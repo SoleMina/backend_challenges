@@ -4,7 +4,7 @@ class ProductManager {
         this.products = [];
     }
 
-    addProduct({ title, description, price, thumbnail, stock }) {
+    addProduct({ title, description, price, thumbnail, code, stock }) {
         let id = 0;
         if(this.products.length === 0) {
             id = 1;
@@ -12,12 +12,12 @@ class ProductManager {
             let lastProduct = this.products[this.products.length - 1];
             id = lastProduct.id + 1;
         }
-        let existingProduct = (this.products.find(product => product.title == title));
+        let existingProduct = (this.products.find(product => product.code == code));
         
         if(existingProduct) {
-            console.log("You cannot create an existing product");
+            console.log("You cannot create a product with an existing code");
         }else{
-            let product = { id, title, description, price, thumbnail, stock}
+            let product = { id, title, description, price, thumbnail, code, stock}
             this.products.push(product);
         }
     }
@@ -31,9 +31,15 @@ class ProductManager {
     //         id = lastProduct.id + 1;
     //     }
 
-    //     let product = { id, ...item };
-    //     console.log(product, 'product');
-    //     this.products.push(product);
+    //     let existingProduct = (this.products.find(product => product.code == code));
+        
+    //     if(existingProduct) {
+    //         console.log("You cannot create a product with an existing code");
+    //     }else{
+    //         let product = { id, ...item };
+    //         console.log(product, 'product');
+    //         this.products.push(product);
+    //     }
     // }
 
     getProducts() {
@@ -51,10 +57,10 @@ class ProductManager {
 
 let product = new ProductManager();
 
-product.addProduct({ title: 'Iphone', description: 'High quality', price: 4500, thumbnail: '', stock: 10})
-product.addProduct({ title: 'Macbook', description: 'High quality', price: 7500, thumbnail: '', stock: 20})
-product.addProduct({ title: 'Ipad', description: 'High quality', price: 3500, thumbnail: '', stock: 5})
+product.addProduct({ title: 'Iphone', description: 'High quality', price: 4500, thumbnail: '', code: '000A1', stock: 10})
+product.addProduct({ title: 'Macbook', description: 'High quality', price: 7500, thumbnail: '', code: '000A2', stock: 20})
+product.addProduct({ title: 'Ipad', description: 'High quality', price: 3500, thumbnail: '', code: '000A3', stock: 5})
 
 console.log(product.getProducts());
 console.log("--------------------");
-console.log(product.getProductById(3));
+console.log(product.getProductById(2));
