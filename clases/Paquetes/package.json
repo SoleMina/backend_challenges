@@ -1,0 +1,16 @@
+{
+  "name": "native_server",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./app.js",
+    "dev": "nodemon ./app.js"
+  },
+  "author": "Karina Prado",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.29.4",
+    "nodemon": "^2.0.22"
+  }
+}

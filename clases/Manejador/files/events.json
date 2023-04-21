@@ -1,0 +1,20 @@
+[
+  {
+    "id": "H1477IT",
+    "title": "Concierto",
+    "location": "El campo",
+    "price": 1250,
+    "capacity": 5,
+    "status": "open",
+    "participants": []
+  },
+  {
+    "id": "MfUqNky",
+    "title": "Show Infantil",
+    "location": "Colegio",
+    "price": 150,
+    "capacity": 20,
+    "status": "open",
+    "participants": []
+  }
+]
