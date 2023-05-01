@@ -58,3 +58,40 @@ let query_function = (req, res) => {
 };
 
 server.get(query_route, query_function);
+
+//EXPRESS ADVANCE
+server.post("/users", (req, res) => {
+    // let name = req.body.name ?? null;
+    const {name, lastname, age, carts } = req.body;
+    if(name && lastname && age && carts) {
+        manager.add_user({name, lastname, age, carts});
+        return res.json({
+            status: 201,
+            message: "created"
+        });
+    }else{
+        return res.json({
+            status: 400,
+            message: "Check data!"
+        });
+    }
+});
+server.put("/users/:uid", (req, res) => {
+        let {uid: id } = req.params;
+        id = Number(id);
+        let data = req.body;
+        console.log(data, 'data');
+        if(id && req.body) {
+            manager.update_user(id, data);
+           return res.json({
+            status: 200,
+            message: "User updated!"
+           })
+        }else{
+            return res.json({
+                status: 400,
+                message: "Check data!"
+            })
+        }
+
+})

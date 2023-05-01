@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Karina",
+    "lastname": "Prado",
+    "age": 25,
+    "products": [],
+    "hasPet": false
+  },
+  {
+    "id": 2,
+    "name": "Soledad",
+    "lastname": "Prado",
+    "age": 21,
+    "products": [],
+    "hasPet": false
+  }
+]

@@ -65,7 +65,8 @@ class UserManager {
             let one = this.read_user(id)
             //itero para modificar la propiedad correspondiente
             for (let prop in data) {
-                //console.log(prop)
+                console.log(one)
+                console.log(prop)
                 one[prop] = data[prop]
             }
             //convierto a texto plano el array
