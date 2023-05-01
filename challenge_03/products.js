@@ -152,32 +152,37 @@ class ProductManager {
     }
 }
 
-(async () => {
-    let product = new ProductManager("./data/products.json");
+let manager = new ProductManager("./data/products.json");
 
-    await product.addProduct({ title: 'Macbook', description: 'High quality', price: 4500, thumbnail: '', code: '000A1', stock: 10})
-      .then(result => {
-        console.log(result.message);
-    });
-    await product.addProduct({ title: 'Ipad', description: 'High quality', price: 4500, thumbnail: '', code: '000A1', stock: 10})
-      .then(result => {
-        console.log(result.message);
-    });
-    await product.getProducts().then(result => {
-        console.log(result.products);
-        console.log(result.message);
-    });
-    await product.getProductById(1).then(result => {
-        console.log(result.product);
-        console.log(result.message);
-    });
-    // await product.updateProduct(1, { title: 'Macbookcito', description: 'High quality', price: 4500, thumbnail: '', code: '000A1', stock: 10})
-    //   .then(result => {
-    //     console.log(result.message);
-    //     console.log(result.product);
-    // });
-    // await product.deleteProduct(2).then(result => {
-    //     console.log(result.message);
-    // });
 
-})();
+// (async () => {
+//     let product = new ProductManager("./data/products.json");
+
+//     await product.addProduct({ title: 'Macbook', description: 'High quality', price: 4500, thumbnail: '', code: '000A1', stock: 10})
+//       .then(result => {
+//         console.log(result.message);
+//     });
+//     await product.addProduct({ title: 'Ipad', description: 'High quality', price: 4500, thumbnail: '', code: '000A1', stock: 10})
+//       .then(result => {
+//         console.log(result.message);
+//     });
+//     await product.getProducts().then(result => {
+//         console.log(result.products);
+//         console.log(result.message);
+//     });
+//     await product.getProductById(1).then(result => {
+//         console.log(result.product);
+//         console.log(result.message);
+//     });
+//     // await product.updateProduct(1, { title: 'Macbookcito', description: 'High quality', price: 4500, thumbnail: '', code: '000A1', stock: 10})
+//     //   .then(result => {
+//     //     console.log(result.message);
+//     //     console.log(result.product);
+//     // });
+//     // await product.deleteProduct(2).then(result => {
+//     //     console.log(result.message);
+//     // });
+
+// })();
+
+module.exports = manager;
