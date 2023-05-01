@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Laptop",
+    "title": "Macbook",
     "description": "High quality",
     "price": 4500,
     "thumbnail": "",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "title": "Macbook",
+    "title": "Ipad",
     "description": "High quality",
     "price": 4500,
     "thumbnail": "",
