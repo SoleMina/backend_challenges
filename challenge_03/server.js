@@ -3,6 +3,7 @@ const server = express();
 const PORT = process.env.PORT || 8000;
 
 const manager = require("./products");
+const cart = require("./cart");
 
 server.listen(PORT, () => {
     console.log(`Listening server on ${PORT}`)
@@ -74,3 +75,49 @@ server.get("/api/products/:pid", async (req, res) => {
         })
     }
 });
+server.get("/api/carts",  async(req, res) => {
+    try {
+        let totalCarts = (await cart.getCarts()).carts;
+        console.log(totalCarts);
+        if(totalCarts.length > 0) {
+            return res.status(200).json({
+                success: true,
+                response: totalCarts
+            })
+        }else {
+            return res.status(400).json({
+                success: false,
+                message: "Carts not found"
+            });
+        }
+    } catch (error) {
+        return res.status(500).json({
+            success: false,
+            message: "Cart not found: " + error
+        })
+    }
+});
+
+server.get("/api/carts/:cid", async (req, res) => {
+    let {cid: id} = req.params;
+    id = Number(id);
+    try {
+        if(id) {
+            const obj = (await cart.getCartById(id)).cartId;
+            res.status(200).json({
+                success: true,
+                response: obj
+            })
+        }else {
+            return res.status(400).json({
+                success: false,
+                message: "Cart not found"
+            })
+        }
+    } catch (error) {
+        return res.status(500).json({
+            success: false,
+            message: "Cart not found: " + error
+        })
+    }
+})
