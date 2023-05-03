@@ -15,7 +15,6 @@ server.use(express.urlencoded({extended: true}));
 server.get("/api/products", async (req, res) => {
     let limit = req.query.limit ?? null;
     let products = (await manager.getProducts()).products;
-    console.log(products);
     try {
         if(limit) {
             let productLimited = products.slice(0, limit);
@@ -74,44 +73,6 @@ server.get("/api/products/:pid", async (req, res) => {
     }
 });
 
-server.post("/api/carts/:pid/:quantity", async (req, res) => {
-    let {pid: id, quantity} = req.params;
-    id = Number(id);
-    quantity = Number(quantity);
-
-    try {
-        if(id && quantity) {
-            let product = (await manager.getProductById(id)).product;
-            console.log(product, 'product');
-            if(product){
-                console.log(product.id);
-                let obj = await cart.addCart(product.id, quantity);
-                console.log(obj, 'obj');
-                return res.status(200).json({
-                    success: true,
-                    response: obj.cart
-                })
-            }else{
-                return res.status(400).json({
-                    success: false,
-                    message: "Check product id!"
-                })
-            }
-        }else{
-            return res.status(400).json({
-                success: false,
-                message: "Check id or quantity data!"
-            })
-        }
-        
-    } catch (error) {
-        return res.status(500).json({
-            success: false,
-            message: "Cannot create cart: " + error
-        })
-    }
-});
-
 server.get("/api/carts",  async(req, res) => {
     try {
         let totalCarts = (await cart.getCarts()).carts;
@@ -155,6 +116,44 @@ server.get("/api/carts/:cid", async (req, res) => {
         return res.status(500).json({
             success: false,
             message: "Cart not found: " + error
+        })
+    }
+});
+
+server.post("/api/carts/:pid/:quantity", async (req, res) => {
+    let {pid: id, quantity} = req.params;
+    id = Number(id);
+    quantity = Number(quantity);
+
+    try {
+        if(id && quantity) {
+            let product = (await manager.getProductById(id)).product;
+            console.log(product, 'product');
+            if(product){
+                console.log(product.id);
+                let obj = await cart.addCart(product.id, quantity);
+                console.log(obj, 'obj');
+                return res.status(200).json({
+                    success: true,
+                    response: obj.cart
+                })
+            }else{
+                return res.status(400).json({
+                    success: false,
+                    message: "Check product id!"
+                })
+            }
+        }else{
+            return res.status(400).json({
+                success: false,
+                message: "Check id or quantity data!"
+            })
+        }
+        
+    } catch (error) {
+        return res.status(500).json({
+            success: false,
+            message: "Cannot create cart: " + error
         })
     }
 });
