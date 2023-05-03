@@ -7,7 +7,7 @@ const cart = require("./cart");
 
 server.listen(PORT, () => {
     console.log(`Listening server on ${PORT}`)
-})
+});
 
 //Accept different properties
 server.use(express.json());
@@ -23,7 +23,7 @@ server.get("/api/products", async (req, res) => {
             if(productLimited.length > 0) {
                 return res.status(200).json({
                     success: true,
-                    payload: productLimited
+                    response: productLimited
                 })
             }else{
                 return res.status(400).json({
@@ -34,7 +34,7 @@ server.get("/api/products", async (req, res) => {
         }else{
             return res.status(200).json({
                 success: true,
-                payload: products
+                response: products
             })
         }
     } catch (error) {
@@ -44,11 +44,11 @@ server.get("/api/products", async (req, res) => {
         })
     }
 });
+
 server.get("/api/products/:pid", async (req, res) => {
     try {
         let {pid: id} = req.params;
         id = Number(id);
-        console.log(id, "id");
         if(typeof id === "number" && id >= 0) {
             let product = (await manager.getProductById(id)).product;
             console.log(product);
@@ -58,7 +58,7 @@ server.get("/api/products/:pid", async (req, res) => {
             });
             return res.status(200).json({
                 success: true,
-                payload: product
+                response: product
             })
 
         }else{
@@ -67,7 +67,6 @@ server.get("/api/products/:pid", async (req, res) => {
                 message: "Check id data, it should be a number!"
             })
         }
-
     } catch (error) {
         return res.status(500).json({
             success: false,
@@ -75,6 +74,7 @@ server.get("/api/products/:pid", async (req, res) => {
         })
     }
 });
+
 server.get("/api/carts",  async(req, res) => {
     try {
         let totalCarts = (await cart.getCarts()).carts;
@@ -120,4 +120,4 @@ server.get("/api/carts/:cid", async (req, res) => {
             message: "Cart not found: " + error
         })
     }
-})
+});
