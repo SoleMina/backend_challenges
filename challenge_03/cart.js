@@ -33,7 +33,7 @@ class CartManager {
                 dataObj.products.push({pid, quantity});
                 this.cart.push(dataObj);
                 await fs.promises.writeFile(this.path, JSON.stringify(this.cart, null, 2));
-                return {status: "Success", cart: dataObj.id, message: "Cart created successfully!"}
+                return {status: "Success", cart: dataObj, message: "Cart created successfully!"}
             }else{
                 try {
                     //Id increment
@@ -45,7 +45,7 @@ class CartManager {
                     }
                     dataObj.products.push({pid, quantity});
                     await fs.promises.writeFile(this.path, JSON.stringify([dataObj], null, 2));
-                    return {status: "success", cart: dataObj.id, message: "Cart created successfully!"}
+                    return {status: "success", cart: dataObj, message: "Cart created successfully!"}
 
                 } catch (error) {
                     return {status: "error", message: "Cannot create cart: " + error}
