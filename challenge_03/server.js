@@ -9,7 +9,6 @@ server.listen(PORT, () => {
     console.log(`Listening server on ${PORT}`)
 });
 
-//Accept different properties
 server.use(express.json());
 server.use(express.urlencoded({extended: true}));
 

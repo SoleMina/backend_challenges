@@ -1,4 +1,4 @@
-### Challenge 2
+### Challenge 3
 
 - Create Class ProductManager
 
