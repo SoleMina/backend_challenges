@@ -78,5 +78,9 @@
     "age": "5",
     "thumbnail": "http://localhost:8080/images/1637975823961fish1.jpg",
     "adopted": false
+  },
+  {
+    "id": 11,
+    "adopted": false
   }
 ]
