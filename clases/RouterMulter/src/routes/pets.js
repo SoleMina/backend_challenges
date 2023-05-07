@@ -4,6 +4,13 @@ import Adopcion from "../classes/Adopcion.js";
 const router = Router();
 const contenedor = new Adopcion(); 
 
+router.use((req, res, next) => {
+    let timestamp = Date.now();
+    let time = new Date(timestamp);
+    console.log(`Petición hecha a las: ${time.toTimeString().split(" ")[0]}`);
+    next();
+});
+
 //GETS
 router.get("/", (req, res) => {
     contenedor.getAllPets().then(result => {
@@ -21,6 +28,7 @@ router.get("/:pid", (req, res) => {
 //POSTS
 router.post("/", (req, res) => {
     let body = req.body;
+    body.age = Number(body.age);
     console.log(body);
     contenedor.registerPet(body).then(result => {
         res.send(result);

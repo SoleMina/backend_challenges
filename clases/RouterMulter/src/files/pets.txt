@@ -81,6 +81,9 @@
   },
   {
     "id": 11,
+    "name": "Rosita",
+    "specie": "cat",
+    "age": 3,
     "adopted": false
   }
 ]

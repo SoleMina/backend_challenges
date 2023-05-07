@@ -17,6 +17,7 @@ const storage = multer.diskStorage({
         cb(null, "public");
     },
     filename: function(req, file, cb) {
+        console.log(file);
         cb(null, Date.now() + file.originalname);
     }
 });
@@ -25,6 +26,9 @@ const upload = multer({storage: storage});
 //Lee todo tipo de archivos
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
+
+// app.use(upload.single("file")); dosen't work for now
+
 // app.use(express.static("public"));
 // app.use(express.static(__dirname + "/src/public"));
 // app.use("/images", express.static(__dirname + "/src/public"));
@@ -37,12 +41,6 @@ app.use((err, req, res, next) => {
     res.status(500).send("Error en el servidor");
 });
 
-app.use((req, res, next) => {
-    let timestamp = Date.now();
-    let time = new Date(timestamp);
-    console.log(`Petición hecha a las: ${time.toTimeString().split(" ")[0]}`);
-    next();
-});
 
 app.use("/api/pets", petsRouter);
 app.use("/api/users", usersRouter);
@@ -61,11 +59,17 @@ app.post("/api/adoption", (req, res) => {
     })
 });
 app.post("/api/uploadfile", upload.single("file"), (req, res) => {
-    const files = req.file;
-    console.log(files);
-    if(!files || files.length === 0) {
-      res.status(500).send({message: "No se subió archivo"});
-    }
-    res.send(files);
+    //req.file is not from upload.single("file") name
+    //upload.single -> file
+    //upload.array -> files
+   try {
+     const files = req.file;
+     if(!files || files.length === 0) {
+       res.status(500).send({message: "No se subió archivo"});
+     }
+     res.send(files);
+   } catch (error) {
+     console.log(error);
+   }
 
 });
