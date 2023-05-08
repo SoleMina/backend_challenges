@@ -1,9 +1,10 @@
 import express from "express";
-import multer from "multer";
 import Adopcion from "./src/classes/Adopcion.js";
 import router from "./src/routes/pets.js";
 import router_user from "./src/routes/users.js";
 import __dirname from "./utils.js";
+import upload from "./src/services/upload.js";
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -11,17 +12,6 @@ const PORT = process.env.PORT || 3000;
 const contenedor = new Adopcion(); 
 const petsRouter = router;
 const usersRouter = router_user;
-
-const storage = multer.diskStorage({
-    destination: function(req, file, cb){
-        cb(null, "public");
-    },
-    filename: function(req, file, cb) {
-        console.log(file);
-        cb(null, Date.now() + file.originalname);
-    }
-});
-const upload = multer({storage: storage});
 
 //Lee todo tipo de archivos
 app.use(express.urlencoded({extended: true}));
@@ -40,7 +30,6 @@ app.use((err, req, res, next) => {
     console.log(err.stack);
     res.status(500).send("Error en el servidor");
 });
-
 
 app.use("/api/pets", petsRouter);
 app.use("/api/users", usersRouter);

@@ -1,5 +1,7 @@
 import { Router } from "express";
 import Adopcion from "../classes/Adopcion.js";
+import upload from "../services/upload.js";
+
 
 const router = Router();
 const contenedor = new Adopcion(); 
@@ -26,14 +28,35 @@ router.get("/:pid", (req, res) => {
 });
 
 //POSTS
-router.post("/", (req, res) => {
+router.post("/",  upload.fields(
+    [
+        {
+        name: "image", maxCount: 1
+        },
+       {
+        name: "documents", maxCount: 1
+       }
+    ]
+), (req, res) => {
     let body = req.body;
+    console.log(body);
     body.age = Number(body.age);
     console.log(body);
     contenedor.registerPet(body).then(result => {
         res.send(result);
     })
 });
+// router.post("/",  upload.single("image"), (req, res) => {
+//     let body = req.body;
+//     console.log(body);
+//     body.age = Number(body.age);
+//     let thumbnail = "http://localhost:3000/images/" + req.file.filename;
+//     body.thumbnail = thumbnail;
+//     console.log(body);
+//     contenedor.registerPet(body).then(result => {
+//         res.send(result);
+//     })
+// });
 
 //PUTS
 router.put("/:pid", (req, res) => {
