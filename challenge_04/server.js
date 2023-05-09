@@ -12,7 +12,6 @@ server.listen(PORT, () => {
 server.use(express.json());
 server.use(express.urlencoded({extended: true}));
 
-
 //PRODUCTS
 server.get("/api/products", async (req, res) => {
     let limit = req.query.limit ?? null;
@@ -167,7 +166,6 @@ server.delete("/api/products/:pid", async (req, res) => {
 });
 
 // CARTS
-
 server.get("/api/carts",  async(req, res) => {
     try {
         let totalCarts = (await cart.getCarts()).carts;
@@ -215,6 +213,30 @@ server.get("/api/carts/:cid", async (req, res) => {
     }
 });
 
+//Create an empty cart with no products
+server.post("/api/carts", async (req, res) => {
+    try {
+        let obj = (await cart.addCart()).cart;
+        if(obj) {
+            res.status(200).json({
+                success: true,
+                response: obj
+            })
+        }else {
+            return res.status(400).json({
+                success: false,
+                message: "Cannot create cart"
+            })
+        }
+    } catch (error) {
+        return res.status(500).json({
+            success: false,
+            message: "Cannot create cart: " + error
+        })
+    }
+});
+
+//Create cart with id product
 server.post("/api/carts/:pid/:quantity", async (req, res) => {
     let {pid: id, quantity} = req.params;
     id = Number(id);

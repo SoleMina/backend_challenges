@@ -30,10 +30,16 @@ class CartManager {
                     id,
                     products: []
                 }
-                dataObj.products.push({pid, quantity});
-                this.cart.push(dataObj);
-                await fs.promises.writeFile(this.path, JSON.stringify(this.cart, null, 2));
-                return {status: "Success", cart: dataObj, message: "Cart created successfully!"}
+                if(id && quantity) {
+                    dataObj.products.push({pid, quantity});
+                    this.cart.push(dataObj);
+                    await fs.promises.writeFile(this.path, JSON.stringify(this.cart, null, 2));
+                    return {status: "Success", cart: dataObj, message: "Cart created successfully!"}
+                }else{
+                    this.cart.push(dataObj);
+                    await fs.promises.writeFile(this.path, JSON.stringify(this.cart, null, 2));
+                    return {status: "Success", cart: dataObj, message: "Cart created successfully!"}
+                }
             }else{
                 try {
                     //Id increment
