@@ -1,4 +1,4 @@
-### Challenge 3
+### Challenge 4
 
 - Create Class ProductManager
 
@@ -17,3 +17,6 @@ deleteProduct(id)
 addCart(pid, quantity)
 getCarts()
 getCartById(id)
+
+- Add server endpoints (products & cart)
+get, post, put & delete
