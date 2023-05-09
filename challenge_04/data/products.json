@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Macbook",
+    "description": "High quality",
+    "price": 4500,
+    "thumbnail": "",
+    "code": "000A1",
+    "stock": 10
+  },
+  {
+    "id": 2,
+    "title": "Ipad",
+    "description": "High quality",
+    "price": 4500,
+    "thumbnail": "",
+    "code": "000A1",
+    "stock": 10
+  },
+  {
+    "id": 3,
+    "title": "Iphone 12 Pro Max",
+    "description": "High quality",
+    "price": 4500,
+    "thumbnail": "",
+    "code": "000A4",
+    "stock": 12
+  }
+]
