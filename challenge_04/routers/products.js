@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const manager = require("../products");
+const manager = require("../classes/products");
 
 //GETS
 router.get("/", async (req, res) => {

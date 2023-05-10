@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const carts = require("../cart");
-const manager = require("../products");
+const carts = require("../classes/cart");
+const manager = require("../classes/products");
 
 
 //GETS
@@ -165,9 +165,9 @@ router.delete("/:cid/product/:pid/:units", async (req, res) => {
     try {
         if(cid && pid && units) {
             let product = (await manager.getProductById(pid)).product;
-            let cartFound = (await cart.getCartById(cid)).cartId;
+            let cartFound = (await carts.getCartById(cid)).cartId;
             if(cartFound && product) {
-                let obj = await cart.deleteProductFromCart(cid, pid, units);
+                let obj = await carts.deleteProductFromCart(cid, pid, units);
                 return res.status(200).json({
                     success: true,
                     response: obj.cart
