@@ -274,3 +274,47 @@ server.post("/api/carts/:pid/:quantity", async (req, res) => {
         })
     }
 });
+server.put("/api/carts/:cid/product/:pid/:units", async (req, res) => {
+    let cid = req.params.cid ?? null;
+    let pid = req.params.pid ?? null;
+    let units = req.params.units ?? null;
+    cid = Number(cid);
+    pid = Number(pid);
+    units = Number(units);
+    try {
+        if(cid && pid && units) {
+            let product = (await manager.getProductById(pid)).product;
+            let cartFound = (await cart.getCartById(cid)).cartId;
+            if(cartFound && product) {
+                let obj = await cart.updateCart(cid, pid, units);
+                return res.status(200).json({
+                    success: true,
+                    response: obj.cart
+                })
+            }else {
+                return res.status(400).json({
+                    success: false,
+                    message: "Cannot update cart"
+                })
+            }
+        }else {
+            return res.status(400).json({
+                success: false,
+                message: "Check data id!"
+            });
+        }
+    } catch (error) {
+        return res.status(500).json({
+            success: false,
+            message: "Cannot update cart: " + error
+        })
+    }
+});
+server.delete("/api/carts/:cid/product/:pid/:units", (req, res) => {
+    let cid = req.params.cid ?? null;
+    let pid = req.params.pid ?? null;
+    let units = req.params.units ?? null;
+    cid = Number(cid);
+    pid = Number(pid);
+    units = Number(units);
+});

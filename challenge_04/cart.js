@@ -84,6 +84,34 @@ class CartManager {
             return {status: "Error", message: "Not found: " + error}
         }
     }
+    async updateCart(cid, pid, units) {
+        try {
+            this.cart = JSON.parse(fs.readFileSync(this.path, "utf-8"));
+            let obj = this.cart.find(ob => ob.id === cid);
+            console.log(obj, "object update");
+            if(obj) {
+                let index = obj.products.findIndex((product) => product.pid === pid);
+                console.log(index, "index");
+                if(index < 0) {
+                    let product = {
+                        pid,
+                        quantity: units
+                    }
+                    obj.products.push(product);
+                    await fs.promises.writeFile(this.path, JSON.stringify(this.cart, null, 2));
+                    return {status: "Success", cart: obj, message: "Cart updated successfully!"}
+                }
+                obj.products[index].pid = pid;
+                obj.products[index].quantity = units;
+                await fs.promises.writeFile(this.path, JSON.stringify(this.cart, null, 2));
+                return {status: "Success", cart: obj, message: "Cart updated successfully!"}
+            }
+            return {status: "Error", message: "Cannot update cart"}
+            
+        } catch (error) {
+            return {status: "Error", message: "Cannot update cart: " + error}
+        }
+    }
 }
 
 let cart = new CartManager("./data/cart.json");
