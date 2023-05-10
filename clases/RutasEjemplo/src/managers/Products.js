@@ -1,157 +1,86 @@
-import fs from "fs";
+import fs from 'fs'
 
-class ProductManager {
-
+class Product {
     constructor(path) {
-        this.products = [];
-        this.path = path;
+        this.products = []
+        this.path = path
+        this.init(path)
     }
-
-    async incrementId() {
-        let id = 0;
-        if(this.products.length === 0) {
-            id = 1;
-        }else {
-            const lastProduct = this.products[this.products.length - 1];
-            id = lastProduct.id + 1;
+    init(path) {
+        let file = fs.existsSync(path)
+        if (!file) {
+            fs.writeFileSync(path,'[]')
+            console.log('file created at path: '+this.path)
+            return 201
+        } else {
+            this.products = JSON.parse(fs.readFileSync(path,'UTF-8'))
+            console.log('products recovered')
+            return 200
         }
-        return id;
     }
-
-    async addProduct(product) {
-        //Check if file exists
-        let file = fs.existsSync(this.path);
+    async add_product({ title,description,stock,url_photo,price }) {
         try {
-            if(file) {
-                console.log(file, 'file');
-                //If file existe read json
-                this.products = JSON.parse(fs.readFileSync(this.path, "utf-8"));
-                console.log(this.products, "this.products");
-
-                //Check if there are products with the same name
-                let prod = this.products.find( pd => pd.title === product.title);
-
-                if(prod) {
-                    return {status: "error", message: "Product already exist"}
-                }else{
-                    try {
-                        //Id increment
-                        let id = await this.incrementId();
-
-                        let dataObj = {
-                            id: id,
-                            title: product.title,
-                            description: product.description,
-                            price: product.price,
-                            thumbnail: product.thumbnail,
-                            code: product.code,
-                            stock: product.stock
-                        }
-                        this.products.push(dataObj);
-                    
-                        await fs.promises.writeFile(this.path, JSON.stringify(this.products, null, 2));
-                        return {status: "Success", product: dataObj, message: "Product created successfully!"}
-                    } catch (error) {
-                        return {status: "error", message: `Cannot create product here ${prod}`}
-                    }
-
+            if (title&&description&&stock&&url_photo&&price) {
+                let data = { title,description,stock,url_photo,price }
+                if (this.products.length>0) {
+                    let next_id = this.products[this.products.length-1].id+1
+                    data.id = next_id
+                } else {
+                    data.id = 1
                 }
-            }else{
-                //If file doesn't exist, create it
-
-                try {
-                    //Id increment
-                    let id = await this.incrementId();
-
-                    let dataObj = {
-                        id: id,
-                        title: product.title,
-                        description: product.description,
-                        price: product.price,
-                        thumbnail: product.thumbnail,
-                        code: product.code,
-                        stock: product.stock
-                    }
-
-                    await fs.promises.writeFile(this.path, JSON.stringify([dataObj], null, 2));
-                    return {status: "success", product: dataObj, message: "Product created successfully!"}
-
-                } catch (error) {
-                    return {status: "error", message: "Cannot create product: " + error}
-                }
-
+                this.products.push(data)
+                let data_json = JSON.stringify(this.products,null,2)
+                await fs.promises.writeFile(this.path,data_json)
+                console.log('id´s created product: '+data.id)
+                return 201
             }
-        } catch (error) {
-            return {status: "error", message: "Cannot create product: " + error}
+            console.log('complete data')
+            return null
+        } catch(error) {
+            console.log(error)
+            return null
         }
     }
-    async getProducts() {
-        try {
-            let products  = await fs.promises.readFile(this.path, "utf-8");
-            if(!products) return {status: "error", message: "Products not found: " + error};
-
-            this.products = JSON.parse(products);
-            return {status: "success", products: this.products, message: "List of products"}
-
-        } catch (error) {
-            return {status: "error", message: "Products not found: " + error}
-        }
+    read_products() {
+        return this.products
     }
-    async getProductById(id) {
-        try {
-            let products  = await fs.promises.readFile(this.path, "utf-8");
-            this.products = JSON.parse(products);
-            
-            let product = this.products.find(prd => prd.id === id);
-            if(!product) return {status: "error", message: "Product not found: " + error}
-
-            return {status: "Success", product: product, message: "Product found successfully!"}
-            
-        } catch (error) {
-            return {status: "error", message: "Product not found: " + error}
-        }
+    read_product(id) {
+        return this.products.find(each=>each.id===id)
     }
-    async updateProduct(id, data) {
+    async update_product(id,data) {
         try {
-            let products  = await fs.promises.readFile(this.path, "utf-8");
-            this.products = JSON.parse(products);
-
-            let index = this.products.findIndex(prd => prd.id == id);
-            console.log(this.products);
-
-            if(index>=0) {
-                this.products[index] = { id, ...data}
-                await fs.promises.writeFile(this.path, JSON.stringify(this.products, null, 2));
-                return {status: "Success", product: this.products[index], message: "Product updated successfully!"}
-            }else{
-                return {status: "error", message: "Product not found, can't update: " + error}
+            let one = await this.read_product(id)
+            for (let prop in data) {
+                one[prop] = data[prop]
             }
-            
-        } catch (error) {
-            return {status: "error", message: "Cannot update product: " + error}
+            let data_json = JSON.stringify(this.products,null,2)
+            await fs.promises.writeFile(this.path,data_json)
+            console.log('updated product: '+id)
+            return 200
+        } catch(error) {
+            console.log(error)
+            return null
         }
     }
-    async deleteProduct(id) {
+    async destroy_product(id) {
         try {
-            let products  = await fs.promises.readFile(this.path, "utf-8");
-            this.products = JSON.parse(products);
-
-            let index = this.products.findIndex(prd => prd.id === id);
-            if(index >=0) {
-                this.products.splice(index, 1);
-                console.log(this.products, "this.products inside delete");
-                await fs.promises.writeFile(this.path, JSON.stringify(this.products, null, 2));
-                return {status: "success", message: "Product has been deleted"}
-            }else{
-                return {status: "error", message: "Cannot delete product: " + error}
+            let one = this.products.find(each=>each.id===id)
+            if (one) {
+                this.products = this.products.filter(each=>each.id!==id)
+                let data_json = JSON.stringify(this.products,null,2)
+                await fs.promises.writeFile(this.path,data_json)
+                console.log('delete product: '+id)
+                return 200
             }
-
-        } catch (error) {
-            return {status: "error", message: "Cannot delete product: " + error}
+            console.log('not found')
+            return null
+        } catch(error) {
+            console.log(error)
+            return null
         }
     }
 }
 
-let manager = new ProductManager("./data/products.json");
+let manager = new Product('./src/data/products.json')
 
-export default manager;
+export default manager

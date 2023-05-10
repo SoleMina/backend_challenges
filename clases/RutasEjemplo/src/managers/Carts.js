@@ -1,168 +1,83 @@
-import fs from "fs";
+import fs from 'fs'
 
-class CartManager {
+class Cart {
     constructor(path) {
-        this.path = path;
-        this.cart = [];
+        this.carts = []
+        this.path = path
+        this.init(path)
     }
-
-    async incrementId() {
-        let id = 0;
-        if(this.cart.length === 0) {
-            id = 1;
-        }else {
-            const lastProduct = this.cart[this.cart.length - 1];
-            id = lastProduct.id + 1;
-        }
-        return id;
-    }
-
-    async addCart(pid, quantity) {
-        //Check if file exists
-        let file = fs.existsSync(this.path);
-        try {
-            if(file) {
-                //If file existe read json
-                this.cart = JSON.parse(fs.readFileSync(this.path, "utf-8"));
-                //Id increment
-                let id = await this.incrementId();
-                let dataObj = {
-                    id,
-                    products: []
-                }
-                if(id && quantity) {
-                    dataObj.products.push({pid, quantity});
-                    this.cart.push(dataObj);
-                    await fs.promises.writeFile(this.path, JSON.stringify(this.cart, null, 2));
-                    return {status: "Success", cart: dataObj, message: "Cart created successfully!"}
-                }else{
-                    this.cart.push(dataObj);
-                    await fs.promises.writeFile(this.path, JSON.stringify(this.cart, null, 2));
-                    return {status: "Success", cart: dataObj, message: "Cart created successfully!"}
-                }
-            }else{
-                try {
-                    //Id increment
-                    let id = await this.incrementId();
-
-                    let dataObj = {
-                        id,
-                        products: []
-                    }
-                    dataObj.products.push({pid, quantity});
-                    await fs.promises.writeFile(this.path, JSON.stringify([dataObj], null, 2));
-                    return {status: "success", cart: dataObj, message: "Cart created successfully!"}
-
-                } catch (error) {
-                    return {status: "error", message: "Cannot create cart: " + error}
-                }
-            }
-        }catch(error){
-            return {status: "error", message: "Cannot add cart " + error}
+    init(path) {
+        let file = fs.existsSync(path)
+        if (!file) {
+            fs.writeFileSync(path,'[]')
+            console.log('file created at path: '+this.path)
+            return 201
+        } else {
+            this.carts = JSON.parse(fs.readFileSync(path,'UTF-8'))
+            console.log('carts recovered')
+            return 200
         }
     }
-    async getCarts() {
+    async add_cart() {
         try {
-            this.cart = JSON.parse(fs.readFileSync(this.path, "utf-8"));
-            if(this.cart.length>0) {
-                return {status: "Success", carts: this.cart, message: "Carts found successfully!"}
+            let data = { products: [] }
+            //por ahora vacío y luego contendrá objetos con pid y quantity
+            if (this.carts.length>0) {
+                let next_id = this.carts[this.carts.length-1].id+1
+                data.id = next_id
+            } else {
+                data.id = 1
             }
-            return {status: "Error", message: "Not found"}
-        } catch (error) {
-            return {status: "Error", message: "Not found: " + error}
+            this.carts.push(data)
+            let data_json = JSON.stringify(this.carts,null,2)
+            await fs.promises.writeFile(this.path,data_json)
+            console.log('id´s created cart: '+data.id)
+            return 201
+        } catch(error) {
+            console.log(error)
+            return null
         }
     }
-    async getCartById(id) {
+    read_carts() {
+        return this.carts
+    }
+    read_cart(id) {
+        return this.carts.find(each=>each.id===id)
+    }
+    async update_cart(id,data) {
         try {
-            this.cart = JSON.parse(fs.readFileSync(this.path, "utf-8"));
-            let obj = this.cart.find(ob => ob.id === id);
-            if(obj) {
-                return {status: "Success", cartId: obj, message: "Cart found successfully!"}
+            let one = this.read_cart(id)
+            for (let prop in data) {
+                one[prop] = data[prop]
             }
-            return {status: "Error", message: "Not found"}
-        } catch (error) {
-            return {status: "Error", message: "Not found: " + error}
+            let data_json = JSON.stringify(this.carts,null,2)
+            await fs.promises.writeFile(this.path,data_json)
+            console.log('updated cart: '+id)
+            return 200
+        } catch(error) {
+            console.log(error)
+            return null
         }
     }
-    async updateCart(cid, pid, units) {
+    async destroy_cart(id) {
         try {
-            this.cart = JSON.parse(fs.readFileSync(this.path, "utf-8"));
-            let obj = this.cart.find(ob => ob.id === cid);
-            if(obj) {
-                let index = obj.products.findIndex((product) => product.pid === pid);
-                if(index < 0) {
-                    let product = {
-                        pid,
-                        quantity: units
-                    }
-                    let totalProducts  = await fs.promises.readFile("./data/products.json", "utf-8");
-                    totalProducts = JSON.parse(totalProducts);
-                    indexProduct = totalProducts.findIndex((product) => product.id === pid);
-                    let stock = totalProducts[indexProduct].stock;
-
-                    if(stock >= units) {
-                        totalProducts[indexProduct].stock = stock - units;
-                        obj.products.push(product);
-                        await fs.promises.writeFile("./data/products.json", JSON.stringify(totalProducts, null, 2));
-                        await fs.promises.writeFile(this.path, JSON.stringify(this.cart, null, 2));
-                        return {status: "Success", cart: obj, message: "Cart updated successfully!"}
-                    }
-                }
-                let totalProducts  = await fs.promises.readFile("./data/products.json", "utf-8");
-                totalProducts = JSON.parse(totalProducts);
-                console.log(totalProducts, "totalProducts");
-
-                let indexProduct = totalProducts.findIndex((product) => product.id === pid);
-                let stock = totalProducts[indexProduct].stock;
-                console.log(stock, "stock");
-
-                if(stock >= units) {
-                    totalProducts[indexProduct].stock = stock - units;
-                    console.log(totalProducts, "totalProducts 2");
-                    obj.products[index].pid = pid;
-                    obj.products[index].quantity = units;
-                    await fs.promises.writeFile("./data/products.json", JSON.stringify(totalProducts, null, 2));
-                    await fs.promises.writeFile(this.path, JSON.stringify(this.cart, null, 2));
-                    return {status: "Success", cart: obj, message: "Cart updated successfully!"}
-                }
+            let one = this.carts.find(each=>each.id===id)
+            if (one) {
+                this.carts = this.carts.filter(each=>each.id!==id)
+                let data_json = JSON.stringify(this.carts,null,2)
+                await fs.promises.writeFile(this.path,data_json)
+                console.log('delete cart: '+id)
+                return 200
             }
-            return {status: "Error", message: "Cannot update cart"}
-            
-        } catch (error) {
-            return {status: "Error", message: "Cannot update cart: " + error}
-        }
-    }
-    async deleteProductFromCart(cid, pid, units) {
-        try {
-            this.cart = JSON.parse(fs.readFileSync(this.path, "utf-8"));
-            let obj = this.cart.find(ob => ob.id === cid);
-            if(obj) {
-                let index = obj.products.findIndex((product) => product.pid === pid);
-                if(index >= 0) {
-                    let totalProducts  = await fs.promises.readFile("./data/products.json", "utf-8");
-                    totalProducts = JSON.parse(totalProducts);
-
-                    let indexProduct = totalProducts.findIndex((product) => product.id === pid);
-                    let stock = totalProducts[indexProduct].stock;
-                    console.log(stock, "stock");
-
-                    if(stock >= units) {
-                        totalProducts[indexProduct].stock = stock + units;
-                        obj.products = await obj.products.filter((product) => product.pid !== pid);
-                        await fs.promises.writeFile("./data/products.json", JSON.stringify(totalProducts, null, 2));
-                        await fs.promises.writeFile(this.path, JSON.stringify(this.cart, null, 2));
-                        return {status: "Success", cart: obj, message: "Product deleted from cart successfully!"}
-                    }
-                }
-                return {status: "Error", message: "Cannot delete product from cart"}
-            }
-            
-        } catch (error) {
-            return {status: "Error", message: "Cannot delete product from cart: " + error}
+            console.log('not found')
+            return null
+        } catch(error) {
+            console.log(error)
+            return null
         }
     }
 }
 
-let cart = new CartManager("./data/cart.json");
+let manager = new Cart('./src/data/carts.json')
 
-export default cart;
+export default manager
