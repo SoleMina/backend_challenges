@@ -6,7 +6,7 @@
     "price": 4500,
     "thumbnail": "",
     "code": "000A1",
-    "stock": 10
+    "stock": 24
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "price": 4500,
     "thumbnail": "",
     "code": "000A1",
-    "stock": 10
+    "stock": 22
   },
   {
     "id": 3,
@@ -24,6 +24,6 @@
     "price": 4500,
     "thumbnail": "",
     "code": "000A4",
-    "stock": 12
+    "stock": 28
   }
 ]
