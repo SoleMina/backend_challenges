@@ -3,9 +3,9 @@ import api_router from "./api/index.js";
 import view_router from "./views/index.js";
 
 const router = Router();
-router.use("/api", api_router);
+router.use("/api", api_router); //enrutador de rutas que responden con json (datos)
 //Todas las rutas de la api rest van a tener el endpoint /api
-router.use("/", view_router);
+router.use("/", view_router); //enrutador de rutas que responden con vistas (handlebars)
 //mientras que todas las rutas de las vistas van a tener el endpoint (/) libre
 
 router.get("/test", (req, res) => {

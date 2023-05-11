@@ -3,33 +3,75 @@ import carts from "../../managers/Carts.js";
 
 const router = Router();
 
-router.get("/", async (req, res) => {
+// router.get("/", async (req, res) => {
 
+//     try {
+//         return res.json({statusCode: 200})
+//     } catch (error) {
+//         next(error);
+//     }
+// });
+
+router.post('/', async(req,res,next)=> {
     try {
-        return res.json({statusCode: 200})
-    } catch (error) {
-        next(error);
+        let response = await manager.add_cart(req.body)
+        if (response===201) {
+            return res.json({ status:201,message:'cart created'})
+        }
+        return res.json({ status:400,message:'not created'})
+    } catch(error) {
+        next(error)
     }
-    // try {
-    //     let totalCarts = (await carts.getCarts()).carts;
-    //     console.log(totalCarts);
-    //     if(totalCarts.length > 0) {
-    //         return res.status(200).json({
-    //             success: true,
-    //             response: totalCarts
-    //         })
-    //     }else {
-    //         return res.status(400).json({
-    //             success: false,
-    //             message: "Carts not found"
-    //         });
-    //     }
-    // } catch (error) {
-    //     return res.status(500).json({
-    //         success: false,
-    //         message: "Cart not found: " + error
-    //     })
-    // }
-});
+})
+router.get('/', async(req,res,next)=> {
+    try {
+        let all = manager.read_carts()
+        if (all.length>0) {
+            return res.json({ status:200,all })
+        }
+        let message = 'not found'
+        return res.json({ status:404,message })
+    } catch(error) {
+        next(error)
+    }
+})
+router.get('/:pid', async(req,res,next)=> {
+    try {
+        let id = Number(req.params.pid)
+        let one = manager.read_cart(id)
+        if (one) {
+            return res.json({ status:200,one })
+        }
+        let message = 'not found'
+        return res.json({ status:404,message })
+    } catch(error) {
+        next(error)
+    }
+})
+router.put('/:pid', async(req,res,next)=> {
+    try {
+        let id = Number(req.params.pid)
+        let data = req.body
+        let response = await manager.update_cart(id,data)
+        if (response===200) {
+            return res.json({ status:200,message:'cart updated'})
+        }
+        return res.json({ status:404,message:'not found'})
+    } catch(error) {
+        next(error)
+    }
+})
+router.delete('/:pid', async(req,res,next)=> {
+    try {
+        let id = Number(req.params.pid)
+        let response = await manager.destroy_cart(id)
+        if (response===200) {
+            return res.json({ status:200,message:'cart deleted'})
+        }
+        return res.json({ status:404,message:'not found'})
+    } catch(error) {
+        next(error)
+    }
+})
 
 export default router;

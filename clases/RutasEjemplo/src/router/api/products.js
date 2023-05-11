@@ -3,41 +3,76 @@ import manager from "../../managers/Products.js";
 
 const router = Router();
 
-router.get("/", async (req, res, next) => {
+// router.get("/", async (req, res, next) => {
+//     try {
+//         // let content = body;
+//        return  res.json({status: "ok"});
+//     } catch (error) {
+//         next(error);
+//     }
+// });
+
+
+router.post('/', async(req,res,next)=> {
     try {
-        // let content = body;
-       return  res.json({status: "ok"});
-    } catch (error) {
-        next(error);
+        let response = await manager.add_product(req.body)
+        if (response===201) {
+            return res.json({ status:201,message:'product created'})
+        }
+        return res.json({ status:400,message:'not created'})
+    } catch(error) {
+        next(error)
     }
-    // let limit = req.query.limit ?? null;
-    // let products = (await manager.getProducts()).products;
-    // try {
-    //     if(limit) {
-    //         let productLimited = products.slice(0, limit);
-    //         if(productLimited.length > 0) {
-    //             return res.status(200).json({
-    //                 success: true,
-    //                 response: productLimited
-    //             })
-    //         }else{
-    //             return res.status(400).json({
-    //                 success: false,
-    //                 message: "Products not found"
-    //             })
-    //         }
-    //     }else{
-    //         return res.status(200).json({
-    //             success: true,
-    //             response: products
-    //         })
-    //     }
-    // } catch (error) {
-    //     return res.status(500).json({
-    //         success: false,
-    //         message: "Products not found: " + error
-    //     })
-    // }
-});
+})
+router.get('/', async(req,res,next)=> {
+    try {
+        let products = manager.read_products()
+        if (products.length>0) {
+            return res.json({ status:200,products })
+        }
+        let message = 'not found'
+        return res.json({ status:404,message })
+    } catch(error) {
+        next(error)
+    }
+})
+router.get('/:pid', async(req,res,next)=> {
+    try {
+        let id = Number(req.params.pid)
+        let product = manager.read_product(id)
+        if (product) {
+            return res.json({ status:200,product })
+        }
+        let message = 'not found'
+        return res.json({ status:404,message })
+    } catch(error) {
+        next(error)
+    }
+})
+router.put('/:pid', async(req,res,next)=> {
+    try {
+        let id = Number(req.params.pid)
+        let data = req.body
+        let response = await manager.update_product(id,data)
+        if (response===200) {
+            return res.json({ status:200,message:'product updated'})
+        }
+        return res.json({ status:404,message:'not found'})
+    } catch(error) {
+        next(error)
+    }
+})
+router.delete('/:pid', async(req,res,next)=> {
+    try {
+        let id = Number(req.params.pid)
+        let response = await manager.destroy_product(id)
+        if (response===200) {
+            return res.json({ status:200,message:'product deleted'})
+        }
+        return res.json({ status:404,message:'not found'})
+    } catch(error) {
+        next(error)
+    }
+})
 
 export default router;
