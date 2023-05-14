@@ -1,4 +1,4 @@
-const fs = require("fs");
+import fs from "fs";
 
 class ProductManager {
 
@@ -154,4 +154,4 @@ class ProductManager {
 
 let manager = new ProductManager("./src/data/products.json");
 
-module.exports = manager;
+export default manager;

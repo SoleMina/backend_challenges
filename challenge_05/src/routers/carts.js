@@ -1,8 +1,8 @@
-const express = require("express");
-const router = express.Router();
-const carts = require("../classes/cart");
-const manager = require("../classes/products");
+import {Router} from "express";
+import carts from "../classes/cart.js";
+import manager from "../classes/products.js";
 
+const router = Router();
 
 //GETS
 router.get("/", async (req, res) => {
@@ -193,4 +193,4 @@ router.delete("/:cid/product/:pid/:units", async (req, res) => {
     }
 });
 
-module.exports = router;
+export default router;
