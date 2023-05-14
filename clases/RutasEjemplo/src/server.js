@@ -8,6 +8,8 @@ let ready = () => console.log("Server ready on port " + PORT);
 let http_server = server.listen(PORT, ready);
 let socket_server = new Server(http_server);
 
+let contador = 0;
+
 socket_server.on( //on srive para escuchar los mensajes que llegan (en este caso del cliente)
     "connection", //identificador del mensaje a escuchar
     socket => {
@@ -17,6 +19,8 @@ socket_server.on( //on srive para escuchar los mensajes que llegan (en este caso
         });
         socket.on("message", data => {
             console.log("User is: ", data.user);
+            contador++;
+            socket_server.emit("contador", contador);
         });
         
 });

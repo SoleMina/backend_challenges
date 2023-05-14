@@ -3,9 +3,6 @@ let buttonList = document.querySelectorAll(".btn-primary");
 let cards = document.querySelectorAll(".card-title");
 console.log(cards);
 
-// let card = document.querySelector(".card-title").innerHTML;
-// console.log(card);
-
 socket.emit(
     "primera_conexion", {
     name: "Sole",
@@ -26,3 +23,20 @@ buttonList.forEach(function(i, index){
         buttonPressed(index);
     })
 });
+
+//example
+
+// function emit_data() {
+//     socket.emit("segunda_conexion", {
+//         name: Sara,
+//         age: 20
+//     })
+// };
+
+// let selectors = document.querySelectorAll(".btn_primary");
+// console.log(selectors);
+// selectors.forEach(each = each.addEventListener("click", emit_data));
+
+socket.on("contador", data => {
+    console.log(data, "contador");
+})
