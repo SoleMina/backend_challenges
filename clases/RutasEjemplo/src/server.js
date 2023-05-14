@@ -1,27 +1,25 @@
-import express from "express";
-import router from "./router/index.js";
-import errorHandler from "./middlewares/errorHandler.js";
-import not_found_handler from "./middlewares/notFoundHandlers.js";
-import {engine} from "express-handlebars";
-import __dirname from "../utils.js";
+import server from "./app.js";
+import { Server } from "socket.io";
 
-let server = express();
+
 let PORT = 8080;
-
 let ready = () => console.log("Server ready on port " + PORT);
 
+let http_server = server.listen(PORT, ready);
+let socket_server = new Server(http_server);
 
-server.engine("handlebars", engine());      //Inicializamos el motor de plantilla
-server.set("view engine", "handlebars");    //Configurar el motor para que funcione
-server.set("views", __dirname + "/src/views"); //Configurar donde irán las plantillas
-server.listen(PORT, ready);
-server.use('/public', express.static("public"));
-server.use(express.urlencoded({extended:true}));
-server.use(express.json());
-server.use("/", router);
-server.use(errorHandler);
-server.use(not_found_handler);
-
+socket_server.on( //on srive para escuchar los mensajes que llegan (en este caso del cliente)
+    "connection", //identificador del mensaje a escuchar
+    socket => {
+        console.log(`client ${socket.client.id} connected`);
+        socket.on("primera_conexion", data => {
+            console.log(data.name);
+        });
+        socket.on("message", data => {
+            console.log("User is: ", data.user);
+        });
+        
+});
 
 
 // let index_route = "/";

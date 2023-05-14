@@ -5,7 +5,7 @@ const router = Router();
 router.use("/auth", authRouter);
 //Add carts and products router here
 
-router.get("/vista_de_prueba", (req, res, next) => {
+router.get("/", (req, res, next) => {
     try {
        return res.render(
         "index", 
@@ -28,7 +28,7 @@ router.get("/vista_de_prueba", (req, res, next) => {
                 }
             ],
             title: "index",
-            script: "products.js"
+            script: "./public/connection.js"
         }
        )
     } catch (error) {
