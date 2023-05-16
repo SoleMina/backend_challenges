@@ -11,4 +11,7 @@ const io = new Server(http_server);
 
 io.on("connection", socket => {
     console.log(socket.client.id);
+    socket.on("message", data => {
+        console.log(data);
+    })
 });

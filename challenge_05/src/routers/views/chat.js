@@ -8,6 +8,8 @@ router.get("/chat", async (req, res, next) => {
             "chat", 
             {
               title: "Chat",
+              styles: "css/styles.css",
+              script: "/public/js/index.js"
             }
         );
         
