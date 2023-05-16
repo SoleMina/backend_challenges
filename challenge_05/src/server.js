@@ -9,9 +9,13 @@ const http_server = server.listen(PORT, () => {
 
 const io = new Server(http_server);
 
+let messages = [];
+
 io.on("connection", socket => {
     console.log(socket.client.id);
     socket.on("message", data => {
         console.log(data);
+        messages.push(data);
+        io.emit("messageslog", messages);
     })
 });

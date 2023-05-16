@@ -1,11 +1,13 @@
 import { Router} from "express";
 import cartsRouter from "./carts.js";
 import productsRouter from "./products.js";
+import chatsRouter from "./chat.js";
 
 const router = Router();
 
 router.use("/carts", cartsRouter);
 router.use("/products", productsRouter);
+router.use("/", chatsRouter);
 
 router.get("/", (req, res, next) => {
     try {
@@ -36,19 +38,6 @@ router.get("/register", (req, res, next) => {
             title: "register",
             styles: "css/styles.css"
         });
-    } catch (error) {
-        next(error);
-    }
-});
-router.get("/chat", async (req, res, next) => {
-    try {
-        return res.render(
-            "chat", 
-            {
-              title: "Chat",
-            }
-        );
-        
     } catch (error) {
         next(error);
     }

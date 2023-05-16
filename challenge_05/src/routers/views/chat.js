@@ -9,7 +9,7 @@ router.get("/chat", async (req, res, next) => {
             {
               title: "Chat",
               styles: "css/styles.css",
-              script: "/public/js/index.js"
+              script: "public/js/index.js"
             }
         );
         
@@ -17,3 +17,5 @@ router.get("/chat", async (req, res, next) => {
         next(error);
     }
 });
+
+export default router;

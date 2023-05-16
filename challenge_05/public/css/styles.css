@@ -4,3 +4,10 @@
 /* body {
     background-color: red;
 } */
+.chatbox {
+    max-width: 700px;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+    background-color: blanchedalmond;
+}
