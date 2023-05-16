@@ -1,6 +1,6 @@
 import express from "express";
-import productsRouter from "./routers/products.js";
-import cartsRouter from "./routers/carts.js";
+// import productsRouter from "./routers/views/products.js";
+// import cartsRouter from "./routers/views/carts.js";
 import {engine} from "express-handlebars";
 import __dirname from "./utils.js";
 import router from "./routers/index.js";
@@ -15,8 +15,7 @@ server.listen(PORT, () => {
 //middlewares
 server.use(express.json());
 server.use(express.urlencoded({extended: true}));
-server.use("public", express.static(__dirname + "/public"));
-server.use("/", router);
+server.use("/public", express.static("public"));
 
 //template engine
 server.engine("handlebars", engine());
@@ -24,5 +23,6 @@ server.set("view engine", "handlebars");
 server.set("views", __dirname + "/views");
 
 //Endpoints
-server.use("/api/products", productsRouter);
-server.use("/api/carts", cartsRouter);
+server.use("/", router);
+// server.use("/api/products", productsRouter);
+// server.use("/api/carts", cartsRouter);
