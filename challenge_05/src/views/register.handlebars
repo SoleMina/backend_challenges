@@ -1,29 +1,37 @@
 <main class="d-flex justify-content-center align-items-center">
     <div class="container">
-            <div class="row">
-                <div class="col-6 d-flex flex-column">
-                    <h3>User register</h3>
-                    <form id="productsForm" enctype="multipart/form-data" action="/api/auth/signup", method="POST">
+        <div class="row">
+            <div class="col-6 d-flex flex-column p-5">
+                <h3 class="text-center">Register New Product</h3>
+                <form id="productsForm" enctype="multipart/form-data" action="/api/auth/signup", method="POST">
                         <fieldset class="mb-2">
-                            <label for="productName" class="form-label">Name</label>
+                            <label for="productName" class="form-label">Product Name</label>
                             <input type="text" class="form-control" name="name" id="productName" />
                         </fieldset>
-                                <fieldset class="mb-2">
-                                    <label for="productLast_Name" class="form-label">Last Name</label>
-                                    <input type="text" class="form-control" name="last_Name" id="productLast_Name" />
-                                </fieldset>
-                                <fieldset class="mb-2">
-                                    <label for="productNumber" class="form-label">Number</label>
-                                    <input type="number" class="form-control" name="number" id="productNumber" />
-                                </fieldset>
-                                <div class="mb-2">
-                                    <label for="productPhoto" class="form-label">Photo</label>
-                                    <input type="file" class="form-control" name="url_photo" id="productPhoto" aria-describedby="photoSource"/>
-                                </div>
-                                <button id='newProduct' type="submit" class="btn btn-danger mt-2">Sign Up!</button>
-                    </form>
-                </div>
-                <div id="productTable" class="col-6"></div>
+                        <fieldset class="mb-2">
+                            <label for="productLast_Name" class="form-label">Description</label>
+                            <input type="text" class="form-control" name="last_Name" id="productLast_Name" />
+                        </fieldset>
+                        <fieldset class="mb-2">
+                            <label for="productNumber" class="form-label">Price</label>
+                            <input type="number" class="form-control" name="number" id="productNumber" />
+                        </fieldset>
+                        <fieldset class="mb-2">
+                            <label for="productCode" class="form-label">Code</label>
+                            <input type="number" class="form-control" name="code" id="productCode" />
+                        </fieldset>
+                        <fieldset class="mb-2">
+                            <label for="productStock" class="form-label">Stock</label>
+                            <input type="number" class="form-control" name="stock" id="productStock" />
+                        </fieldset>
+                        <div class="mb-2">
+                            <label for="productPhoto" class="form-label">Photo</label>
+                            <input type="file" class="form-control" name="url_photo" id="productPhoto" aria-describedby="photoSource"/>
+                        </div>
+                        <button id='newProduct' type="submit" class="btn btn-danger mt-2">Sign Up!</button>
+                </form>
             </div>
+            <div id="productTable" class="col-6"></div>
+        </div>
     </div>
 </main>

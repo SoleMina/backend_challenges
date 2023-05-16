@@ -1,15 +1,19 @@
 import { Router} from "express";
+import manager from "../../classes/products.js";
 
 const router = Router();
 
-router.get("/products", async (req, res, next) => {
+router.get("/", async (req, res, next) => {
+    let products = (await manager.getProducts()).products;
     try {
         return res.render(
-          "products", 
-          {
-            title: "Products"
-          }
+            "products", 
+            {
+              title: "Products",
+              products: products
+            }
         );
+        
     } catch (error) {
         next(error);
     }

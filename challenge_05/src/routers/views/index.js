@@ -29,5 +29,15 @@ router.get("/", (req, res, next) => {
         next(error);
     }
 });
+router.get("/register", (req, res, next) => {
+    try {
+        return res.render('register', {
+            title: "register",
+            styles: "css/styles.css"
+        });
+    } catch (error) {
+        next(error);
+    }
+});
 
 export default router;
