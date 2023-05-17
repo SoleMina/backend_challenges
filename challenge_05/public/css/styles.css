@@ -1,9 +1,13 @@
-.hello {
-    font-size: 12px;
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-/* body {
-    background-color: red;
-} */
+h2, h3, h4, h5, h6, p {
+    font-family: 'PT Sans', sans-serif;
+}
 .chatbox {
     max-width: 700px;
     padding: 20px;
