@@ -10,6 +10,7 @@ const http_server = server.listen(PORT, () => {
 const io = new Server(http_server);
 
 let messages = [];
+let contador = 0;
 
 io.on("connection", socket => {
     // console.log(socket.client.id);
