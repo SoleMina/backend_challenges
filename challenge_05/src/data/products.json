@@ -4,7 +4,7 @@
     "title": "Macbook",
     "description": "High quality",
     "price": 4500,
-    "thumbnail": "",
+    "thumbnail": "https://coolboxpe.vtexassets.com/arquivos/ids/182342-1200-auto?v=637516353003070000&width=1200&height=auto&aspect=true",
     "code": "000A1",
     "stock": 24
   },
@@ -13,7 +13,7 @@
     "title": "Ipad",
     "description": "High quality",
     "price": 4500,
-    "thumbnail": "",
+    "thumbnail": "https://coolboxpe.vtexassets.com/arquivos/ids/182342-1200-auto?v=637516353003070000&width=1200&height=auto&aspect=true",
     "code": "000A1",
     "stock": 22
   },
@@ -22,7 +22,7 @@
     "title": "Iphone 13 Pro Max",
     "description": "High quality",
     "price": 4500,
-    "thumbnail": "",
+    "thumbnail": "https://coolboxpe.vtexassets.com/arquivos/ids/182342-1200-auto?v=637516353003070000&width=1200&height=auto&aspect=true",
     "code": "000A4",
     "stock": 18
   }

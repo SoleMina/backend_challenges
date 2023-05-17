@@ -1,10 +1,12 @@
 <div class="products-container">
-    <h1 class="text-center p-2">{{title}}</h1>
+    <h1 class="text-center p-5">{{title}}</h1>
     <div class="d-flex justify-content-around">
         {{#each products}}
-        <div class="products-card">
-            <p>{{this.title}}</p>
+        <div class="products-card d-flex flex-column">
+            <h5 class="text-center fw-bold">{{this.title}}</h5>
+            <img src={{this.thumbnail}} alt={{this.description}} width="150">
             <p>{{this.description}}</p>
+            <a class="btn btn-outline-dark" href="/products/{{id}}">More info</a>
         </div>
         {{/each}}
     </div>
