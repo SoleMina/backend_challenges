@@ -12,7 +12,8 @@ const io = new Server(http_server);
 let messages = [];
 
 io.on("connection", socket => {
-    console.log(socket.client.id);
+    // console.log(socket.client.id);
+    socket.emit("messageslog", messages);
     socket.on("message", data => {
         console.log(data);
         messages.push(data);
