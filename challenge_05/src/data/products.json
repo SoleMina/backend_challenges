@@ -14,7 +14,7 @@
     "description": "Product with high quality",
     "price": 4500,
     "thumbnail": "https://coolboxpe.vtexassets.com/arquivos/ids/182342-1200-auto?v=637516353003070000&width=1200&height=auto&aspect=true",
-    "code": "000A1",
+    "code": "000A2",
     "stock": 22
   },
   {
@@ -23,7 +23,16 @@
     "description": "Product with high quality",
     "price": 4500,
     "thumbnail": "https://coolboxpe.vtexassets.com/arquivos/ids/182342-1200-auto?v=637516353003070000&width=1200&height=auto&aspect=true",
-    "code": "000A4",
+    "code": "000A3",
     "stock": 18
+  },
+  {
+    "id": 4,
+    "title": "Tv Samsung",
+    "description": "Product with high quality",
+    "price": "2333",
+    "thumbnail": "https://coolboxpe.vtexassets.com/arquivos/ids/182342-1200-auto?v=637516353003070000&width=1200&height=auto&aspect=true",
+    "code": "000A4",
+    "stock": "21"
   }
 ]

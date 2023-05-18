@@ -1,4 +1,5 @@
 import { Router} from "express";
+import authRouter from "./register.js"
 import cartsRouter from "./carts.js";
 import productsRouter from "./products.js";
 import chatsRouter from "./chat.js";
@@ -8,6 +9,8 @@ const router = Router();
 router.use("/carts", cartsRouter);
 router.use("/products", productsRouter);
 router.use("/", chatsRouter);
+router.use('/register', authRouter);
+
 
 router.get("/", (req, res, next) => {
     try {
@@ -27,16 +30,6 @@ router.get("/", (req, res, next) => {
             title: "index",
             styles: "css/styles.css",
             script: "public/js/index.js"
-        });
-    } catch (error) {
-        next(error);
-    }
-});
-router.get("/register", (req, res, next) => {
-    try {
-        return res.render('register', {
-            title: "register",
-            styles: "css/styles.css"
         });
     } catch (error) {
         next(error);

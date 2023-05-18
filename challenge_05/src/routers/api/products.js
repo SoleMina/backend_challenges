@@ -69,6 +69,7 @@ router.get("/:pid", async (req, res) => {
 router.post("/", async (req, res) => {
     try {
         const body = req.body;
+        console.log("entró");
         if(!body) {
             return res.status(400).json({
                 success: false,
