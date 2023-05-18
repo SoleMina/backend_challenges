@@ -2,6 +2,13 @@ const socket = io();
 
 let input = document.querySelector("#messages");
 let user = document.getElementById("user");
+let count = Number(document.getElementById("count").textContent);
+let buy = document.getElementById("buy");
+
+buy.addEventListener("click", () => {
+    count = count + 1;
+    document.getElementById("count").innerHTML = count;
+});
 
 input.addEventListener("keyup", (e) => {
     if(e.key === "Enter") {
@@ -18,4 +25,4 @@ socket.on("messageslog", data => {
         return `<div><span class="fw-bold">${message.user} dice: </span><span>${message.message}</span></div>`
     }).join("");
     log.innerHTML = messages;
-})
+});

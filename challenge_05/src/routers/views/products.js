@@ -12,7 +12,9 @@ router.get("/", async (req, res, next) => {
             {
               title: "Products",
               products: products,
-              id
+              id,
+              script: "public/js/index.js",
+              styles: "public/css/styles.css"
             }
         );
         
@@ -39,8 +41,10 @@ router.get("/:pid", async (req, res, next) => {
                     code, 
                     price,
                     thumbnail,
-                    stock
-                }
+                    stock,
+                    styles: "../public/css/styles.css",
+                    script: "../public/js/index.js"
+                },
             );
 
         }else{
