@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-6 d-flex flex-column p-5">
                 <h3 class="text-center">Register New Product</h3>
-                <form id="productsForm" name="productsForm">
+                <form id="productsForm" name="productsForm" enctype="multipart/form-data">
                         <fieldset class="mb-2">
                             <label for="productName" class="form-label">Product Name</label>
                             <input type="text" class="form-control" name="name" id="productName" />
@@ -25,8 +25,8 @@
                             <input type="number" class="form-control" name="stock" id="productStock" />
                         </fieldset>
                         <div class="mb-2">
-                            <label for="productPhoto" class="form-label">Photo</label>
-                            <input type="file" class="form-control" name="url_photo" id="productPhoto" aria-describedby="photoSource"/>
+                            <label for="image" class="form-label">Photo</label>
+                            <input type="file" class="form-control" name="image" id="image" aria-describedby="photoSource"/>
                         </div>
                         <button type="submit" class="btn btn-danger mt-2">Register!</button>
                 </form>

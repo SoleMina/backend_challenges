@@ -7,7 +7,7 @@ router.get("/", (req, res, next) => {
         return res.render('register', {
             title: "register",
             styles: "css/styles.css",
-            script: "public/js/index.js",
+            script: "public/js/register.js",
         });
     } catch (error) {
         next(error);

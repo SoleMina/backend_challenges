@@ -1,9 +1,10 @@
 import { Router } from "express"
 import manager from "../../classes/products";
+import uploader from "../../middlewares/multer";
 
 const router = Router()
 
-router.post('/signup',uploader.single('url_photo'), async(req,res,next)=> {
+router.post('/signup',uploader.single('file'), async(req,res,next)=> {
     try {
         if (!req.file) {
             return res.send('no se pudo cargar la imagen');
