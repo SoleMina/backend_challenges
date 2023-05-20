@@ -1,5 +1,6 @@
 import {Router} from "express";
 import manager from "../../classes/products.js";
+import upload from '../../middlewares/multer.js'
 
 const router = Router();
 
@@ -66,9 +67,18 @@ router.get("/:pid", async (req, res) => {
 });
 
 //POSTS
-router.post("/", async (req, res) => {
+router.post("/", upload.single("imageFile"), async (req, res) => {
     try {
         const body = req.body;
+        console.log("body", body);
+
+        console.log(upload);
+        console.log(req.file, "req.file");
+
+        let thumbnail = "http://localhost:8000/public/images/" + body.thumbnail;
+        body.thumbnail = thumbnail;
+        console.log("body", body);
+
         if(!body) {
             return res.status(400).json({
                 success: false,

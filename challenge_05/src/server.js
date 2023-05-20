@@ -1,28 +1,23 @@
-import express from "express";
-// import productsRouter from "./routers/views/products.js";
-// import cartsRouter from "./routers/views/carts.js";
-import {engine} from "express-handlebars";
-import __dirname from "./utils.js";
-import router from "./routers/index.js";
+import server from "./app.js";
+import { Server } from "socket.io";
 
-const server = express();
 const PORT = process.env.PORT || 8000;
 
-server.listen(PORT, () => {
+const http_server = server.listen(PORT, () => {
     console.log(`Listening server on ${PORT}`)
 });
 
-//middlewares
-server.use(express.json());
-server.use(express.urlencoded({extended: true}));
-server.use("/public", express.static("public"));
+const io = new Server(http_server);
 
-//template engine
-server.engine("handlebars", engine());
-server.set("view engine", "handlebars");
-server.set("views", __dirname + "/views");
+let messages = [];
+let contador = 0;
 
-//Endpoints
-server.use("/", router);
-// server.use("/api/products", productsRouter);
-// server.use("/api/carts", cartsRouter);
+io.on("connection", socket => {
+    // console.log(socket.client.id);
+    socket.emit("messageslog", messages);
+    socket.on("message", data => {
+        console.log(data);
+        messages.push(data);
+        io.emit("messageslog", messages);
+    })
+});

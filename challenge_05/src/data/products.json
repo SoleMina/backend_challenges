@@ -2,28 +2,37 @@
   {
     "id": 1,
     "title": "Macbook",
-    "description": "High quality",
+    "description": "Product with high quality",
     "price": 4500,
-    "thumbnail": "",
+    "thumbnail": "https://coolboxpe.vtexassets.com/arquivos/ids/182342-1200-auto?v=637516353003070000&width=1200&height=auto&aspect=true",
     "code": "000A1",
     "stock": 24
   },
   {
     "id": 2,
     "title": "Ipad",
-    "description": "High quality",
+    "description": "Product with high quality",
     "price": 4500,
-    "thumbnail": "",
-    "code": "000A1",
+    "thumbnail": "https://coolboxpe.vtexassets.com/arquivos/ids/182342-1200-auto?v=637516353003070000&width=1200&height=auto&aspect=true",
+    "code": "000A2",
     "stock": 22
   },
   {
     "id": 3,
     "title": "Iphone 13 Pro Max",
-    "description": "High quality",
+    "description": "Product with high quality",
     "price": 4500,
-    "thumbnail": "",
-    "code": "000A4",
+    "thumbnail": "https://coolboxpe.vtexassets.com/arquivos/ids/182342-1200-auto?v=637516353003070000&width=1200&height=auto&aspect=true",
+    "code": "000A3",
     "stock": 18
+  },
+  {
+    "id": 4,
+    "title": "Tv Samsung",
+    "description": "Product with high quality",
+    "price": "2333",
+    "thumbnail": "https://coolboxpe.vtexassets.com/arquivos/ids/182342-1200-auto?v=637516353003070000&width=1200&height=auto&aspect=true",
+    "code": "000A4",
+    "stock": "21"
   }
 ]

@@ -1,4 +1,4 @@
-### Challenge 4
+### Challenge 5
 
 - Create Class ProductManager
 
@@ -20,3 +20,5 @@ getCartById(id)
 
 - Add server endpoints (products & cart)
 get, post, put & delete
+
+- Create template views using handlebars & socket
