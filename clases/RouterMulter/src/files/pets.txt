@@ -87,61 +87,6 @@
     "adopted": false
   },
   {
-    "id": 12,
-    "name": "Faraoni",
-    "specie": "dog",
-    "age": 2,
-    "adopted": false
-  },
-  {
-    "id": 13,
-    "name": "Faraoni",
-    "specie": "dog",
-    "age": 2,
-    "thumbnail": "http://localhost:3000/images/1683521011984image.png",
-    "adopted": false
-  },
-  {
-    "id": 14,
-    "name": "Faraoni",
-    "specie": "dog",
-    "age": 2,
-    "thumbnail": "http://localhost:3000/images/1683521556764image.png",
-    "adopted": false
-  },
-  {
-    "id": 15,
-    "name": "Faraoni",
-    "specie": "dog",
-    "age": 2,
-    "thumbnail": "http://localhost:3000/images/1683521569082image.png",
-    "adopted": false
-  },
-  {
-    "id": 16,
-    "name": "Faraoni",
-    "specie": "dog",
-    "age": 2,
-    "thumbnail": "http://localhost:3000/images/1683521667881image.png",
-    "adopted": false
-  },
-  {
-    "id": 17,
-    "name": "Faraoni",
-    "specie": "dog",
-    "age": 2,
-    "thumbnail": "http://localhost:3000/images/1683521683364image.png",
-    "adopted": false
-  },
-  {
-    "id": 18,
-    "name": "Faraoni",
-    "specie": "dog",
-    "age": 2,
-    "thumbnail": "http://localhost:3000/images/1683521719842image.png",
-    "adopted": false
-  },
-  {
     "id": 19,
     "name": "Faraoni",
     "specie": "dog",
@@ -150,18 +95,18 @@
     "adopted": false
   },
   {
-    "id": 20,
-    "name": "Faraoni",
-    "specie": "dog",
-    "age": 2,
-    "thumbnail": "http://localhost:3000/images/1683526639431image.png",
-    "adopted": false
-  },
-  {
     "id": 21,
     "name": "Faraoni",
     "specie": "dog",
     "age": 2,
+    "adopted": false
+  },
+  {
+    "id": 22,
+    "name": "Rose",
+    "specie": "dog",
+    "age": "4",
+    "thumbnail": "http://localhost:3000/images/1684695837762image.jpeg",
     "adopted": false
   }
 ]

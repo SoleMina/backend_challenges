@@ -1,7 +1,7 @@
 import express from "express";
 import Adopcion from "./src/classes/Adopcion.js";
-import router from "./src/routes/pets.js";
-import router_user from "./src/routes/users.js";
+import petsRouter from "./src/routes/pets.js";
+import usersRouter from "./src/routes/users.js";
 import __dirname from "./utils.js";
 import upload from "./src/services/upload.js";
 import {engine} from "express-handlebars";
@@ -9,38 +9,37 @@ import {engine} from "express-handlebars";
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+const contenedor = new Adopcion();
 
-const contenedor = new Adopcion(); 
-const petsRouter = router;
-const usersRouter = router_user;
+app.listen(PORT, () => {
+  console.log(`Server listening on port: ${PORT}`)
+});
+
+app.engine("handlebars", engine());
+app.set("views", __dirname + "/src/views");
+app.set("view engine", "handlebars");
 
 //Lee todo tipo de archivos
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
-app.engine("handlebars", engine());
-app.set("views", "./views");
-app.set("view engine", "handlebars");
+
+app.use(express.static("public"));
+
+app.use("/api/pets", petsRouter);
+app.use("/api/users", usersRouter);
 
 // app.use(upload.single("file")); dosen't work for now
 
 // app.use(express.static("public"));
 // app.use(express.static(__dirname + "/src/public"));
 // app.use("/images", express.static(__dirname + "/src/public"));
-app.use("/resources", express.static(__dirname + "/public"));
+
 // const cors = require("cors");
 // app.use(cors());
 
 app.use((err, req, res, next) => {
     console.log(err.stack);
     res.status(500).send("Error en el servidor");
-});
-
-app.use("/api/pets", petsRouter);
-app.use("/api/users", usersRouter);
-
-
-app.listen(PORT, () => {
-    console.log(`Server listening on port: ${PORT}`)
 });
 
 app.post("/api/adoption", (req, res) => {
@@ -66,3 +65,13 @@ app.post("/api/uploadfile", upload.single("file"), (req, res) => {
    }
 
 });
+
+app.get('/view/pets',(req,res)=>{
+  contenedor.getAllPets().then(result=>{
+      let info = result.payload;
+      let preparedObject ={
+          pets : info
+      }
+      res.render('pets', preparedObject)
+  })
+})

@@ -1,27 +1,33 @@
-document.addEventListener("submit", evt => {
-    evt.preventDefault();
-    let form = document.querySelector("#petForm");
-    let data = new FormData(form);
-    let name = data.get("name");
-    let specie = data.get("specie");
-    let age = data.get("age");
+document.getElementById("image").onchange = (e) => {
+    let read = new FileReader();
+    read.onload = e => {
+        document.querySelector(".image-text").innerHTML = "Qué hermoso!"
+        document.getElementById("preview").src = e.target.result;
+    }
+    if(e.target.files[0]){
+        read.readAsDataURL(e.target.files[0]);
+    }
+}
 
-    let req = {
-        name,
-        specie,
-        age
-    };
+document.addEventListener("submit",  (event) => {
+    event.preventDefault();
+    let form =  document.querySelector("#petForm");
+    let data =  new FormData(form);
+    console.log(data, "dataaaaa");
 
-    fetch("http://localhost:3000/api/pets", {
+    fetch("/api/pets", {
         method: "POST",
-        body: JSON.stringify(req),
-        headers: {
-            "Content-type": "application/json"
-        }
-    }).then(result => {
+        body: data
+    }).then((result) => {
+        console.log(result, "result");
         return result.json();
     }).then(json => {
-        console.log(json);
+        Swal.fire({
+            title: "Éxito",
+            icon: "success",
+            timer: 2000 
+        }).then(result => {
+            location.href="/"
+        })
     })
 });
-

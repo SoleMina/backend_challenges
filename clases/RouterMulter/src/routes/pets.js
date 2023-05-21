@@ -31,8 +31,9 @@ router.get("/:pid", (req, res) => {
 router.post("/", upload.single("image"), (req, res) => {
     let file = req.file;
     let pet = req.body;
-    pet.thumbnail = req.protocol + "://" + req.hostname + ":8080"+ "/resources/images/" + file.filename;
-    contenedor.registerPet(body).then(result => {
+    console.log(pet, "pet");
+    pet.thumbnail = req.protocol + "://" + req.hostname + ":3000"+ "/images/" + file.filename;
+    contenedor.registerPet(pet).then(result => {
         res.send(result);
     })
 })
