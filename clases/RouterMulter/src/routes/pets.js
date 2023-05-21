@@ -28,24 +28,32 @@ router.get("/:pid", (req, res) => {
 });
 
 //POSTS
-router.post("/",  upload.fields(
-    [
-        {
-        name: "image", maxCount: 1
-        },
-       {
-        name: "documents", maxCount: 1
-       }
-    ]
-), (req, res) => {
-    let body = req.body;
-    console.log(body);
-    body.age = Number(body.age);
-    console.log(body);
+router.post("/", upload.single("image"), (req, res) => {
+    let file = req.file;
+    let pet = req.body;
+    pet.thumbnail = req.protocol + "://" + req.hostname + ":8080"+ "/resources/images/" + file.filename;
     contenedor.registerPet(body).then(result => {
         res.send(result);
     })
-});
+})
+// router.post("/",  upload.fields(
+//     [
+//         {
+//         name: "image", maxCount: 1
+//         },
+//        {
+//         name: "documents", maxCount: 1
+//        }
+//     ]
+// ), (req, res) => {
+//     let body = req.body;
+//     console.log(body);
+//     body.age = Number(body.age);
+//     console.log(body);
+//     contenedor.registerPet(body).then(result => {
+//         res.send(result);
+//     })
+// });
 // router.post("/",  upload.single("image"), (req, res) => {
 //     let body = req.body;
 //     console.log(body);

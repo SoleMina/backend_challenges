@@ -1,13 +1,13 @@
 {
-  "name": "routermulter",
+  "name": "challenge_05",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./app.js",
-    "dev": "nodemon ./app.js"
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js"
   },
   "dependencies": {
     "dotenv": "^16.0.3",

@@ -4,6 +4,7 @@ import router from "./src/routes/pets.js";
 import router_user from "./src/routes/users.js";
 import __dirname from "./utils.js";
 import upload from "./src/services/upload.js";
+import {engine} from "express-handlebars";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -16,13 +17,16 @@ const usersRouter = router_user;
 //Lee todo tipo de archivos
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
+app.engine("handlebars", engine());
+app.set("views", "./views");
+app.set("view engine", "handlebars");
 
 // app.use(upload.single("file")); dosen't work for now
 
 // app.use(express.static("public"));
 // app.use(express.static(__dirname + "/src/public"));
 // app.use("/images", express.static(__dirname + "/src/public"));
-app.use(express.static(__dirname + "/public"));
+app.use("/resources", express.static(__dirname + "/public"));
 // const cors = require("cors");
 // app.use(cors());
 
