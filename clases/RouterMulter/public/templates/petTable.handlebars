@@ -1,0 +1,10 @@
+{{#if pets}}
+{{#each pets}}
+<div>
+    <p>
+        {{this.name}}
+    </p>
+    <img src={{this.thumbnail}} width="200" />
+</div>
+{{/each}}
+{{/if}}

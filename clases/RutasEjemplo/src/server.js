@@ -2,7 +2,7 @@ import server from "./app.js";
 import { Server } from "socket.io";
 
 
-let PORT = 8080;
+let PORT = 3000 || 8080;
 let ready = () => console.log("Server ready on port " + PORT);
 
 let http_server = server.listen(PORT, ready);

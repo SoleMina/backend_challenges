@@ -5,15 +5,19 @@ import usersRouter from "./src/routes/users.js";
 import __dirname from "./utils.js";
 import upload from "./src/services/upload.js";
 import {engine} from "express-handlebars";
+import { connect } from "mongoose";
+import {Server} from "socket.io";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 const contenedor = new Adopcion();
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`Server listening on port: ${PORT}`)
 });
+
+export const io = new Server(server);
 
 app.engine("handlebars", engine());
 app.set("views", __dirname + "/src/views");
@@ -23,7 +27,7 @@ app.set("view engine", "handlebars");
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
-app.use(express.static("public"));
+app.use(express.static(__dirname + "/public"));
 
 app.use("/api/pets", petsRouter);
 app.use("/api/users", usersRouter);
@@ -36,6 +40,11 @@ app.use("/api/users", usersRouter);
 
 // const cors = require("cors");
 // app.use(cors());
+
+//database
+connect("mongodb+srv://admin:Karina137@cluster0.lpiuuos.mongodb.net/coder")
+  .then(() => console.log("database connected"))
+  .catch(err => console.log(err));
 
 app.use((err, req, res, next) => {
     console.log(err.stack);
@@ -74,4 +83,12 @@ app.get('/view/pets',(req,res)=>{
       }
       res.render('pets', preparedObject)
   })
-})
+});
+
+//socket
+io.on("connection", async socket => {
+  console.log(`El socket ${socket.id} se ha conectado`);
+  let pets = await contenedor.getAllPets();
+  socket.emit("deliverPets", pets);
+
+});

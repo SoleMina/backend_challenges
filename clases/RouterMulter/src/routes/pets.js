@@ -1,7 +1,7 @@
 import { Router } from "express";
 import Adopcion from "../classes/Adopcion.js";
 import upload from "../services/upload.js";
-
+import {io} from "../../app.js";
 
 const router = Router();
 const contenedor = new Adopcion(); 
@@ -35,6 +35,11 @@ router.post("/", upload.single("image"), (req, res) => {
     pet.thumbnail = req.protocol + "://" + req.hostname + ":3000"+ "/images/" + file.filename;
     contenedor.registerPet(pet).then(result => {
         res.send(result);
+        if(result.status === "success") {
+            contenedor.getAllPets().then(result => {
+                io.emit("deliverPets", result);
+            })
+        }
     })
 })
 // router.post("/",  upload.fields(
