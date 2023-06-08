@@ -1,6 +1,7 @@
 import { Router} from "express";
 import manager from "../../classes/products.js";
 import upload from "../../middlewares/multer.js";
+import Product from "../../models/Product.js";
 
 const router = Router();
 
@@ -63,14 +64,9 @@ router.get("/:pid", async (req, res, next) => {
 router.post("/", upload.single("imageFile"), async (req, res, next) => {
     try {
         const body = req.body;
-        console.log("body", body);
-
-        console.log(upload);
-        console.log(req.file, "req.file");
 
         let thumbnail = "http://localhost:8000/public/images/" + req.file.filename;
         body.thumbnail = thumbnail;
-        console.log("body", body);
 
         if(!body) {
             return res.status(400).json({
@@ -78,7 +74,7 @@ router.post("/", upload.single("imageFile"), async (req, res, next) => {
                 message: "Cannot create product"
             });
         }
-        const product = (await manager.addProduct(body)).product;
+        const product = await Product.create(req.body);
         console.log(product);
         if(!product) {
             return res.status(400).json({
@@ -86,7 +82,7 @@ router.post("/", upload.single("imageFile"), async (req, res, next) => {
                 message: "Cannot create product"
             });
         }
-        let products = (await manager.getProducts()).products;
+        let products = await Product.find();
         res.render("products", {
             
                 title: "Products",

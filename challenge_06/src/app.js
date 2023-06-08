@@ -1,9 +1,11 @@
 import express from "express";
+import "dotenv/config.js";
 import {engine} from "express-handlebars";
 import __dirname from "./utils.js";
 import router from "./routers/index.js";
 import errorHandler from "./middlewares/errorHandler.js";
 import notFoundHandlers from "./middlewares/notFoundHandlers.js";
+import { connect } from "mongoose";
 
 const server = express();
 
@@ -21,5 +23,10 @@ server.set("views", __dirname + "/views");
 server.use("/", router);
 server.use(errorHandler);
 server.use(notFoundHandlers);
+
+//database
+connect(process.env.MONGO_URL)
+  .then(() => console.log("database connected"))
+  .catch(err => console.log(err));
 
 export default server;
