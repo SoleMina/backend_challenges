@@ -1,5 +1,5 @@
 import {Router} from "express";
-import manager from "../../classes/products.js";
+import manager from "../../dao/managers/products.js";
 import upload from '../../middlewares/multer.js'
 
 const router = Router();
