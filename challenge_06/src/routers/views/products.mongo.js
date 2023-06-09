@@ -4,6 +4,7 @@ import Product from "../../models/Product.js";
 const router = Router();
 
 router.get("/", async(req, res, next) => {
+    let id = req.query.pid ?? null;
     try {
         let products = await Product.find().lean();
         console.log(products);
@@ -14,7 +15,7 @@ router.get("/", async(req, res, next) => {
                   title: "Products",
                   products: products,
                   script: "public/js/index.js",
-                  styles: "public/css/styles.css"
+                  styles: "public/css/styles.css",
                 }
             );
         }else{
@@ -29,12 +30,26 @@ router.get("/", async(req, res, next) => {
 });
 router.get("/:pid", async(req, res, next) => {
     try {
-        let one = await Product.findById(req.params.pid);
+        let {pid: id} = req.params;
+        console.log(id, "pid");
+        let one = await Product.findById(id);
+        console.log(one, "one");
         if(one) {
-            return res.status(200).json({
-                success: true,
-                product: one
-            })
+            let {title, description, code, price, thumbnail, stock} = one;
+            return res.render(
+                "product", 
+                {
+                    title,
+                    description, 
+                    code, 
+                    price,
+                    thumbnail,
+                    stock,
+                    styles: "../public/css/styles.css",
+                    script: "../public/js/index.js"
+                },
+            );
+
         }else{
             return res.status(404).json({
                 success: false,
