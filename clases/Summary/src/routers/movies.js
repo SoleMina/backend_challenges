@@ -16,8 +16,21 @@ router.post("/", async(req, res, next) => {
 });
 
 router.get("/", async(req, res, next) => {
+    let skip = 1; //req.query.skip;
+    if(req.query.skip) {skip = req.query.skip}
+
+    let limit = req.query.limit ?? 5;
+    let page = req.query.page ?? 1;
+    let title = req.query.title ? new RegExp(req.query.title, "i") : '';
+
     try {
-        let all = await Movie.find();
+        // let all = await Movie.find()
+        //     .skip(skip)
+        //     .limit(limit);
+        let all = await Movie.paginate(
+            {title}, //objeto con queries para filtros
+            { limit, page} //limit y page de la paginacion
+        )
         if(all) {
             return res.status(200).json({
                 success: true,
@@ -47,6 +60,20 @@ router.put("/:id", async(req, res, next) => {
                 message: `Not found`
             })
         }
+    } catch (error) {
+        next(error);
+    }
+});
+router.get("/query-stats", async(req, res, next) => {
+    try {
+        let quantity =  await Movie.find({ price: {$gt: 40}});
+        let stats = await Movie.find({ price: {$gt: 40}}).explain("executionStats");
+        console.log(stats);
+        return res.status(200).json({
+            success: true,
+            quantity: quantity.length,
+            time: stats.executionStats.executionTimeMillis
+        })
     } catch (error) {
         next(error);
     }
