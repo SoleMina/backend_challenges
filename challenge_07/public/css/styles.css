@@ -16,3 +16,26 @@ h2, h3, h4, h5, h6, p {
     background-color: blanchedalmond;
     border-radius: 10px;
 }
+.responsive-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.responsive-flex > .products-card {
+    width: 22%;
+    margin-bottom: 5%;
+    border: 2px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 10px;
+}
+.products-card > img {
+    display: block;
+    margin: 0 auto;
+}
+.btn-fit {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+
+}

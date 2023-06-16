@@ -71,10 +71,17 @@ router.post("/", upload.single("imageFile"), async(req, res, next) => {
         let response = await Product.create(body);
         console.log(response, "response");
         if(response) {
-            return res.status(200).json({
-                success: true,
-                message: `Product created!`
-            })
+            let products = await Product.find().lean();
+            
+            return res.render(
+                "products", 
+                {
+                  title: "Products",
+                  products: products,
+                  script: "public/js/index.js",
+                  styles: "public/css/styles.css",
+                }
+            );
         }else {
             return res.status(404).json({
                 success: false,
