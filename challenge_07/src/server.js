@@ -1,5 +1,4 @@
 import server from "./app.js";
-import "dotenv/config.js";
 import { Server } from "socket.io";
 
 const PORT = process.env.PORT || 8000;
