@@ -22,3 +22,5 @@ getCartById(id)
 get, post, put & delete
 
 - Create template views using handlebars & socket
+
+- Add mongoose models
