@@ -9,6 +9,7 @@ router.get("/", async(req, res, next) => {
     let limit = req.query.limit ?? 5;
     let page = req.query.page ?? 1;
     let title = req.query.title ? new RegExp(req.query.title, "i") : '';
+
     try {
         //let products = await Product.find().lean();
         let products = await Product.paginate(
@@ -21,9 +22,10 @@ router.get("/", async(req, res, next) => {
                 "products", 
                 {
                   title: "Products",
-                  products: products.docs,
-                  script: "public/js/index.js",
+                  products: products,
+                  script: "public/js/pagination.js",
                   styles: "public/css/styles.css",
+                  page: page,
                 }
             );
         }else{
