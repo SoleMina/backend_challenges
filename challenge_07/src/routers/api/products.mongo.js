@@ -5,12 +5,20 @@ import upload from "../../middlewares/multer.js";
 const router = Router();
 
 router.get("/", async(req, res, next) => {
+    let limit = req.query.limit ?? 4;
+    let page = req.query.page ?? 1;
+    let title = req.query.title ? new RegExp(req.query.title, "i") : '';
     try {
-        let products = new Product.find();
-        if(products) {
+        //let products = new Product.find();
+        let data = await Product.paginate(
+            {}, //objeto con queries para filtros
+            { limit, page} //limit y page de la paginacion
+        );
+
+        if(data) {
             return res.status(200).json({
                 success: true,
-                products: products
+                products: data
             })
         }else{
             return res.status(404).json({

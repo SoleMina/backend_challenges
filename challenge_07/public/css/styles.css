@@ -23,7 +23,7 @@ h2, h3, h4, h5, h6, p {
     justify-content: space-around;
 }
 .responsive-flex > .products-card {
-    width: 22%;
+    width: 30%;
     margin-bottom: 5%;
     border: 2px solid #c9c9c9;
     padding: 10px;

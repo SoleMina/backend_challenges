@@ -15,7 +15,11 @@ server.use(express.urlencoded({extended: true}));
 server.use("/public", express.static("public"));
 
 //template engine
-server.engine("handlebars", engine());
+server.engine("handlebars", engine(
+  {extname: 'handlebars', runtimeOptions: {
+  allowProtoPropertiesByDefault: true,
+  allowProtoMethodsByDefault: true}}));
+
 server.set("view engine", "handlebars");
 server.set("views", __dirname + "/views");
 

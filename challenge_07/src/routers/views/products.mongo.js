@@ -6,15 +6,22 @@ const router = Router();
 
 router.get("/", async(req, res, next) => {
     let id = req.query.pid ?? null;
+    let limit = req.query.limit ?? 5;
+    let page = req.query.page ?? 1;
+    let title = req.query.title ? new RegExp(req.query.title, "i") : '';
     try {
-        let products = await Product.find().lean();
-        console.log(products);
+        //let products = await Product.find().lean();
+        let products = await Product.paginate(
+            {}, //objeto con queries para filtros
+            { limit, page} //limit y page de la paginacion
+        );
+        console.log(typeof products);
         if(products) {
             return res.render(
                 "products", 
                 {
                   title: "Products",
-                  products: products,
+                  products: products.docs,
                   script: "public/js/index.js",
                   styles: "public/css/styles.css",
                 }
@@ -72,7 +79,7 @@ router.post("/", upload.single("imageFile"), async(req, res, next) => {
         console.log(response, "response");
         if(response) {
             let products = await Product.find().lean();
-            
+
             return res.render(
                 "products", 
                 {
