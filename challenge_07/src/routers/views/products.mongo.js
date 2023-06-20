@@ -6,7 +6,7 @@ const router = Router();
 
 router.get("/", async(req, res, next) => {
     let id = req.query.pid ?? null;
-    let limit = req.query.limit ?? 5;
+    let limit = req.query.limit ?? 6;
     let page = req.query.page ?? 1;
     let title = req.query.title && new RegExp(req.query.title, "i");
 
