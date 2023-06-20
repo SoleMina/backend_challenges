@@ -1,5 +1,9 @@
 <div class="products-container">
     <h1 class="text-center p-5">{{title}}</h1>
+    <div class="container pb-4">
+        <h4>Search:</h4>
+        <input id="type-text" type="text" />
+    </div>
     <div class="responsive-flex" id="product-list">
         {{#each products.docs}}
         <div class="products-card d-flex flex-column">

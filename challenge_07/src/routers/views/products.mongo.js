@@ -8,10 +8,34 @@ router.get("/", async(req, res, next) => {
     let id = req.query.pid ?? null;
     let limit = req.query.limit ?? 5;
     let page = req.query.page ?? 1;
-    let title = req.query.title ? new RegExp(req.query.title, "i") : '';
+    let title = req.query.title && new RegExp(req.query.title, "i");
 
     try {
-        //let products = await Product.find().lean();
+        if(title) {
+            //let products = await Product.find().lean();
+            let products = await Product.paginate(
+                {title}, //objeto con queries para filtros
+                { limit, page} //limit y page de la paginacion
+            );
+            if(products) {
+                return res.render(
+                    "products", 
+                    {
+                    title: "Products",
+                    products: products,
+                    script: "public/js/pagination.js",
+                    styles: "public/css/styles.css",
+                    page: page,
+                    }
+                );
+            }else{
+                return res.status(404).json({
+                    success: false,
+                    message: `Not found`
+                })
+            }
+        }else {
+            //let products = await Product.find().lean();
         let products = await Product.paginate(
             {}, //objeto con queries para filtros
             { limit, page} //limit y page de la paginacion
@@ -34,6 +58,8 @@ router.get("/", async(req, res, next) => {
                 message: `Not found`
             })
         }
+        }
+
     } catch (error) {
         next(error);
     }

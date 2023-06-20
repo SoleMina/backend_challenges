@@ -14,3 +14,16 @@
 //         console.log(error);
 //       });
 //   });
+document.getElementById('type-text').addEventListener("keyup", (e) =>  {
+    if(e.key === "Enter") {
+        let title = document.getElementById('type-text').value;
+        console.log(title);
+        fetch(`/products?title=${title}`)
+        .then(data => {
+            location.href = `http://localhost:8080/products?title=${title}`;
+        })
+        .catch(error => {
+            console.log(error);
+        });
+    }
+});
