@@ -19,6 +19,8 @@
         {{#if products.prevPage}}
             <a class="btn btn-primary" id="next-page-button"  href="/products?page={{products.prevPage}}">Prev Page</button>
         {{/if}}
-        <a class="btn btn-primary" id="next-page-button" {{#unless products.nextPage}}disabled{{/unless}} href="/products?page={{products.nextPage}}">Next Page</button>
+        {{#if products.nextPage}}
+            <a class="btn btn-primary" id="next-page-button" {{#unless products.nextPage}}disabled{{/unless}} href="/products?page={{products.nextPage}}">Next Page</button>
+        {{/if}}
     </div>
 </div>
