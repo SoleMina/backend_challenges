@@ -1,6 +1,7 @@
 import { Router} from "express";
 import Cart from "../../models/Cart.js";
 import Product from "../../models/Product.js";
+import { Types } from "mongoose";
 
 const router = Router();
 
@@ -8,8 +9,19 @@ const router = Router();
 //GETS
 router.get("/", async (req, res, next) => {
     try {
-        let totalCarts = await Cart.find();
-        console.log(totalCarts, "totalCarts");
+        let totalCarts = await Cart.aggregate([
+            { $lookup: { foreignField: "product_id", from: "products", localField: "product_id", as: "product_id"}}, //populeo los datos del usuario
+
+            { $replaceRoot: { //reemplazo la ubicacion de los elementos del array populado
+                newRoot: {
+                    $mergeObjects: [
+                        { $arrayElemAt: [ "$product_id", 0]},
+                        "$$ROOT"
+                    ]
+                }
+            }},
+            { $project: { product_id: 0, title: 0, price: 0, __v: 0}}, //limpia el objeto
+        ]);
         if(totalCarts) {
             return res.render(
                 "carts", 
@@ -18,11 +30,11 @@ router.get("/", async (req, res, next) => {
                   carts: totalCarts[0]
                 }
               );
-        }else {
+        }else{
             return res.status(404).json({
-                success: false,
-                message: "Cart not found"
-            });
+                success: true,
+                message: `Not found`
+            })
         }
     } catch (error) {
         next(error);

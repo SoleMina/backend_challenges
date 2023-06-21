@@ -1,24 +1,39 @@
 import { Router} from "express";
 import Cart from "../../models/Cart.js";
 import Product from "../../models/Product.js";
+import { Types } from "mongoose";
 
 const router = Router();
 
 //GETS
 router.get("/", async (req, res, next) => {
     try {
-        let totalCarts = await Cart.find();
-        console.log(totalCarts);
+        const uid = "649329d5a25c8f354e1439a7";
+        let totalCarts = await Cart.aggregate([
+            { $lookup: { foreignField: "product_id", from: "products", localField: "product_id", as: "product_id"}}, //populeo los datos del usuario
+
+            { $replaceRoot: { //reemplazo la ubicacion de los elementos del array populado
+                newRoot: {
+                    $mergeObjects: [
+                        { $arrayElemAt: [ "$product_id", 0]},
+                        "$$ROOT"
+                    ]
+                }
+            }},
+            { $project: { product_id: 0, title: 0, price: 0, __v: 0}}, //limpia el objeto
+        ]);
+
+        console.log(totalCarts, "totalCarts");
         if(totalCarts) {
             return res.status(200).json({
                 success: true,
                 response: totalCarts[0]
             })
-        }else {
+        }else{
             return res.status(404).json({
-                success: false,
-                message: "Cart not found"
-            });
+                success: true,
+                message: `Not found`
+            })
         }
     } catch (error) {
         next(error);
@@ -44,7 +59,7 @@ router.get("/:cid", async (req, res) => {
 });
 
 //POSTS
-router.post("/",  async (req, res) => {
+router.post("/",  async (req, res, next) => {
     try {
         let obj = await Cart.create(req.body);
         if(obj) {
