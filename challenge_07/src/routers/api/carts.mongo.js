@@ -1,6 +1,6 @@
 import { Router} from "express";
-import Cart from "../../models/Cart";
-import Product from "../../models/Product";
+import Cart from "../../models/Cart.js";
+import Product from "../../models/Product.js";
 
 const router = Router();
 
@@ -12,7 +12,7 @@ router.get("/", async (req, res, next) => {
         if(totalCarts) {
             return res.status(200).json({
                 success: true,
-                response: totalCarts
+                response: totalCarts[0]
             })
         }else {
             return res.status(404).json({
