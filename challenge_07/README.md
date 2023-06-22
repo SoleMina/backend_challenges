@@ -24,3 +24,4 @@ get, post, put & delete
 - Create template views using handlebars & socket
 
 - Add mongoose models
+- Add mongoose cart & products
