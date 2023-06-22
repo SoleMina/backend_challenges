@@ -1,14 +1,26 @@
 <div class="products-container">
     <h1 class="text-center p-5">{{title}}</h1>
-    <div class="d-flex justify-content-around">
-        {{#each products}}
+    <div class="container pb-4">
+        <h4>Search:</h4>
+        <input id="type-text" type="text" />
+    </div>
+    <div class="responsive-flex" id="product-list">
+        {{#each products.docs}}
         <div class="products-card d-flex flex-column">
             <h5 class="text-center fw-bold">{{this.title}}</h5>
             <img src={{this.thumbnail}} alt={{this.description}} width="150">
             <p>{{this.description}}</p>
             <p>Price: S/. {{this.price}}</p>
-            <a class="btn btn-outline-primary" href="/products/{{_id}}">More info</a>
+            <a class="btn btn-outline-primary btn-fit" href="/products/{{_id}}">More info</a>
         </div>
         {{/each}}
+    </div>
+    <div class="btn-general d-flex justify-content-around">
+        {{#if products.prevPage}}
+            <a class="btn btn-primary" id="next-page-button"  href="/products?page={{products.prevPage}}">Prev Page</button>
+        {{/if}}
+        {{#if products.nextPage}}
+            <a class="btn btn-primary" id="next-page-button" {{#unless products.nextPage}}disabled{{/unless}} href="/products?page={{products.nextPage}}">Next Page</button>
+        {{/if}}
     </div>
 </div>

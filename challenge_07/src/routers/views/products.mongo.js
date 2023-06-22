@@ -6,17 +6,50 @@ const router = Router();
 
 router.get("/", async(req, res, next) => {
     let id = req.query.pid ?? null;
+    let limit = req.query.limit ?? 6;
+    let page = req.query.page ?? 1;
+    let title = req.query.title && new RegExp(req.query.title, "i");
+
     try {
-        let products = await Product.find().lean();
-        console.log(products);
+        if(title) {
+            //let products = await Product.find().lean();
+            let products = await Product.paginate(
+                {title}, //objeto con queries para filtros
+                { limit, page} //limit y page de la paginacion
+            );
+            if(products) {
+                return res.render(
+                    "products", 
+                    {
+                    title: "Products",
+                    products: products,
+                    script: "public/js/pagination.js",
+                    styles: "public/css/styles.css",
+                    page: page,
+                    }
+                );
+            }else{
+                return res.status(404).json({
+                    success: false,
+                    message: `Not found`
+                })
+            }
+        }else {
+            //let products = await Product.find().lean();
+        let products = await Product.paginate(
+            {}, //objeto con queries para filtros
+            { limit, page} //limit y page de la paginacion
+        );
+        console.log(typeof products);
         if(products) {
             return res.render(
                 "products", 
                 {
                   title: "Products",
                   products: products,
-                  script: "public/js/index.js",
+                  script: "public/js/pagination.js",
                   styles: "public/css/styles.css",
+                  page: page,
                 }
             );
         }else{
@@ -25,6 +58,8 @@ router.get("/", async(req, res, next) => {
                 message: `Not found`
             })
         }
+        }
+
     } catch (error) {
         next(error);
     }
@@ -71,10 +106,17 @@ router.post("/", upload.single("imageFile"), async(req, res, next) => {
         let response = await Product.create(body);
         console.log(response, "response");
         if(response) {
-            return res.status(200).json({
-                success: true,
-                message: `Product created!`
-            })
+            let products = await Product.find().lean();
+
+            return res.render(
+                "products", 
+                {
+                  title: "Products",
+                  products: products,
+                  script: "public/js/index.js",
+                  styles: "public/css/styles.css",
+                }
+            );
         }else {
             return res.status(404).json({
                 success: false,
