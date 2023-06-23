@@ -1,8 +1,9 @@
 import server from "./app.js";
+import "dotenv/config.js";
 import { Server } from "socket.io";
 
 
-let PORT = 3000 || 8080;
+let PORT = process.env.PORT || 8000;
 let ready = () => console.log("Server ready on port " + PORT);
 
 let http_server = server.listen(PORT, ready);

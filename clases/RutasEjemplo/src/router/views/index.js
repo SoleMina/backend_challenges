@@ -1,8 +1,10 @@
 import { Router} from "express";
-import authRouter from "./auth.js";
+import authRouter from "./register.js";
+import loginRouter from "./login.js";
 const router = Router();
 
-router.use("/auth", authRouter);
+router.use("/", authRouter);
+router.use("/", loginRouter);
 //Add carts and products router here
 
 router.get("/", (req, res, next) => {

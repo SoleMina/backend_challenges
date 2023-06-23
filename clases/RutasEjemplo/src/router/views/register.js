@@ -7,7 +7,8 @@ router.get("/register", async (req, res, next) => {
         return res.render(
           "register", 
           {
-            title: "Auth Form"
+            title: "Register",
+            script: "./public/register.js"
           }
         );
     } catch (error) {
