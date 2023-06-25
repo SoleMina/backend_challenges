@@ -28,12 +28,12 @@ router.post("/signin", async(req, res, next) => {
             req.session.role = one.role;
             return res.status(200).json({
                 success: true,
-                message: `User signed in`
+                message: `User signed in!`
             })
         }else{
             return res.status(404).json({
                 success: false,
-                message: `User not found`
+                message: `User not found!`
             })
         }
     } catch (error) {
