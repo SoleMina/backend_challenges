@@ -18,7 +18,7 @@ router.use("/students", students_router);
 router.use("/carts", carts_router);
 router.use("/auth", auth_Router);
 router.use("/cookies", cookies_Router);
-router.use("/session", session_Router);
+router.use("/sessions", session_Router);
 
 export default router;
 //El enrutador principal de la api (para enviar datos)

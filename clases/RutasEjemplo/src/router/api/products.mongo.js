@@ -1,6 +1,7 @@
 import { Router} from "express";
 import manager from "../../managers/Products.js";
 import Product from "../../models/product.model.js";
+import auth from "../../middlewares/auth.js";
 
 const router = Router();
 
@@ -14,7 +15,7 @@ const router = Router();
 // });
 
 
-router.post('/', async(req,res,next)=> {
+router.post('/', auth, async(req,res,next)=> {
     try {
         let response = await Product.create(req.body);
         if (response) {
