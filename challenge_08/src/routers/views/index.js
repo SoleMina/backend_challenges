@@ -4,8 +4,8 @@ import cartsRouter from "./carts.mongo.js";
 // import productsRouter from "./products.js";
 import productsRouter from "./products.mongo.js";
 import chatsRouter from "./chat.js";
-import loginRouter from "./login.js";
-import registeruserRouter from "./register-user.js";
+import loginRouter from "./login.mongo.js";
+import registeruserRouter from "./register-user.mongo.js";
 
 const router = Router();
 
