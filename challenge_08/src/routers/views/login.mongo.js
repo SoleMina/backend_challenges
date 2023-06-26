@@ -18,7 +18,7 @@ router.get("/",  async(req, res, next) => {
     }
 });
 
-router.post("/login", async(req, res, next) => {
+router.post("/", async(req, res, next) => {
     try {
         const {email} = req.body;
         const one = await User.findOne({email});

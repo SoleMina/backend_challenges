@@ -26,7 +26,9 @@ router.post("/register-user", validator, pass_is_8, async(req, res, next) => {
 router.post("/login", async(req, res, next) => {
     try {
         const {email} = req.body;
+        console.log(req.body, "req.body");
         const one = await User.findOne({email});
+        console.log(one, "one");
         if(one) {
             req.session.email = email;
             req.session.role = one.role;
