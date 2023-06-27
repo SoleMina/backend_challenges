@@ -4,7 +4,7 @@ document.getElementById('register').addEventListener('click',(event)=>{
         name: document.querySelector('#name').value,
         photo: document.querySelector('#photo').value,
         age: document.querySelector('#age').value,
-        mail: document.querySelector('#mail').value,
+        email: document.querySelector('#email').value,
         password: document.querySelector('#password').value,
     }
     console.log(data)

@@ -1,7 +1,7 @@
 import server from "./app.js";
 import { connect } from "mongoose";
 
-let PORT =  8000 || process.env.PORT;
+let PORT =  process.env.PORT || 8000;
 
 // let ready = () => {
 //     console.log("Server ready on port " + PORT);

@@ -2,11 +2,13 @@ import { Router } from "express";
 import User from "../models/User.js";
 import validator from "../middlewares/validator.js";
 import pass_is_8 from "../middlewares/pass_is_8.js";
+import create_hash from "../middlewares/create_hash.js";
+import is_valid_password from "../middlewares/is_valid_password.js";
 
 const router = Router();
 
 //REGISTER
-router.post("/register", validator, pass_is_8, async(req, res, next) => {
+router.post("/register", validator, pass_is_8, create_hash, async(req, res, next) => {
     try {
         await User.create(req.body);
         return res.status(201).json({
@@ -19,7 +21,8 @@ router.post("/register", validator, pass_is_8, async(req, res, next) => {
 });
 
 //SIGNIN
-router.post("/signin", async(req, res, next) => {
+router.post("/login",
+    pass_is_8, is_valid_password, async(req, res, next) => {
     try {
         const {email} = req.body;
         const one = await User.findOne({email});
