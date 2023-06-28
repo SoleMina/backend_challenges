@@ -6,6 +6,8 @@ import not_found_handler from './middlewares/not_found_handler.js';
 import router from './routers/index.js';
 import session from 'express-session';
 import mongoStore from "connect-mongo";
+import passport from 'passport';
+import initializePassport from './config/passport.js';
 
 const server = express();
 
@@ -24,6 +26,9 @@ server.use('/',express.static('public'));
 server.use(express.json());
 server.use(express.urlencoded({extended:true}));
 server.use(morgan('dev'));
+initializePassport();
+server.use(passport.initialize());
+server.use(passport.session());
 
 //endpoints
 server.use("/api", router);
