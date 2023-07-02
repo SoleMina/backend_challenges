@@ -10,6 +10,8 @@ import { connect } from "mongoose";
 import session from 'express-session';
 import mongoStore from "connect-mongo";
 import cookieParser from "cookie-parser";
+import passport from 'passport';
+import initializePassport from "./config/passport.js";
 
 const server = express();
 
@@ -28,6 +30,9 @@ server.use(express.json());
 server.use(express.urlencoded({extended: true}));
 server.use("/public", express.static("public"));
 server.use(morgan('dev'));
+initializePassport();
+server.use(passport.initialize());
+server.use(passport.session());
 
 //template engine
 server.engine("handlebars", engine(

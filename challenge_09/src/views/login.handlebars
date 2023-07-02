@@ -1,6 +1,7 @@
 <main class="d-flex flex-column justify-content-center align-items-center flex-grow-1">
     <h1 class="p-5">{{title}}</h1>
-    <form class="d-flex flex-column justify-content-center align-items-center w-50" id="loginForm">
+    <div class="w-75 d-flex flex-column justify-content-center align-items-center flex-grow-1">
+        <form class="d-flex flex-column justify-content-center align-items-center w-50" id="loginForm">
         <fieldset class="mb-2 w-100">
             <label for="email" class="form-label">Email</label>
             <input type="email" class="form-control" name="email" id="email" />
@@ -9,9 +10,15 @@
             <label for="password" class="form-label">Password</label>
             <input type="password" class="form-control" name="password" id="password" />
         </fieldset>
-        <div class="d-flex justify-content-between w-100">
+        <div class="d-flex justify-content-between w-75">
             <input type="button" id='login' class="btn btn-danger mt-2  w-100" value="Log In!">
         </div>
+        <div class="d-flex justify-content-between w-75">
+            <a href="/api/auth/github" class="w-100">
+                <input type="button" id='loginGithub' class="btn bg-secondary mt-2  w-100 text-white" value="Log In with Github!">
+            </a>
+        </div>
     </form>
+    </div>
             
 </main>

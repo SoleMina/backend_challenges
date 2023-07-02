@@ -2,6 +2,7 @@ import { Router } from "express";
 import User from "../../models/User.js";
 import validator from "../../middlewares/validator.js";
 import pass_is_8 from "../../middlewares/pass_is_8.js";
+import passport from "passport";
 
 const router = Router();
 
@@ -58,6 +59,23 @@ router.post("/signout", async(req, res, next) => {
     } catch (error) {
         next(error);
     }
-})
+});
+
+//FAILED PAGE
+router.get("/fail-register", (req, res) => res.status(400).json({
+    success: false,
+    message: `Error auth`
+}));
+
+//LOGIN WITH GITHUB
+router.get("/github", passport.authenticate("github", {scope: ["user: email"]}), (req, res) => {});
+router.get(
+    "/github/callback", passport.authenticate("github", {failureRedirect: "/api/auth/fail-register-github"}), //middleware con estrategia de auth de github
+    (req, res) => res.status(200).redirect("/")
+);
+router.get("/fail-register-github", (req, res) => res.status(403).json({
+    success: false,
+    message: "bad auth"
+}));
 
 export default router;

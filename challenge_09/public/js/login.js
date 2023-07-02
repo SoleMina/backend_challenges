@@ -14,4 +14,5 @@ document.getElementById('login').addEventListener('click',(event)=>{
         .then(res=>console.log(res))    //en lugar de imprimir en consola: mostrar mensaje de alerta
         .then(res => location.href = '/products')
         .catch(err=>console.log(err))   //en lugar de imprimir en consola: mostrar mensaje de alerta
-})
+});
+
