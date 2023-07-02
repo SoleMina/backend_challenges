@@ -1,6 +1,7 @@
 import { Router} from "express";
 import pass_is_8 from "../../middlewares/pass_is_8.js";
 import validator from "../../middlewares/validator.js";
+import createHash from "../../middlewares/createHash.js";
 
 const router = Router();
 
@@ -20,7 +21,7 @@ router.get("/",  async(req, res, next) => {
 });
 
 //REGISTER
-router.post("/register-user", validator, pass_is_8, async(req, res, next) => {
+router.post("/register-user", validator, pass_is_8, createHash, async(req, res, next) => {
     try {
         let body = req.body;
         if(body.photo.length<2) {

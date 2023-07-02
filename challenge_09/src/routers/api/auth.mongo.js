@@ -3,11 +3,12 @@ import User from "../../models/User.js";
 import validator from "../../middlewares/validator.js";
 import pass_is_8 from "../../middlewares/pass_is_8.js";
 import passport from "passport";
+import createHash from "../../middlewares/createHash.js";
 
 const router = Router();
 
 //REGISTER
-router.post("/register-user", validator, pass_is_8, async(req, res, next) => {
+router.post("/register-user", validator, pass_is_8, createHash, async(req, res, next) => {
     try {
         let body = req.body;
         if(body.photo.length<2) {
