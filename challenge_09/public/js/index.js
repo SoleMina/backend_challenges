@@ -10,4 +10,3 @@ buy.addEventListener("click", () => {
 
 
 /***** *****/
-
