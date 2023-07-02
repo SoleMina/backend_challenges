@@ -73,7 +73,7 @@ router.post("/login",
     // } catch (error) {
     //     next(error);
     // }
-})
+});
 
 //SIGNOUT
 router.post("/signout", async(req, res, next) => {
@@ -86,6 +86,16 @@ router.post("/signout", async(req, res, next) => {
     } catch (error) {
         next(error);
     }
-})
+});
+
+router.get("/github", passport.authenticate("github", {scope: ["user: email"]}), (req, res) => {});
+router.get(
+    "/github/callback", passport.authenticate("github", {failureRedirect: "/api/auth/fail-register-github"}), //middleware con estrategia de auth de github
+    (req, res) => res.status(200).redirect("/")
+);
+router.get("/fail-register-github", (req, res) => res.status(403).json({
+    success: false,
+    message: "bad auth"
+}));
 
 export default router;

@@ -7,7 +7,7 @@ import router from './routers/index.js';
 import session from 'express-session';
 import mongoStore from "connect-mongo";
 import passport from 'passport';
-import initializePassport from './config/passport.js';
+import initializePassport from './config/passport-gh.js';
 
 const server = express();
 
