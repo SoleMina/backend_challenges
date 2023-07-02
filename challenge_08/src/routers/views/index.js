@@ -4,6 +4,8 @@ import cartsRouter from "./carts.mongo.js";
 // import productsRouter from "./products.js";
 import productsRouter from "./products.mongo.js";
 import chatsRouter from "./chat.js";
+import loginRouter from "./login.mongo.js";
+import registeruserRouter from "./register-user.mongo.js";
 
 const router = Router();
 
@@ -11,6 +13,8 @@ router.use("/carts", cartsRouter);
 router.use("/products", productsRouter);
 router.use("/", chatsRouter);
 router.use('/register', authRouter);
+router.use('/login', loginRouter);
+router.use('/register-user', registeruserRouter);
 
 
 router.get("/", (req, res, next) => {
