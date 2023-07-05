@@ -27,3 +27,6 @@ get, post, put & delete
 - Add mongoose cart & products
 - Add cookies
 - Add login
+- Add Passport config
+- Add bcript
+- Add createHash
