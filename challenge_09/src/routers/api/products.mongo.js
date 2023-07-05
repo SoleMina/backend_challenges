@@ -1,10 +1,11 @@
 import { Router} from "express";
 import Product from "../../models/Product.js";
 import upload from "../../middlewares/multer.js";
+import isAdmin from "../../middlewares/isAdmin.js";
 
 const router = Router();
 
-router.get("/", async(req, res, next) => {
+router.get("/", isAdmin, async(req, res, next) => {
     let limit = req.query.limit ?? 6;
     let page = req.query.page ?? 1;
     let title = req.query.title ? new RegExp(req.query.title, "i") : '';

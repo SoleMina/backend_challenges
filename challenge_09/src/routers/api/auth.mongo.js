@@ -5,6 +5,7 @@ import pass_is_8 from "../../middlewares/pass_is_8.js";
 import passport from "passport";
 import createHash from "../../middlewares/createHash.js";
 import isValidPassword from "../../middlewares/isValidPassword.js";
+import isAdmin from "../../middlewares/isAdmin.js";
 
 const router = Router();
 
@@ -37,7 +38,8 @@ router.post("/register-user", validator, pass_is_8, createHash,
 //SIGNIN
 router.post("/login", 
     passport.authenticate("signin", {failureRedirect: "/api/auth/fail-signin"}),
-    isValidPassword, async(req, res, next) => {
+    isValidPassword,
+    async(req, res, next) => {
     try {
         const {email} = req.body;
         req.session.email = email;

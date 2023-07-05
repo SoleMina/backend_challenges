@@ -2,6 +2,8 @@
 
 - Create Class ProductManager
 
+- Email: admin@admin.com password: admin2023
+
 - Create methods:
 addProduct()
 getProducts(id)
