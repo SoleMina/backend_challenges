@@ -4,46 +4,65 @@ import validator from "../../middlewares/validator.js";
 import pass_is_8 from "../../middlewares/pass_is_8.js";
 import passport from "passport";
 import createHash from "../../middlewares/createHash.js";
+import isValidPassword from "../../middlewares/isValidPassword.js";
 
 const router = Router();
 
 //REGISTER
-router.post("/register-user", validator, pass_is_8, createHash, async(req, res, next) => {
-    try {
-        let body = req.body;
-        if(body.photo.length<2) {
-            body.photo = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8rQTfvDS0mK_Y09wABdP_UOwfxiuQLqWcUQ&usqp=CAU"
-        }
-        await User.create(body);
-        return res.status(201).json({
-            success: true,
-            message: "User created!"
-        })
-    } catch (error) {
-        next(error);
-    }
-});
+router.post("/register-user", validator, pass_is_8, createHash,
+    passport.authenticate(
+        "register", //nombre de la estrategia
+        { failureRedirect: "/api/auth/fail-register"} //objeto de config de la ruta
+    ),
+    (req, res) => res.status(201).json({
+        success: true,
+        message: "User created!"
+    })
+
+    // try {
+    //     let body = req.body;
+    //     if(body.photo.length<2) {
+    //         body.photo = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8rQTfvDS0mK_Y09wABdP_UOwfxiuQLqWcUQ&usqp=CAU"
+    //     }
+    //     await User.create(body);
+    //     return res.status(201).json({
+    //         success: true,
+    //         message: "User created!"
+    //     })
+    // } catch (error) {
+    //     next(error);
+    // }
+);
 
 //SIGNIN
-router.post("/login", async(req, res, next) => {
+router.post("/login", 
+    passport.authenticate("signin", {failureRedirect: "/api/auth/fail-signin"}),
+    isValidPassword, async(req, res, next) => {
     try {
         const {email} = req.body;
-        console.log(req.body, "req.body");
-        const one = await User.findOne({email});
-        console.log(one, "one");
-        if(one) {
-            req.session.email = email;
-            req.session.role = one.role;
+        req.session.email = email;
+        req.session.role = req.user.role;
             return res.status(200).json({
                 success: true,
                 message: `User signed in!`
             })
-        }else{
-            return res.status(404).json({
-                success: false,
-                message: `User not found!`
-            })
-        }
+        // const {email} = req.body;
+        // console.log(req.body, "req.body");
+        // const one = await User.findOne({email});
+        // console.log(one, "one");
+        // if(one) {
+        //     req.session.email = email;
+        //     req.session.role = one.role;
+        //     return res.status(200).json({
+        //         success: true,
+        //         message: `User signed in!`
+        //     })
+        // }else{
+        //     return res.status(404).json({
+        //         success: false,
+        //         message: `User not found!`
+        //     })
+        // }
     } catch (error) {
         next(error);
     }
