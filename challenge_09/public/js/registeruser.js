@@ -6,6 +6,7 @@ document.getElementById('register').addEventListener('click',(event)=>{
         age: document.querySelector('#age').value,
         email: document.querySelector('#email').value,
         password: document.querySelector('#password').value,
+        role: document.querySelector('#role').value,
     }
     console.log(data)
     fetch(`/api/auth/register-user`, {

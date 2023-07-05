@@ -5,7 +5,7 @@ import isAdmin from "../../middlewares/isAdmin.js";
 
 const router = Router();
 
-router.get("/", isAdmin, async(req, res, next) => {
+router.get("/", async(req, res, next) => {
     let id = req.query.pid ?? null;
     let limit = req.query.limit ?? 6;
     let page = req.query.page ?? 1;

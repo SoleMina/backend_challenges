@@ -2,6 +2,7 @@ import { Router} from "express";
 import pass_is_8 from "../../middlewares/pass_is_8.js";
 import validator from "../../middlewares/validator.js";
 import createHash from "../../middlewares/createHash.js";
+import isAdmin from "../../middlewares/isAdmin.js";
 
 const router = Router();
 

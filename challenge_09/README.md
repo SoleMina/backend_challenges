@@ -32,3 +32,4 @@ get, post, put & delete
 - Add Passport config
 - Add bcript
 - Add createHash
+- Add role validation to create new product
