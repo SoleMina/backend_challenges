@@ -2,6 +2,8 @@
 
 - Create Class ProductManager
 
+- Email: admin@admin.com password: admin2023
+
 - Create methods:
 addProduct()
 getProducts(id)
@@ -27,3 +29,7 @@ get, post, put & delete
 - Add mongoose cart & products
 - Add cookies
 - Add login
+- Add Passport config
+- Add bcript
+- Add createHash
+- Add role validation to create new product

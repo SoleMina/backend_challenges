@@ -1,8 +1,9 @@
 import { Router } from "express";
+import isAdmin from "../../middlewares/isAdmin.js";
 
 const router = Router();
 
-router.get("/", (req, res, next) => {
+router.get("/", isAdmin, (req, res, next) => {
     try {
         return res.render('register', {
             title: "register",

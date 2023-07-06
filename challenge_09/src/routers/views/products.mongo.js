@@ -1,6 +1,7 @@
 import { Router} from "express";
 import Product from "../../models/Product.js";
 import upload from "../../middlewares/multer.js";
+import isAdmin from "../../middlewares/isAdmin.js";
 
 const router = Router();
 
