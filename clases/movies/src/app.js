@@ -8,10 +8,12 @@ import session from 'express-session';
 import mongoStore from "connect-mongo";
 import passport from 'passport';
 import initializePassport from './config/passport-gh.js';
+import cookieParser from 'cookie-parser'
 
 const server = express();
 
 //middlewares
+server.use(cookieParser(process.env.SECRET_COOKIE));
 server.use(session({
     secret: process.env.SECRET_SESSION,
     resave: true,
