@@ -44,7 +44,8 @@ export default  function initializePassport() {
             async (username,password,done) => {
                 try {
                     //va a buscar un usuario
-                    let one = await User.findOne({ email:username })    
+                    let one = await User.findOne({ email:username })  ;
+                    console.log(one);
                     if (one) {
                         return done(null,one)
                     }
