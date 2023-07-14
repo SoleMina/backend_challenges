@@ -83,7 +83,7 @@ export default  function initializePassport() {
             }
         )
     );
-    passport.use(     //estrategia para jwt (SOLO SIRVE PARA AUTENTICAR USUARIOS)
+    passport.use(     //estrategia para jwt
         'jwt',
         new jwt.Strategy(
             { secretOrKey:process.env.SECRET_JWT,jwtFromRequest:jwt.ExtractJwt.fromExtractors([(req)=>req?.cookies['token']])},

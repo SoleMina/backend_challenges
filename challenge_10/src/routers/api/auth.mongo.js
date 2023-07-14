@@ -6,6 +6,7 @@ import passport from "passport";
 import createHash from "../../middlewares/createHash.js";
 import isValidPassword from "../../middlewares/isValidPassword.js";
 import isAdmin from "../../middlewares/isAdmin.js";
+import createToken from "../../middlewares/createToken.js";
 
 const router = Router();
 
@@ -19,26 +20,13 @@ router.post("/register-user", validator, pass_is_8, createHash,
         success: true,
         message: "User created!"
     })
-
-    // try {
-    //     let body = req.body;
-    //     if(body.photo.length<2) {
-    //         body.photo = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8rQTfvDS0mK_Y09wABdP_UOwfxiuQLqWcUQ&usqp=CAU"
-    //     }
-    //     await User.create(body);
-    //     return res.status(201).json({
-    //         success: true,
-    //         message: "User created!"
-    //     })
-    // } catch (error) {
-    //     next(error);
-    // }
 );
 
 //SIGNIN
 router.post("/login", 
     passport.authenticate("signin", {failureRedirect: "/api/auth/fail-signin"}),
     isValidPassword,
+    createToken,
     async(req, res, next) => {
     try {
         const {email} = req.body;
@@ -48,23 +36,6 @@ router.post("/login",
                 success: true,
                 message: `User signed in!`
             })
-        // const {email} = req.body;
-        // console.log(req.body, "req.body");
-        // const one = await User.findOne({email});
-        // console.log(one, "one");
-        // if(one) {
-        //     req.session.email = email;
-        //     req.session.role = one.role;
-        //     return res.status(200).json({
-        //         success: true,
-        //         message: `User signed in!`
-        //     })
-        // }else{
-        //     return res.status(404).json({
-        //         success: false,
-        //         message: `User not found!`
-        //     })
-        // }
     } catch (error) {
         next(error);
     }
