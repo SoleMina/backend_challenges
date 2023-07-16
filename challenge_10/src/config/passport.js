@@ -90,7 +90,8 @@ export default  function initializePassport() {
             async(jwt_payload,done)=> {
                 //jwt_payload es el resultado del desencriptamiento del token
                 try {
-                    let one = await User.findOne({ email:jwt_payload.email })
+                    let one = await User.findOne({ email:jwt_payload.email });
+                    console.log(one, "one");
                     if(one) {
                         delete one.password
                         return done(null,one)
