@@ -1,5 +1,5 @@
 import { Router } from "express";
-import User from "../models/User.js";
+import User from "../dao/Mongo/models/User.js";
 import validator from "../middlewares/validator.js";
 import pass_is_8 from "../middlewares/pass_is_8.js";
 import create_hash from "../middlewares/create_hash.js";

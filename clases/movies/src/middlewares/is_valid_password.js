@@ -1,5 +1,5 @@
 import { compareSync } from "bcrypt";
-import User from "../models/User.js";
+import User from "../dao/Mongo/models/User.js";
 
 export default async function(req, res, next) {
     //password inyecta al requerimiento el obj user con los datos encontrado en mongo
