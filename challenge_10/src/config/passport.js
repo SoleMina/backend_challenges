@@ -83,14 +83,15 @@ export default  function initializePassport() {
             }
         )
     );
-    passport.use(     //estrategia para jwt (SOLO SIRVE PARA AUTENTICAR USUARIOS)
+    passport.use(     //estrategia para jwt
         'jwt',
         new jwt.Strategy(
             { secretOrKey:process.env.SECRET_JWT,jwtFromRequest:jwt.ExtractJwt.fromExtractors([(req)=>req?.cookies['token']])},
             async(jwt_payload,done)=> {
                 //jwt_payload es el resultado del desencriptamiento del token
                 try {
-                    let one = await User.findOne({ email:jwt_payload.email })
+                    let one = await User.findOne({ email:jwt_payload.email });
+                    console.log(one, "one");
                     if(one) {
                         delete one.password
                         return done(null,one)
