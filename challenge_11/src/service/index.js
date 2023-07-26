@@ -1,5 +1,5 @@
 import ProductDaoMongo from "../dao/Mongo/products.mongo.js";
+import UserDaoMongo from "../dao/Mongo/users.mongo.js";
 
-const productService = new ProductDaoMongo();
-
-export default productService;
+export const productService = new ProductDaoMongo();
+export const userService = new UserDaoMongo();

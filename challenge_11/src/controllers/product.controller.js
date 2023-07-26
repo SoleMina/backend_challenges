@@ -1,5 +1,5 @@
 // import ProductDaoMongo from "../dao/Mongo/products.mongo";
-import productService from "../service/index.js";
+import {productService} from "../service/index.js";
 
 class ProductController {
     constructor() {
