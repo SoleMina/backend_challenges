@@ -1,6 +1,7 @@
 import { Router} from "express";
 // import productsRouter from "./products.js";
-import productsRouter from "./products.mongo.js";
+// import productsRouter from "./products.mongo.js";
+import productsRouter from "./products.router.js";
 import cartsRouter from "./carts.mongo.js";
 import registerRouter from "./carts.js";
 import authRouter from "./auth.mongo.js";

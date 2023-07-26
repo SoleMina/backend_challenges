@@ -12,6 +12,7 @@ import mongoStore from "connect-mongo";
 import cookieParser from "cookie-parser";
 import passport from 'passport';
 import initializePassport from "./config/passport.js";
+import MongoSingleton from "./config/mongoSingleton.js";
 
 const server = express();
 
@@ -49,8 +50,10 @@ server.use(errorHandler);
 server.use(notFoundHandlers);
 
 //database
-connect(process.env.MONGO_URL)
-  .then(() => console.log("database connected"))
-  .catch(err => console.log(err));
+
+// connect(process.env.MONGO_URL)
+//   .then(() => console.log("database connected"))
+//   .catch(err => console.log(err));
+MongoSingleton.getInstance();
 
 export default server;

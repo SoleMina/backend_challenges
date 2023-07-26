@@ -1,4 +1,4 @@
-import ProductDaoMongo from "../dao/Mongo/products.mongo";
+import ProductDaoMongo from "../dao/Mongo/products.mongo.js";
 
 const productService = new ProductDaoMongo();
 

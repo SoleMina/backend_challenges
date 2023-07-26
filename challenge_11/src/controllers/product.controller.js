@@ -1,12 +1,16 @@
-import ProductDaoMongo from "../dao/Mongo/products.mongo";
+// import ProductDaoMongo from "../dao/Mongo/products.mongo";
+import productService from "../service/index.js";
 
 class ProductController {
     constructor() {
-        this.productDao = new ProductDaoMongo();
+        //this.productDao = new ProductDaoMongo();
+        this.productService = productService;
     }
 
     getProducts = async(req, res, next) => {
         try {
+            const {limite, page} = req.query;
+
             const {
                 docs, 
                 hasPrevPage, 
@@ -14,7 +18,7 @@ class ProductController {
                 prevPage, 
                 nextPage, 
                 totalDocs
-            } = await this.productDao.getProducts();
+            } = await this.productService.getProducts(limite, page);
     
         } catch (error) {
             return res.status(200).json({
@@ -22,11 +26,11 @@ class ProductController {
                     products: docs
                 })
         }
-    }
+    };
     getProduct = async(req, res, next) => {
         try {
             const {pid} = req.params
-            let product = await this.productDao.getProduct(pid);
+            let product = await this.productService.getProduct(pid);
             if(one) {
                 return res.status(200).json({
                     success: true,
@@ -41,7 +45,7 @@ class ProductController {
         } catch (error) {
             next(error);
         }
-    }
+    };
     createProduct = async(req, res, next) => {
         const newProduct = req.body;
     
@@ -50,7 +54,7 @@ class ProductController {
         body.thumbnail = thumbnail;
     
         try {
-            let response = await this.productDao.createProduct(newProduct);
+            let response = await this.productService.createProduct(newProduct);
             if(response) {
                 return res.status(200).json({
                     success: true,
@@ -70,7 +74,7 @@ class ProductController {
     updateProduct = async(req, res, next) => {
         try {
             const {pid}  = req.params;
-            let response = await this.productDao.updateProduct(pid, req.body);
+            let response = await this.productService.updateProduct(pid, req.body);
             if(response) {
                 return res.status(200).json({
                     success: true,
@@ -90,7 +94,7 @@ class ProductController {
     deleteProduct = async(req, res, next) => {
         try {
             const {pid} = req.params;
-            let response = await this.productDao.deleteProduct(pid);
+            let response = await this.productService.deleteProduct(pid);
     
             if(response) {
                 return res.status(200).json({
@@ -112,4 +116,4 @@ class ProductController {
 
 }
 
-export default new ProductController();
+export default ProductController;

@@ -3,19 +3,15 @@ import Product from "../../dao/Mongo/models/Product.js";
 import upload from "../../middlewares/multer.js";
 import isAdmin from "../../middlewares/isAdmin.js";
 import ProductDaoMongo from "../../dao/Mongo/products.mongo.js";
-import {getProducts, 
-    getProduct,
-    createProduct,
-    updateProduct,
-    deleteProduct} from "../../controllers/product.controller.js";
+import ProductController from "../../controllers/product.controller.js";
 
 const router = Router();
-const productDao = new ProductDaoMongo();
+const productController = new ProductController();
 
-router.get("/", isAdmin, getProducts);
-router.get("/:pid", getProduct);
-router.post("/", upload.single("imageFile"), createProduct);
-router.put("/:pid", updateProduct);
-router.delete("/:pid", deleteProduct);
+router.get("/", isAdmin, productController.getProducts);
+router.get("/:pid", productController.getProduct);
+router.post("/", upload.single("imageFile"), productController.createProduct);
+router.put("/:pid", productController.updateProduct);
+router.delete("/:pid", productController.deleteProduct);
 
 export default router;
