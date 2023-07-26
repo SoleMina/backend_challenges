@@ -34,3 +34,4 @@ get, post, put & delete
 - Add createHash
 - Add role validation to create new product
 - Add middlewares validation
+- Add capas
