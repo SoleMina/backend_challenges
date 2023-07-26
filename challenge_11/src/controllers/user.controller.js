@@ -2,7 +2,6 @@ import {userService} from "../service/index.js";
 
 class UserController {
     constructor() {
-        //this.productDao = new ProductDaoMongo();
         this.userService = userService;
     }
     registerUser = (req, res) => res.status(201).json({
