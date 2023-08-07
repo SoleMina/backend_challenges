@@ -5,9 +5,18 @@ class ProductDaoMongo {
         this.productModel = Product;
     }
 
-    getProducts = async(limit=10, page=1) => {
-        //return await Product.find();
-        return await Product.paginate({}, {limit, page, lean: true});
+    getProducts = async(limit, page, title) => {
+        try {
+            //let products = new Product.find();
+            let data = await Product.paginate(
+                {}, //objeto con queries para filtros
+                { limit, page} //limit y page de la paginacion
+            );
+
+            return data;
+        } catch (error) {
+            next(error);
+        }
     };
     getProduct = async(pid) => {
         return await Product.findOne({_id: pid});
