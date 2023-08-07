@@ -1,5 +1,5 @@
 // import ProductDaoMongo from "../dao/Mongo/products.mongo";
-import productService from "../service/index.js";
+import {productService} from "../service/index.js";
 
 class ProductController {
     constructor() {
@@ -8,17 +8,35 @@ class ProductController {
     }
 
     getProducts = async(req, res, next) => {
+        //return await Product.find();
+        let limit = req.query.limit ?? 6;
+        let page = req.query.page ?? 1;
+        
         try {
-            const {limite, page} = req.query;
+            // const {limite, page} = req.query;
 
-            const {
-                docs, 
-                hasPrevPage, 
-                hasNextPage, 
-                prevPage, 
-                nextPage, 
-                totalDocs
-            } = await this.productService.getProducts(limite, page);
+            // const {
+            //     docs, 
+            //     hasPrevPage, 
+            //     hasNextPage, 
+            //     prevPage, 
+            //     nextPage, 
+            //     totalDocs
+            // } = await this.productService.getProducts(limite, page);
+
+            const data = await this.productService.getProducts(limit, page);
+            if(data) {
+                console.log(data);
+                return res.status(200).json({
+                    success: true,
+                    products: data
+                })
+            }else{
+                return res.status(404).json({
+                    success: false,
+                    message: `Not found`
+                })
+            }
     
         } catch (error) {
             return res.status(200).json({
