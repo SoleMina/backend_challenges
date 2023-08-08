@@ -1,13 +1,21 @@
+import UserDTO from "../dto/user.dto.js";
 import {userService} from "../service/index.js";
 
 class UserController {
     constructor() {
         this.userService = userService;
     }
-    registerUser = (req, res) => res.status(201).json({
-        success: true,
-        message: "User created!"
-    });
+    registerUser = (req, res) => {
+        let {name, photo, email, age, rol, password} = req.body;
+        let newUser = new UserDTO({name, photo, email, age, rol, password});
+
+        // let result = this.service.create(newUser);
+        
+        return res.status(201).json({
+            success: true,
+            message: "User created!"
+        });
+    }
     signIn = async(req, res, next) => {
         try {
             const {email} = req.body;
