@@ -11,20 +11,11 @@ class ProductController {
         //return await Product.find();
         let limit = req.query.limit ?? 6;
         let page = req.query.page ?? 1;
+        let title = req.query.title && new RegExp(req.query.title, "i");
         
         try {
-            // const {limite, page} = req.query;
 
-            // const {
-            //     docs, 
-            //     hasPrevPage, 
-            //     hasNextPage, 
-            //     prevPage, 
-            //     nextPage, 
-            //     totalDocs
-            // } = await this.productService.getProducts(limite, page);
-
-            const data = await this.productService.getProducts(limit, page);
+            const data = await this.productService.getProducts(limit, page, title);
             if(data) {
                 console.log(data);
                 return res.status(200).json({
@@ -117,7 +108,7 @@ class ProductController {
             if(response) {
                 return res.status(200).json({
                     success: true,
-                    message: `Product updated!`,
+                    message: `Product deleted!`,
                     response: response
                 })
             }else{

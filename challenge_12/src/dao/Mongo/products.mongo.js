@@ -7,13 +7,20 @@ class ProductDaoMongo {
 
     getProducts = async(limit, page, title) => {
         try {
-            //let products = new Product.find();
-            let data = await Product.paginate(
-                {}, //objeto con queries para filtros
-                { limit, page} //limit y page de la paginacion
-            );
+            if(title) {
+                let data = await Product.paginate(
+                    {title}, //objeto con queries para filtros
+                    { limit, page} //limit y page de la paginacion
+                );
+                return data;
 
-            return data;
+            }else{
+                let data = await Product.paginate(
+                    {}, //objeto con queries para filtros
+                    { limit, page} //limit y page de la paginacion
+                );
+                return data;
+            }
         } catch (error) {
             next(error);
         }
@@ -21,7 +28,7 @@ class ProductDaoMongo {
     getProduct = async(pid) => {
         return await Product.findOne({_id: pid});
     };
-    createProduct = async(pid) => {
+    createProduct = async(newProduct) => {
         return await Product.create(newProduct);
     };
     updateProduct = async(pid, updProduct) => {
