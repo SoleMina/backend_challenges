@@ -8,7 +8,7 @@ const router = Router();
 const productViewController = new ProductViewController();
 
 
-router.get("/", isAdmin, productViewController.getProducts);
+router.get("/", productViewController.getProducts);
 router.get("/:pid", productViewController.getProduct);
 router.post("/", upload.single("imageFile"), productViewController.createProduct);
 router.put("/:pid", productViewController.updateProduct);

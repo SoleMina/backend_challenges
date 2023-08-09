@@ -3,7 +3,7 @@ import { Router} from "express";
 import authRouter from "./auth.router.js";
 import productsRouter from "./products.router.js";
 import cartsRouter from "./carts.mongo.js";
-import registerRouter from "./carts.js";
+import registerRouter from "./carts.memory.js";
 
 const router = Router();
 
