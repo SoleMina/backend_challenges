@@ -35,3 +35,6 @@ get, post, put & delete
 - Add role validation to create new product
 - Add middlewares validation
 - Add capas
+- Add dao
+- Add dto
+- Add send gmail config
