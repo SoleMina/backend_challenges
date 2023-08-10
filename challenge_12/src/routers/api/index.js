@@ -6,6 +6,7 @@ import cartsRouter from "./carts.mongo.js";
 import registerRouter from "./carts.memory.js";
 import {sendMail} from "../../utils/sendMail.js";
 import {sendSms, sendWhatsapp} from "../../utils/sendSms.js";
+import generateUserFaker from "../../utils/mocks/generateUserFaker.js";
 
 const router = Router();
 
@@ -34,6 +35,20 @@ router.get("/whatsapp", async(req, res, next) => {
     try {
         await sendWhatsapp("Karina", "Prado");
         res.send("Whatsapp enviado");
+    } catch (error) {
+       console.log(error);
+    }
+});
+router.get("/mockuser", (req, res, next) => {
+    try {
+        let users = [];
+        for(let i = 0; i < 100; i++) {
+            users.push(generateUserFaker());
+        }
+        res.send({
+            status: "success",
+            payload: users
+        });
     } catch (error) {
        console.log(error);
     }
