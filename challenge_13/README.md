@@ -38,3 +38,4 @@ get, post, put & delete
 - Add dao
 - Add dto
 - Add send gmail config
+- Add middlewares error custom
