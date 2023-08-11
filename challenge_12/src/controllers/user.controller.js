@@ -1,19 +1,34 @@
 import UserDTO from "../dto/user.dto.js";
 import {userService} from "../service/index.js";
+import CustomError from "../utils/error/customError.js";
+import { EErrors } from "../utils/error/enum.js";
+import { generateUserErrorsInfo } from "../utils/error/generateInfoUser.js";
 
 class UserController {
     constructor() {
         this.userService = userService;
     }
     registerUser = (req, res) => {
+        
         let {name, photo, email, age, rol, password} = req.body;
-        let newUser = new UserDTO({name, photo, email, age, rol, password});
+
+        if(!name || email || password) {
+            CustomError.createError({
+                name: "User Creation error",
+                cause: generateUserErrorsInfo({name, email, password}),
+                message: "Error trying to create user",
+                code: EErrors.INVALID_TYPE_ERROR
+            });
+        }
+
+        //let newUser = new UserDTO({name, photo, email, age, rol, password});
 
         // let result = this.service.create(newUser);
-        
+                
         return res.status(201).json({
             success: true,
-            message: "User created!"
+            message: "User created!",
+            payload: {name, email, age}
         });
     }
     signIn = async(req, res, next) => {

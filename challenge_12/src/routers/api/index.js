@@ -7,8 +7,17 @@ import registerRouter from "./carts.memory.js";
 import {sendMail} from "../../utils/sendMail.js";
 import {sendSms, sendWhatsapp} from "../../utils/sendSms.js";
 import generateUserFaker from "../../utils/mocks/generateUserFaker.js";
+import compression from "express-compression";
 
 const router = Router();
+//router.use(compression())
+
+// router.use(compression({
+//     brotli: {
+//         enabled: true,
+//         zlib: {}
+//     }
+// }))
 
 router.use("/products", productsRouter);
 router.use("/carts", cartsRouter);
@@ -53,6 +62,12 @@ router.get("/mockuser", (req, res, next) => {
        console.log(error);
     }
 });
-
+router.get("/string", (req, res) => {
+    let string = `Hola coders soy un string rídiculamente largo`;
+    for(let i = 0; i<5e2; i++) {
+        string += `Hello coders, soy un string largo`;
+    }
+    res.send(string);
+});
 
 export default router;
