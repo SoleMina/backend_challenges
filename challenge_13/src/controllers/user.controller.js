@@ -8,7 +8,7 @@ class UserController {
     constructor() {
         this.userService = userService;
     }
-    registerUser = (req, res) => {
+    registerUser = async (req, res) => {
         
         let {name, photo, email, age, rol, password} = req.body;
 

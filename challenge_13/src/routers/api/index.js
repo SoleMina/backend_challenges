@@ -8,16 +8,19 @@ import {sendMail} from "../../utils/sendMail.js";
 import {sendSms, sendWhatsapp} from "../../utils/sendSms.js";
 import generateUserFaker from "../../utils/mocks/generateUserFaker.js";
 import compression from "express-compression";
+import UserController from "../../controllers/user.controller.js";
 
 const router = Router();
+
+const userController = new UserController();
 //router.use(compression())
 
-// router.use(compression({
-//     brotli: {
-//         enabled: true,
-//         zlib: {}
-//     }
-// }))
+router.use(compression({
+    brotli: {
+        enabled: true,
+        zlib: {}
+    }
+}))
 
 router.use("/products", productsRouter);
 router.use("/carts", cartsRouter);
@@ -69,5 +72,7 @@ router.get("/string", (req, res) => {
     }
     res.send(string);
 });
+router.post("/users", userController.registerUser);
+
 
 export default router;
