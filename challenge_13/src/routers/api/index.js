@@ -1,8 +1,7 @@
 import { Router} from "express";
-// import productsRouter from "./products.js";
 import authRouter from "./auth.router.js";
 import productsRouter from "./products.router.js";
-import cartsRouter from "./carts.mongo.js";
+import cartsRouter from "./carts.router.js";
 import registerRouter from "./carts.memory.js";
 import compression from "express-compression";
 import pruebasRouter from "./pruebas.router.js";
