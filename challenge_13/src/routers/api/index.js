@@ -6,7 +6,7 @@ import cartsRouter from "./carts.mongo.js";
 import registerRouter from "./carts.memory.js";
 import {sendMail} from "../../utils/sendMail.js";
 import {sendSms, sendWhatsapp} from "../../utils/sendSms.js";
-import generateUserFaker from "../../utils/mocks/generateUserFaker.js";
+import generateUserFaker, { generateMockProducts } from "../../utils/mocks/generateUserFaker.js";
 import compression from "express-compression";
 import UserController from "../../controllers/user.controller.js";
 
@@ -65,14 +65,20 @@ router.get("/mockuser", (req, res, next) => {
        console.log(error);
     }
 });
-router.get("/string", (req, res) => {
-    let string = `Hola coders soy un string rídiculamente largo`;
-    for(let i = 0; i<5e2; i++) {
-        string += `Hello coders, soy un string largo`;
-    }
-    res.send(string);
-});
+
 router.post("/users", userController.registerUser);
+
+router.get("/mockingproducts", async (req, res) => {
+    try {
+        let products = await generateMockProducts();
+        res.send({
+            success: true,
+            payload: products
+        });
+    } catch (error) {
+        next(error);
+    }
+});
 
 
 export default router;
