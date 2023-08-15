@@ -1,10 +1,13 @@
 import server from "./app.js";
 import { Server } from "socket.io";
+import { logger } from "./config/logger.js";
 
 const PORT = process.env.PORT || 8000;
 
-const http_server = server.listen(PORT, () => {
-    console.log(`Listening server on ${PORT}`)
+const http_server = server.listen(PORT, err => {
+    // console.log(`Listening server on ${PORT}`);
+    if (err) logger.error(err);
+    logger.info(`Listening server on ${PORT}`);
 });
 
 const io = new Server(http_server);

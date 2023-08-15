@@ -61,5 +61,15 @@ router.get("/mockingproducts", async (req, res) => {
     }
 });
 
+router.get("/logger", (req, res, next) => {
+    try {
+        //req.logger.warn("This is a warn");
+        req.logger.error(`This is an error - ${Date().toLocaleString()}`);
+        res.send("Logger registrado");
+    } catch (error) {
+        next(error);
+    }
+});
+
 
 export default router;
