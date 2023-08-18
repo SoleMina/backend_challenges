@@ -23,8 +23,6 @@ console.log(envPath, "testtttt");
 dotenv.config({
   path: envPath
 });
-
-
 const server = express();
 
 // console.log(commander.opts());
