@@ -13,6 +13,7 @@ import cookieParser from "cookie-parser";
 import passport from 'passport';
 import initializePassport from "./config/passport.js";
 import MongoSingleton from "./config/mongoSingleton.js";
+import { addLogger } from "./config/logger.js";
 
 const server = express();
 
@@ -34,6 +35,7 @@ server.use(morgan('dev'));
 initializePassport();
 server.use(passport.initialize());
 server.use(passport.session());
+server.use(addLogger);
 
 //template engine
 server.engine("handlebars", engine(

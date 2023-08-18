@@ -1,14 +1,13 @@
-// import ProductDaoMongo from "../dao/Mongo/products.mongo";
 import {productService} from "../service/index.js";
+import CustomError from "../utils/error/customError.js";
+import { EErrors } from "../utils/error/enum.js";
 
 class ProductController {
     constructor() {
-        //this.productDao = new ProductDaoMongo();
         this.productService = productService;
     }
 
     getProducts = async(req, res, next) => {
-        //return await Product.find();
         let limit = req.query.limit ?? 6;
         let page = req.query.page ?? 1;
         let title = req.query.title && new RegExp(req.query.title, "i");
@@ -63,7 +62,18 @@ class ProductController {
         body.thumbnail = thumbnail;
     
         try {
+            const {title, description, price, code, stock } = newProduct;
+            if(!title || !description || !price || !code || !stock) {
+                CustomError.createError({
+                    name: "Product Creation error",
+                    cause: generateProductErrorsInfo({title, description, code}),
+                    message: "Error trying to create product",
+                    code: EErrors.INVALID_TYPE_ERROR
+                });
+            }
+
             let response = await this.productService.createProduct(newProduct);
+
             if(response) {
                 return res.status(200).json({
                     success: true,

@@ -8,28 +8,32 @@ class UserController {
     constructor() {
         this.userService = userService;
     }
-    registerUser = (req, res) => {
-        
-        let {name, photo, email, age, rol, password} = req.body;
+    registerUser = async (req, res) => {
 
-        if(!name || email || password) {
-            CustomError.createError({
-                name: "User Creation error",
-                cause: generateUserErrorsInfo({name, email, password}),
-                message: "Error trying to create user",
-                code: EErrors.INVALID_TYPE_ERROR
+        try {
+            let {name, photo, email, age, rol, password} = req.body;
+    
+            if(!name || !email || !password) {
+                CustomError.createError({
+                    name: "User Creation error",
+                    cause: generateUserErrorsInfo({name, email, password}),
+                    message: "Error trying to create user",
+                    code: EErrors.INVALID_TYPE_ERROR
+                });
+            }
+    
+            let newUser = new UserDTO({name, photo, email, age, rol, password});
+    
+            let result = this.service.create(newUser);
+                    
+            return res.status(201).json({
+                success: true,
+                message: "User created!",
+                payload: {name, email, age}
             });
+        } catch (error) {
+            next(error);
         }
-
-        //let newUser = new UserDTO({name, photo, email, age, rol, password});
-
-        // let result = this.service.create(newUser);
-                
-        return res.status(201).json({
-            success: true,
-            message: "User created!",
-            payload: {name, email, age}
-        });
     }
     signIn = async(req, res, next) => {
         try {

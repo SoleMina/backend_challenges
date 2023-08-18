@@ -31,4 +31,14 @@ const generateUserFaker = () => {
   }
 }
 
+export const generateMockProducts = () => {
+  let numOfProducts = parseInt(faker.string.numeric(1, {bannedDigits: ["0"]}));
+  let products = [];
+  for(let i = 0; i<10e2; i++) {
+    products.push(generateProducts());
+  }
+
+  return products;
+}
+
 export default generateUserFaker;
