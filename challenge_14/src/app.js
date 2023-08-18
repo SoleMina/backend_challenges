@@ -1,5 +1,4 @@
 import express from "express";
-import "dotenv/config.js";
 import morgan from 'morgan';
 import {engine} from "express-handlebars";
 import __dirname from "./utils.js";
@@ -14,8 +13,29 @@ import passport from 'passport';
 import initializePassport from "./config/passport.js";
 import MongoSingleton from "./config/mongoSingleton.js";
 import { addLogger } from "./config/logger.js";
+import commander from "./utils/commander.js";
+import path from 'path';
+import dotenv from 'dotenv';
+
+const envPath = path.join(__dirname, '..', '.env.development');
+console.log(envPath, "testtttt");
+
+dotenv.config({
+  path: envPath
+});
+
 
 const server = express();
+
+// console.log(commander.opts());
+// const { mode } = commander.opts();
+// dotenv.config({
+//   path: mode === "development" ? "./env.development" : "./env.production"
+// })
+
+// for (const key in process.env) {
+//   console.log(`${key}: ${process.env[key]}`);
+// }
 
 //middlewares
 server.use(session({
@@ -32,7 +52,7 @@ server.use(express.json());
 server.use(express.urlencoded({extended: true}));
 server.use("/public", express.static("public"));
 server.use(morgan('dev'));
-initializePassport();
+// initializePassport();
 server.use(passport.initialize());
 server.use(passport.session());
 server.use(addLogger);

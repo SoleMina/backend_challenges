@@ -4,7 +4,9 @@ import { Strategy } from "passport-local";
 import GHStrategy from "passport-github2";
 import User from "../dao/Mongo/models/User.js";
 
-const { GH_APP_ID, GH_CLIENT_ID, GH_CLIENT_SECRET } = process.env;
+const GH_APP_ID = process.env.GH_APP_ID;
+const GH_CLIENT_ID  = process.env.GH_CLIENT_ID;
+const GH_CLIENT_SECRET = process.env.GH_CLIENT_SECRET;
 
 const callback = "http://localhost:8080/api/auth/callback"
 
