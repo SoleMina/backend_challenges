@@ -3,6 +3,7 @@ import UserController from "../../controllers/user.controller.js";
 import {sendMail} from "../../utils/sendMail.js";
 import {sendSms, sendWhatsapp} from "../../utils/sendSms.js";
 import generateUserFaker, { generateMockProducts } from "../../utils/mocks/generateUserFaker.js";
+import { logger } from "../../config/logger.js";
 
 const userController = new UserController();
 
@@ -66,6 +67,19 @@ router.get("/logger", (req, res, next) => {
         //req.logger.warn("This is a warn");
         req.logger.error(`This is an error - ${Date().toLocaleString()}`);
         res.send("Logger registrado");
+    } catch (error) {
+        next(error);
+    }
+});
+router.get("/logger-test", (req, res, next) => {
+    try {
+        if(process.env.NODE_ENV = "development") {
+            logger.debug(`This is a debug`);
+            res.send("Logger registrado as debug");
+        }else {
+            logger.info(`This is an info`);
+            res.send("Logger registrado as info");
+        }
     } catch (error) {
         next(error);
     }
