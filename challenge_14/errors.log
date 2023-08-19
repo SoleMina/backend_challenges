@@ -6,3 +6,11 @@ info: GET en /api/logger-test - 8/18/2023, 9:13:56 PM
 debug: This is a debug
 info: Listening server on 8080
 info: Listening server on 8080
+info: Listening server on 8080
+info: Listening server on 8080
+info: Listening server on 8080
+info: Listening server on 8080
+info: GET en /api/logger-test - 8/18/2023, 9:43:16 PM
+debug: This is a debug
+info: Listening server on 8080
+info: Listening server on 8080
