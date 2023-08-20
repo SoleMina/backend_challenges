@@ -1,8 +1,9 @@
 import server from "./app.js";
 import { Server } from "socket.io";
 import { logger } from "./config/logger.js";
+import config from "./config/configuration.js";
 
-const PORT = process.env.PORT || 8000;
+const PORT = config.port || 8000;
 
 const http_server = server.listen(PORT, err => {
     // console.log(`Listening server on ${PORT}`);
