@@ -1,19 +1,23 @@
 import {cartService} from "../service/index.js";
 
-class CartController {
+class CartViewController {
     constructor() {
         this.cartService = cartService;
     }
 
     getCart = async (req, res, next) => {
+        console.log("FUNCIONAAAAA")
         try {
             const totalCarts = await this.cartService.getCart();
             
             if(totalCarts) {
-                return res.status(200).json({
-                    success: true,
-                    response: totalCarts
-                })
+                return res.render(
+                    "carts", 
+                    {
+                      title: "Carts",
+                      carts: totalCarts[0]
+                    }
+                  );
             }else{
                 return res.status(404).json({
                     success: true,
@@ -64,10 +68,20 @@ class CartController {
         }
     };
     createCart = async (req, res, next) => {
+
+        // const cart = await fetch("http://localhost:8080/api/carts", {
+        //     method: "POST",
+        //     body: JSON.stringify(req.body),
+        //     headers: {
+        //         "Content-Type": "application/json"
+        //     }
+        // }).then((response) => response.json());
+
         const cart = req.body;
+        
         console.log(cart, "cart");
         try {
-            let obj = await this.cartService.createCart(cart);
+            let obj = await this.cartService.createCart(cart.response);
             console.log(obj, "creando");
             if(obj) {
                 res.status(200).json({
@@ -108,4 +122,4 @@ class CartController {
     }
 }
 
-export default CartController;
+export default CartViewController;
