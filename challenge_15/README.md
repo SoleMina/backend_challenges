@@ -40,3 +40,4 @@ get, post, put & delete
 - Add send gmail config
 - Add middlewares error custom
 - Add customized loggers 
+- Security
