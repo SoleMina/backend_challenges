@@ -68,7 +68,7 @@ class CartViewController {
         }
     };
     createCart = async (req, res, next) => {
-
+        // fetch("http://localhost:8080/api/carts", 
         // const cart = await fetch("http://localhost:8080/api/carts", {
         //     method: "POST",
         //     body: JSON.stringify(req.body),
