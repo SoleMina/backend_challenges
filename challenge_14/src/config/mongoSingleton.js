@@ -1,10 +1,12 @@
 import mongoose from "mongoose";
+import config from "./configuration.js";
+// import { connect } from "mongoose";
 
 class MongoSingleton {
     static #instance
 
     constructor() {
-        mongoose.connect(process.env.MONGO_URL)
+        mongoose.connect(config.mongo_url)
         .then(() => console.log("database connected"))
         .catch(err => console.log(err));
     }
@@ -19,3 +21,10 @@ class MongoSingleton {
     }
 }
 export default MongoSingleton;
+
+
+
+//database
+// connect(process.env.MONGO_URL)
+//   .then(() => console.log("database connected"))
+//   .catch(err => console.log(err));

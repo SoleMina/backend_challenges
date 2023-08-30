@@ -3,10 +3,10 @@ import jwt from "passport-jwt";
 import { Strategy } from "passport-local";
 import GHStrategy from "passport-github2";
 import User from "../dao/Mongo/models/User.js";
+import config from "./configuration.js";
 
-const GH_APP_ID = process.env.GH_APP_ID;
-const GH_CLIENT_ID  = process.env.GH_CLIENT_ID;
-const GH_CLIENT_SECRET = process.env.GH_CLIENT_SECRET;
+const GH_CLIENT_ID  = config.gh_id;
+const GH_CLIENT_SECRET = config.gh_secret;
 
 const callback = "http://localhost:8080/api/auth/callback"
 
@@ -88,7 +88,7 @@ export default  function initializePassport() {
     passport.use(     //estrategia para jwt
         'jwt',
         new jwt.Strategy(
-            { secretOrKey:process.env.SECRET_JWT,jwtFromRequest:jwt.ExtractJwt.fromExtractors([(req)=>req?.cookies['token']])},
+            { secretOrKey:config.secret_jwt,jwtFromRequest:jwt.ExtractJwt.fromExtractors([(req)=>req?.cookies['token']])},
             async(jwt_payload,done)=> {
                 //jwt_payload es el resultado del desencriptamiento del token
                 try {

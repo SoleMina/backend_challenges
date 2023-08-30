@@ -51,6 +51,7 @@ class CartDaoMongo {
     };
 
     createCart = async (cart) => {
+        console.log(cart, "mongo folder");
         return await Cart.create(cart);
     }
     updateCart = async (pid, cid, body) => {

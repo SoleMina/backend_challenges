@@ -2,46 +2,14 @@ import { Router} from "express";
 import Cart from "../../dao/Mongo/models/Cart.js";
 import Product from "../../dao/Mongo/models/Product.js";
 import { Types } from "mongoose";
+import CartViewController from "../../controllers/cart-view.controller.js";
 
 const router = Router();
-
+const cartViewController = new CartViewController();
 
 //GETS
-router.get("/", async (req, res, next) => {
-    try {
-        let totalCarts = await Cart.aggregate([
-            { $lookup: { foreignField: "product_id", from: "products", localField: "product_id", as: "product_id"}}, //populeo los datos del usuario
+router.get("/", cartViewController.getCart);
 
-            { $replaceRoot: { //reemplazo la ubicacion de los elementos del array populado
-                newRoot: {
-                    $mergeObjects: [
-                        { $arrayElemAt: [ "$product_id", 0]},
-                        "$$ROOT"
-                    ]
-                }
-            }},
-            { $set: { total: { $multiply: ["$quantity", "price"] }}}, //multiplicar precio x cantidad
-            { $project: { product_id: 0, title: 0, price: 0, __v: 0}}, //limpia el objeto
-
-        ]);
-        if(totalCarts) {
-            return res.render(
-                "carts", 
-                {
-                  title: "Carts",
-                  carts: totalCarts[0]
-                }
-              );
-        }else{
-            return res.status(404).json({
-                success: true,
-                message: `Not found`
-            })
-        }
-    } catch (error) {
-        next(error);
-    }
-});
 router.get("/bills/:cid", async (req, res, next) => {
     try {
         const cid = req.params.cid;
@@ -81,24 +49,25 @@ router.get("/bills/:cid", async (req, res, next) => {
     }
 });
 //POSTS
-router.post("/",  async (req, res) => {
-    try {
-        let obj = await Cart.create(req.body);
-        console.log(obj, "cart posted");
-        if(obj) {
-            res.status(200).json({
-                success: true,
-                response: obj
-            })
-        }else {
-            return res.status(404).json({
-                success: false,
-                message: "Cannot create cart"
-            })
-        }
-    } catch (error) {
-        next(error);
-    }
-});
+router.post("/", cartViewController.createCart);
+// router.post("/",  async (req, res) => {
+//     try {
+//         let obj = await Cart.create(req.body);
+//         console.log(obj, "cart posted");
+//         if(obj) {
+//             res.status(200).json({
+//                 success: true,
+//                 response: obj
+//             })
+//         }else {
+//             return res.status(404).json({
+//                 success: false,
+//                 message: "Cannot create cart"
+//             })
+//         }
+//     } catch (error) {
+//         next(error);
+//     }
+// });
 
 export default router;
