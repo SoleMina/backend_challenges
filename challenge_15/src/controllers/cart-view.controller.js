@@ -1,21 +1,28 @@
-import {cartService} from "../service/index.js";
+import Product from "../dao/Mongo/models/Product.js";
+import {cartService, productService} from "../service/index.js";
 
 class CartViewController {
     constructor() {
         this.cartService = cartService;
+        this.productService = productService;
     }
 
     getCart = async (req, res, next) => {
         console.log("FUNCIONAAAAA")
         try {
             const totalCarts = await this.cartService.getCart();
+            const id =  totalCarts[0].products[0].product_id;
+            const product = await this.productService.getProduct(id);
+            totalCarts[0].products[0].title = product.title;
+            totalCarts[0].products[0].price = product.price;
             
             if(totalCarts) {
                 return res.render(
                     "carts", 
                     {
                       title: "Carts",
-                      carts: totalCarts[0]
+                      carts: totalCarts[0],
+                      product: product
                     }
                   );
             }else{
@@ -116,6 +123,31 @@ class CartViewController {
                         message: "Cannot update cart"
                     })
                 }
+        } catch (error) {
+            next(error);
+        }
+    }
+    purchaseCart =  async (req, res, next) => {
+        try {
+            const cid = req.params.cid;
+            const cart = await this.cartService.getCart(cid);
+            const units = cart.products[0].quantity;
+            const pid = cart.products[0].product_id;
+    
+            let product = await this.cartService.updateCart(pid, units);
+
+            if(obj) {
+                return res.status(200).json({
+                    success: true,
+                    response: product
+                })
+            }else{
+                return res.status(404).json({
+                    success: false,
+                    message: "Restock product!"
+                })
+            }
+            
         } catch (error) {
             next(error);
         }

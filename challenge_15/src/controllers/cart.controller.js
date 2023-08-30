@@ -106,6 +106,36 @@ class CartController {
             next(error);
         }
     }
+    purchaseCart =  async (req, res, next) => {
+        try {
+            const cid = req.params.cid;
+            console.log(cid, "cid");
+            const cart = await this.cartService.getCart(cid);
+            console.log(cart, "cart");
+            const units = cart[0].products[0].quantity;
+            console.log(units, "units");
+            const pid = cart[0].products[0].product_id;
+            console.log(pid, "pid");
+    
+            let product = await this.cartService.purchaseCart(pid, units);
+
+            if(product) {
+                return res.status(200).json({
+                    success: true,
+                    response: product
+                })
+            }else{
+                return res.status(404).json({
+                    success: false,
+                    message: "Restock product!"
+                })
+            }
+            
+        } catch (error) {
+            next(error);
+            console.log("ALGOOOO")
+        }
+    }
 }
 
 export default CartController;

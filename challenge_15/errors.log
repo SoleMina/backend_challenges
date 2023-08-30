@@ -10,3 +10,240 @@ info: Proceso primario, generando worker
 info: Listening server on 8080
 info: GET en /carts - 8/29/2023, 11:44:24 PM
 info: GET en /favicon.ico - 8/29/2023, 11:44:25 PM
+info: GET en /products - 8/30/2023, 12:11:21 AM
+info: GET en /favicon.ico - 8/30/2023, 12:11:23 AM
+info: GET en /products/64d273dd74a9626b8d231730 - 8/30/2023, 12:11:24 AM
+info: GET en /products/public/css/styles.css - 8/30/2023, 12:11:24 AM
+info: GET en /products/public/js/signout.js - 8/30/2023, 12:11:24 AM
+info: GET en /favicon.ico - 8/30/2023, 12:11:25 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /carts - 8/30/2023, 12:21:26 AM
+info: GET en /favicon.ico - 8/30/2023, 12:21:28 AM
+info: GET en /api/carts - 8/30/2023, 12:23:53 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /carts - 8/30/2023, 12:25:35 AM
+info: GET en /favicon.ico - 8/30/2023, 12:25:36 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/carts - 8/30/2023, 12:26:26 AM
+info: GET en /carts - 8/30/2023, 12:26:41 AM
+info: GET en /favicon.ico - 8/30/2023, 12:26:42 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /carts - 8/30/2023, 12:28:29 AM
+info: GET en /favicon.ico - 8/30/2023, 12:28:30 AM
+info: GET en /api/carts - 8/30/2023, 12:28:40 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /carts - 8/30/2023, 12:28:47 AM
+info: GET en /favicon.ico - 8/30/2023, 12:28:54 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/carts - 8/30/2023, 12:29:43 AM
+info: GET en /carts - 8/30/2023, 12:29:47 AM
+info: GET en /favicon.ico - 8/30/2023, 12:29:49 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /carts - 8/30/2023, 12:31:53 AM
+info: GET en /favicon.ico - 8/30/2023, 12:31:55 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /carts - 8/30/2023, 12:33:07 AM
+info: GET en /favicon.ico - 8/30/2023, 12:33:08 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /carts - 8/30/2023, 12:33:22 AM
+info: GET en /favicon.ico - 8/30/2023, 12:33:23 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /carts - 8/30/2023, 12:35:43 AM
+info: GET en /favicon.ico - 8/30/2023, 12:35:44 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /carts - 8/30/2023, 12:37:00 AM
+info: GET en /favicon.ico - 8/30/2023, 12:37:02 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/carts - 8/30/2023, 12:38:38 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /carts - 8/30/2023, 12:38:50 AM
+info: GET en /favicon.ico - 8/30/2023, 12:38:55 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /carts - 8/30/2023, 12:39:06 AM
+info: GET en /favicon.ico - 8/30/2023, 12:39:08 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /carts - 8/30/2023, 12:41:42 AM
+info: GET en /favicon.ico - 8/30/2023, 12:41:49 AM
+info: GET en /carts - 8/30/2023, 12:42:38 AM
+info: GET en /favicon.ico - 8/30/2023, 12:42:39 AM
+info: GET en /carts - 8/30/2023, 12:42:47 AM
+info: GET en /favicon.ico - 8/30/2023, 12:42:48 AM
+info: GET en /carts - 8/30/2023, 12:43:15 AM
+info: GET en /favicon.ico - 8/30/2023, 12:43:16 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /carts - 8/30/2023, 12:44:09 AM
+info: GET en /favicon.ico - 8/30/2023, 12:44:10 AM
+info: GET en /carts - 8/30/2023, 12:44:58 AM
+info: GET en /favicon.ico - 8/30/2023, 12:44:59 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /carts - 8/30/2023, 12:45:12 AM
+info: GET en /favicon.ico - 8/30/2023, 12:45:14 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /carts - 8/30/2023, 12:45:43 AM
+info: GET en /favicon.ico - 8/30/2023, 12:45:44 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /carts - 8/30/2023, 12:47:17 AM
+info: GET en /favicon.ico - 8/30/2023, 12:47:20 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /carts - 8/30/2023, 12:47:29 AM
+info: GET en /favicon.ico - 8/30/2023, 12:47:30 AM
+info: GET en /carts - 8/30/2023, 12:47:38 AM
+info: GET en /favicon.ico - 8/30/2023, 12:47:39 AM
+info: GET en /carts - 8/30/2023, 12:47:47 AM
+info: GET en /favicon.ico - 8/30/2023, 12:47:48 AM
+info: GET en /api/carts - 8/30/2023, 12:54:07 AM
+info: GET en /api/carts/64eed5de5f016636aae1e944 - 8/30/2023, 12:54:37 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/carts/64eed5de5f016636aae1e944/purchase - 8/30/2023, 1:03:55 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/carts/64eed5de5f016636aae1e944/purchase - 8/30/2023, 1:04:25 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/carts/64eed5de5f016636aae1e944/purchase - 8/30/2023, 1:05:02 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/carts/64eed5de5f016636aae1e944/purchase - 8/30/2023, 1:05:26 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/carts/64eed5de5f016636aae1e944/purchase - 8/30/2023, 1:06:00 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/carts/64eed5de5f016636aae1e944/purchase - 8/30/2023, 1:06:35 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/carts/64eed5de5f016636aae1e944/purchase - 8/30/2023, 1:07:13 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/carts/64eed5de5f016636aae1e944/purchase - 8/30/2023, 1:07:26 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/carts/64eed5de5f016636aae1e944 - 8/30/2023, 1:08:23 AM
+info: POST en /api/carts/64eed5de5f016636aae1e944/purchase - 8/30/2023, 1:08:34 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/carts/64eed5de5f016636aae1e944/purchase - 8/30/2023, 1:08:45 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/carts/64eed5de5f016636aae1e944/purchase - 8/30/2023, 1:09:16 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/carts/64eed5de5f016636aae1e944/purchase - 8/30/2023, 1:10:44 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/carts/64eed5de5f016636aae1e944/purchase - 8/30/2023, 1:13:51 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/carts/64eed5de5f016636aae1e944/purchase - 8/30/2023, 1:14:43 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/carts/64eed5de5f016636aae1e944/purchase - 8/30/2023, 1:15:06 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /carts - 8/30/2023, 2:03:23 AM
+info: GET en /favicon.ico - 8/30/2023, 2:03:24 AM

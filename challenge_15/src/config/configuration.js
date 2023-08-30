@@ -25,7 +25,7 @@ let config = {
   my_phone: process.env.MY_PHONE_NUMBER,
 }
 
-console.log(config, "config");
-console.log(process.env.NODE_ENV, "process.env.NODE_ENV");
+// console.log(config, "config");
+// console.log(process.env.NODE_ENV, "process.env.NODE_ENV");
 
 export default config;

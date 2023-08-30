@@ -62,6 +62,17 @@ class CartDaoMongo {
             return await Cart.findByIdAndUpdate(cid, body);
         }
     }
+    purchaseCart = async (pid, units) => {
+        let product = await Product.findById(pid);
+        console.log(product, "product");
+
+        if(product.stock > units) {
+            product.stock = product.stock - units;
+            console.log(product);
+            return product;
+        }
+
+    }
 }
 
 export default CartDaoMongo;

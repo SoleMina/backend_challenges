@@ -13,6 +13,7 @@ router.get("/:cid", cartController.getCartById);
 
 //POSTS
 router.post("/",  cartController.createCart);
+router.post("/:cid/purchase",  cartController.purchaseCart);
 
 //PUTS
 router.put("/:cid/product/:pid/:units", cartController.updateCart);

@@ -8,11 +8,11 @@ const schema = new Schema({
         email: { type: String, required: true}
     }],
     code: { type: String, required: true},
-    purchase_datetime: new Date(Date.now()),
+    purchase_datetime: { type: Date },
     amount: { type: Number, required: true},
     purcharser: { type: String, required: true}
 });
 
-const Tiket = model(collection, schema);
+const Ticket = model(collection, schema);
 
-export default Tiket;
+export default Ticket;

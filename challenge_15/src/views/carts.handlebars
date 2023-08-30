@@ -4,7 +4,9 @@
         {{#each carts.products}}
         <div class="products-card d-flex flex-column">
             <h5 class="text-center fw-bold">Pid: {{this._id}}</h5>
+            <p>Name: {{this.title}}</p>
             <p>Quantity: {{this.quantity}}</p>
+            <p>Price: S/.{{this.price}}</p>
         </div>
         {{/each}}
     </div>
