@@ -1,0 +1,8 @@
+/node_modules
+/.pnp
+.pnp.js
+.env
+.env.development
+.env.production
+env.development
+env.production

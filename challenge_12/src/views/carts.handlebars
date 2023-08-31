@@ -1,0 +1,11 @@
+<div class="products-container">
+    <h1 class="text-center p-5">{{title}}</h1>
+    <div class="d-flex justify-content-around">
+        {{#each carts.products}}
+        <div class="products-card d-flex flex-column">
+            <h5 class="text-center fw-bold">Pid: {{this._id}}</h5>
+            <p>Quantity: {{this.quantity}}</p>
+        </div>
+        {{/each}}
+    </div>
+</div>
