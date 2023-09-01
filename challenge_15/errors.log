@@ -247,3 +247,429 @@ info: Proceso primario, generando worker
 info: Listening server on 8080
 info: GET en /carts - 8/30/2023, 2:03:23 AM
 info: GET en /favicon.ico - 8/30/2023, 2:03:24 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en / - 8/31/2023, 4:43:51 PM
+info: GET en /favicon.ico - 8/31/2023, 4:43:53 PM
+info: GET en /products - 8/31/2023, 4:43:54 PM
+info: GET en /favicon.ico - 8/31/2023, 4:43:55 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /login - 8/31/2023, 4:45:53 PM
+info: GET en /favicon.ico - 8/31/2023, 4:45:55 PM
+info: GET en /login - 8/31/2023, 4:47:25 PM
+info: GET en /favicon.ico - 8/31/2023, 4:47:26 PM
+info: GET en /login - 8/31/2023, 4:47:40 PM
+info: GET en /favicon.ico - 8/31/2023, 4:47:41 PM
+info: GET en /login - 8/31/2023, 4:47:50 PM
+info: GET en /favicon.ico - 8/31/2023, 4:47:51 PM
+info: GET en /login - 8/31/2023, 4:48:01 PM
+info: GET en /favicon.ico - 8/31/2023, 4:48:02 PM
+info: GET en /login - 8/31/2023, 4:48:08 PM
+info: GET en /favicon.ico - 8/31/2023, 4:48:09 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/forgot-password - 8/31/2023, 9:36:03 PM
+info: GET en /favicon.ico - 8/31/2023, 9:36:05 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/forgot-password - 8/31/2023, 9:36:31 PM
+info: GET en /favicon.ico - 8/31/2023, 9:36:33 PM
+info: GET en /favicon.ico - 8/31/2023, 9:36:36 PM
+info: GET en /api/forgot-password - 8/31/2023, 9:36:39 PM
+info: GET en /login - 8/31/2023, 9:36:39 PM
+info: GET en /favicon.ico - 8/31/2023, 9:36:47 PM
+info: GET en /forgot-password - 8/31/2023, 9:36:49 PM
+info: GET en /favicon.ico - 8/31/2023, 9:36:51 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 8/31/2023, 9:37:45 PM
+info: GET en /login - 8/31/2023, 9:37:48 PM
+info: GET en /forgot-password - 8/31/2023, 9:37:53 PM
+info: GET en /favicon.ico - 8/31/2023, 9:37:55 PM
+info: GET en / - 8/31/2023, 9:38:18 PM
+info: GET en /favicon.ico - 8/31/2023, 9:38:22 PM
+info: GET en /chat - 8/31/2023, 9:38:26 PM
+info: GET en /favicon.ico - 8/31/2023, 9:38:36 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /chat - 8/31/2023, 9:39:15 PM
+info: GET en /login - 8/31/2023, 9:39:19 PM
+info: GET en /forgot-password - 8/31/2023, 9:39:24 PM
+info: GET en /favicon.ico - 8/31/2023, 9:39:26 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 8/31/2023, 9:41:17 PM
+info: GET en / - 8/31/2023, 9:41:22 PM
+info: GET en /favicon.ico - 8/31/2023, 9:41:23 PM
+info: GET en /login - 8/31/2023, 9:41:23 PM
+info: GET en /favicon.ico - 8/31/2023, 9:41:26 PM
+info: GET en /forgot-password - 8/31/2023, 9:41:28 PM
+info: GET en /favicon.ico - 8/31/2023, 9:41:30 PM
+info: GET en /forgot-password - 8/31/2023, 9:41:44 PM
+info: GET en /favicon.ico - 8/31/2023, 9:41:47 PM
+info: GET en /forgot-password - 8/31/2023, 9:42:11 PM
+info: GET en /favicon.ico - 8/31/2023, 9:42:14 PM
+info: GET en /forgot-password - 8/31/2023, 9:42:24 PM
+info: GET en /favicon.ico - 8/31/2023, 9:42:28 PM
+info: GET en /forgot-password - 8/31/2023, 9:42:38 PM
+info: GET en /favicon.ico - 8/31/2023, 9:42:41 PM
+info: GET en /login - 8/31/2023, 9:42:51 PM
+info: GET en /favicon.ico - 8/31/2023, 9:42:55 PM
+info: GET en /forgot-password - 8/31/2023, 9:42:56 PM
+info: GET en /favicon.ico - 8/31/2023, 9:43:00 PM
+info: GET en /forgot-password - 8/31/2023, 10:07:03 PM
+info: GET en /favicon.ico - 8/31/2023, 10:07:03 PM
+info: GET en /forgot-password - 8/31/2023, 10:07:15 PM
+info: GET en /favicon.ico - 8/31/2023, 10:07:16 PM
+info: GET en /forgot-password - 8/31/2023, 10:07:39 PM
+info: GET en /favicon.ico - 8/31/2023, 10:07:39 PM
+info: GET en /forgot-password - 8/31/2023, 10:07:58 PM
+info: GET en /favicon.ico - 8/31/2023, 10:07:58 PM
+info: GET en /forgot-password - 8/31/2023, 10:08:15 PM
+info: GET en /favicon.ico - 8/31/2023, 10:08:15 PM
+info: GET en /forgot-password - 8/31/2023, 10:08:24 PM
+info: GET en /favicon.ico - 8/31/2023, 10:08:24 PM
+info: GET en /forgot-password - 8/31/2023, 10:08:36 PM
+info: GET en /favicon.ico - 8/31/2023, 10:08:37 PM
+info: GET en /forgot-password - 8/31/2023, 10:08:41 PM
+info: GET en /favicon.ico - 8/31/2023, 10:08:42 PM
+info: GET en /forgot-password - 8/31/2023, 10:08:56 PM
+info: GET en /favicon.ico - 8/31/2023, 10:08:57 PM
+info: GET en /forgot-password - 8/31/2023, 10:08:58 PM
+info: GET en /favicon.ico - 8/31/2023, 10:08:59 PM
+info: GET en /forgot-password - 8/31/2023, 10:09:04 PM
+info: GET en /favicon.ico - 8/31/2023, 10:09:04 PM
+info: GET en /forgot-password - 8/31/2023, 10:09:06 PM
+info: GET en /favicon.ico - 8/31/2023, 10:09:06 PM
+info: GET en /forgot-password - 8/31/2023, 10:09:13 PM
+info: GET en /favicon.ico - 8/31/2023, 10:09:13 PM
+info: GET en /login - 8/31/2023, 11:03:42 PM
+info: GET en /favicon.ico - 8/31/2023, 11:03:43 PM
+info: GET en /forgot-password - 8/31/2023, 11:03:44 PM
+info: GET en /favicon.ico - 8/31/2023, 11:03:44 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/mail - 8/31/2023, 11:23:45 PM
+info: GET en /favicon.ico - 8/31/2023, 11:23:48 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en / - 9/1/2023, 1:37:00 AM
+info: GET en /favicon.ico - 9/1/2023, 1:37:01 AM
+info: GET en /login - 9/1/2023, 1:37:02 AM
+info: GET en /favicon.ico - 9/1/2023, 1:37:03 AM
+info: GET en /forgot-password - 9/1/2023, 1:37:06 AM
+info: GET en /favicon.ico - 9/1/2023, 1:37:06 AM
+info: GET en /api/forgot-password - 9/1/2023, 1:37:53 AM
+info: GET en /api/public/css/styles.css - 9/1/2023, 1:37:54 AM
+info: GET en /api/public/js/index.js - 9/1/2023, 1:37:54 AM
+info: GET en /api/public/js/signout.js - 9/1/2023, 1:37:54 AM
+info: GET en /favicon.ico - 9/1/2023, 1:37:54 AM
+info: GET en /api/public/css/styles.css - 9/1/2023, 1:38:42 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/reset - 9/1/2023, 2:03:34 AM
+info: GET en /favicon.ico - 9/1/2023, 2:03:34 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/reset - 9/1/2023, 2:04:11 AM
+info: GET en /favicon.ico - 9/1/2023, 2:04:11 AM
+info: GET en /api/reset-password - 9/1/2023, 2:04:23 AM
+info: GET en /favicon.ico - 9/1/2023, 2:04:23 AM
+info: GET en /api/reset-password - 9/1/2023, 2:04:47 AM
+info: GET en /favicon.ico - 9/1/2023, 2:04:47 AM
+info: GET en /api/reset-password/:yoken - 9/1/2023, 2:04:54 AM
+info: GET en /api/reset-password/public/js/signout.js - 9/1/2023, 2:04:54 AM
+info: GET en /api/reset-password/public/js/index.js - 9/1/2023, 2:04:55 AM
+info: GET en /api/reset-password/public/css/styles.css - 9/1/2023, 2:04:55 AM
+info: GET en /favicon.ico - 9/1/2023, 2:04:55 AM
+info: GET en /api/reset-password/:token - 9/1/2023, 2:04:59 AM
+info: GET en /api/reset-password/public/css/styles.css - 9/1/2023, 2:04:59 AM
+info: GET en /api/reset-password/public/js/index.js - 9/1/2023, 2:04:59 AM
+info: GET en /api/reset-password/public/js/signout.js - 9/1/2023, 2:05:00 AM
+info: GET en /favicon.ico - 9/1/2023, 2:05:00 AM
+info: GET en /api/reset-password/:token - 9/1/2023, 2:05:21 AM
+info: GET en /api/reset-password/public/css/styles.css - 9/1/2023, 2:05:21 AM
+info: GET en /api/reset-password/public/js/index.js - 9/1/2023, 2:05:21 AM
+info: GET en /api/reset-password/public/js/signout.js - 9/1/2023, 2:05:21 AM
+info: GET en /favicon.ico - 9/1/2023, 2:05:22 AM
+info: GET en /api/reset-password/:token - 9/1/2023, 2:05:28 AM
+info: GET en /api/reset-password/public/css/styles.css - 9/1/2023, 2:05:28 AM
+info: GET en /api/reset-password/public/js/index.js - 9/1/2023, 2:05:28 AM
+info: GET en /api/reset-password/public/js/signout.js - 9/1/2023, 2:05:28 AM
+info: GET en /favicon.ico - 9/1/2023, 2:05:29 AM
+info: GET en /api/reset-password/:token - 9/1/2023, 2:05:38 AM
+info: GET en /api/reset-password/public/js/index.js - 9/1/2023, 2:05:38 AM
+info: GET en /api/reset-password/public/css/styles.css - 9/1/2023, 2:05:38 AM
+info: GET en /api/reset-password/public/js/signout.js - 9/1/2023, 2:05:38 AM
+info: GET en /favicon.ico - 9/1/2023, 2:05:38 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /login - 9/1/2023, 2:19:25 AM
+info: GET en /favicon.ico - 9/1/2023, 2:19:27 AM
+info: GET en /forgot-password - 9/1/2023, 2:19:35 AM
+info: GET en /favicon.ico - 9/1/2023, 2:19:36 AM
+info: GET en /api/forgot-password - 9/1/2023, 2:19:38 AM
+info: GET en /favicon.ico - 9/1/2023, 2:19:38 AM
+info: GET en /favicon.ico - 9/1/2023, 2:19:52 AM
+info: GET en /api/forgot-password - 9/1/2023, 2:20:03 AM
+info: GET en /favicon.ico - 9/1/2023, 2:20:03 AM
+info: GET en / - 9/1/2023, 3:12:27 AM
+info: GET en /favicon.ico - 9/1/2023, 3:12:28 AM
+info: GET en /login - 9/1/2023, 3:13:32 AM
+info: GET en /favicon.ico - 9/1/2023, 3:13:33 AM
+info: GET en /forgot-password - 9/1/2023, 3:13:37 AM
+info: GET en /favicon.ico - 9/1/2023, 3:13:38 AM
+info: GET en /api/forgot-password - 9/1/2023, 3:13:48 AM
+info: GET en /favicon.ico - 9/1/2023, 3:13:48 AM
+info: GET en / - 9/1/2023, 3:16:09 AM
+info: GET en /favicon.ico - 9/1/2023, 3:16:10 AM
+info: GET en /login - 9/1/2023, 3:16:12 AM
+info: GET en /favicon.ico - 9/1/2023, 3:16:13 AM
+info: GET en /api/forgot-password - 9/1/2023, 3:16:14 AM
+info: GET en /favicon.ico - 9/1/2023, 3:16:14 AM
+info: GET en /favicon.ico - 9/1/2023, 3:16:17 AM
+info: GET en /api/forgot-password - 9/1/2023, 3:16:19 AM
+info: GET en /favicon.ico - 9/1/2023, 3:16:19 AM
+info: GET en /favicon.ico - 9/1/2023, 3:16:27 AM
+info: GET en /api/forgot-password - 9/1/2023, 3:16:28 AM
+info: GET en /favicon.ico - 9/1/2023, 3:16:28 AM
+info: GET en /favicon.ico - 9/1/2023, 3:16:30 AM
+info: GET en /login - 9/1/2023, 3:16:32 AM
+info: GET en /favicon.ico - 9/1/2023, 3:16:32 AM
+info: GET en /login - 9/1/2023, 3:16:36 AM
+info: GET en /favicon.ico - 9/1/2023, 3:16:36 AM
+info: GET en /forgot-password - 9/1/2023, 3:16:37 AM
+info: GET en /favicon.ico - 9/1/2023, 3:16:37 AM
+info: GET en /forgot-password - 9/1/2023, 3:17:41 AM
+info: GET en /favicon.ico - 9/1/2023, 3:17:42 AM
+info: GET en /api/forgot-password - 9/1/2023, 3:17:54 AM
+info: GET en /favicon.ico - 9/1/2023, 3:17:54 AM
+info: GET en /favicon.ico - 9/1/2023, 3:18:13 AM
+info: GET en /api/forgot-password - 9/1/2023, 3:18:17 AM
+info: GET en /favicon.ico - 9/1/2023, 3:18:17 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /favicon.ico - 9/1/2023, 3:21:42 AM
+info: GET en /forgot-password - 9/1/2023, 3:21:47 AM
+info: GET en /favicon.ico - 9/1/2023, 3:21:48 AM
+info: GET en /api/forgot-password - 9/1/2023, 3:21:50 AM
+info: GET en /favicon.ico - 9/1/2023, 3:21:50 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /favicon.ico - 9/1/2023, 3:22:28 AM
+info: GET en /forgot-password - 9/1/2023, 3:22:31 AM
+info: GET en /favicon.ico - 9/1/2023, 3:22:32 AM
+info: GET en /api/forgot-password - 9/1/2023, 3:22:35 AM
+info: GET en /favicon.ico - 9/1/2023, 3:22:36 AM
+info: GET en /favicon.ico - 9/1/2023, 3:22:48 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 3:24:34 AM
+info: GET en /favicon.ico - 9/1/2023, 3:24:36 AM
+info: GET en /api/forgot-password - 9/1/2023, 3:24:42 AM
+info: GET en /favicon.ico - 9/1/2023, 3:24:43 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /favicon.ico - 9/1/2023, 3:27:21 AM
+info: GET en /forgot-password - 9/1/2023, 3:27:24 AM
+info: GET en /favicon.ico - 9/1/2023, 3:27:25 AM
+info: GET en /api/forgot-password - 9/1/2023, 3:27:26 AM
+info: GET en /favicon.ico - 9/1/2023, 3:27:27 AM
+info: GET en /favicon.ico - 9/1/2023, 3:27:30 AM
+info: GET en /forgot-password - 9/1/2023, 3:27:31 AM
+info: GET en /favicon.ico - 9/1/2023, 3:27:31 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 3:28:28 AM
+info: GET en /favicon.ico - 9/1/2023, 3:28:29 AM
+info: GET en /api/forgot-password - 9/1/2023, 3:28:30 AM
+info: GET en /favicon.ico - 9/1/2023, 3:28:30 AM
+info: GET en /favicon.ico - 9/1/2023, 3:28:32 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 3:29:40 AM
+info: GET en /favicon.ico - 9/1/2023, 3:29:41 AM
+info: GET en /forgot-password - 9/1/2023, 3:29:51 AM
+info: GET en /favicon.ico - 9/1/2023, 3:29:51 AM
+info: GET en /api/forgot-password - 9/1/2023, 3:30:01 AM
+info: GET en /favicon.ico - 9/1/2023, 3:30:01 AM
+info: GET en /favicon.ico - 9/1/2023, 3:30:26 AM
+info: GET en /forgot-password - 9/1/2023, 3:30:29 AM
+info: GET en /favicon.ico - 9/1/2023, 3:30:29 AM
+info: GET en /api/forgot-password - 9/1/2023, 3:30:31 AM
+info: GET en /favicon.ico - 9/1/2023, 3:30:32 AM
+info: GET en /favicon.ico - 9/1/2023, 3:31:14 AM
+info: GET en /api/forgot-password - 9/1/2023, 3:31:16 AM
+info: GET en /favicon.ico - 9/1/2023, 3:31:17 AM
+info: GET en /favicon.ico - 9/1/2023, 3:31:19 AM
+info: GET en /forgot-password - 9/1/2023, 3:31:20 AM
+info: GET en /favicon.ico - 9/1/2023, 3:31:21 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 3:33:28 AM
+info: GET en /favicon.ico - 9/1/2023, 3:33:29 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 3:36:06 AM
+info: GET en /favicon.ico - 9/1/2023, 3:36:07 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 3:38:12 AM
+info: GET en /favicon.ico - 9/1/2023, 3:38:13 AM
+info: POST en /api/forgot-password - 9/1/2023, 3:38:14 AM
+info: GET en /forgot-password - 9/1/2023, 3:38:23 AM
+info: GET en /favicon.ico - 9/1/2023, 3:38:24 AM
+info: POST en /api/forgot-password - 9/1/2023, 3:38:26 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 3:40:17 AM
+info: GET en /favicon.ico - 9/1/2023, 3:40:18 AM
+info: POST en /api/forgot-password - 9/1/2023, 3:40:19 AM
+info: GET en /forgot-password - 9/1/2023, 3:40:24 AM
+info: GET en /favicon.ico - 9/1/2023, 3:40:25 AM
+info: POST en /api/forgot-password - 9/1/2023, 3:40:26 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/forgot-password - 9/1/2023, 3:44:44 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 3:47:54 AM
+info: GET en /favicon.ico - 9/1/2023, 3:47:55 AM
+info: POST en /api/forgot-password - 9/1/2023, 3:47:56 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 3:48:21 AM
+info: GET en /favicon.ico - 9/1/2023, 3:48:22 AM
+info: POST en /api/forgot-password - 9/1/2023, 3:48:24 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 3:48:52 AM
+info: GET en /favicon.ico - 9/1/2023, 3:48:53 AM
+info: POST en /api/forgot-password - 9/1/2023, 3:48:54 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 3:49:38 AM
+info: GET en /favicon.ico - 9/1/2023, 3:49:39 AM
+info: POST en /api/forgot-password - 9/1/2023, 3:49:39 AM
+info: GET en /reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzU1ODE4MCwiZXhwIjoxNjkzNTYxNzgwfQ.Dv5vCNTKxyyLEd7BaQVsJWdij_qSVDTRVOJAwt-QVcU - 9/1/2023, 3:49:51 AM
+info: GET en /reset-password/public/css/styles.css - 9/1/2023, 3:49:51 AM
+info: GET en /reset-password/public/js/index.js - 9/1/2023, 3:49:51 AM
+info: GET en /reset-password/public/js/signout.js - 9/1/2023, 3:49:52 AM
+info: GET en /favicon.ico - 9/1/2023, 3:49:52 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080

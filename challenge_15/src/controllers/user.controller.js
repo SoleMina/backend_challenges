@@ -35,6 +35,20 @@ class UserController {
             next(error);
         }
     }
+    getUser = async(req, res, next) => {
+        try {
+            const {email} = req.body;
+            const user = this.service.findOne({email});
+
+            return res.status(201).json({
+                success: true,
+                message: "User found!",
+                payload: user
+            });
+        } catch (error) {
+            next(error);
+        }
+    }
     signIn = async(req, res, next) => {
         try {
             const {email} = req.body;
