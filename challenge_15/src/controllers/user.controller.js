@@ -9,10 +9,11 @@ class UserController {
     constructor() {
         this.userService = userService;
     }
-    registerUser = async (req, res) => {
-
+    registerUser = async (req, res, next) => {
+        console.log("INSIDEEE");
         try {
             let {name, photo, email, age, rol, password} = req.body;
+            console.log(req.body, "req.body");
     
             if(!name || !email || !password) {
                 CustomError.createError({
@@ -23,14 +24,16 @@ class UserController {
                 });
             }
     
-            let newUser = new UserDTO({name, photo, email, age, rol, password});
+            let newUser = {name, photo, email, age, rol, password};
     
-            let result = this.service.create(newUser);
+            let result = await User.create(newUser);
+            console.log(result, "crear user result");
                     
             return res.status(201).json({
                 success: true,
                 message: "User created!",
-                payload: {name, email, age}
+                payload: {name, email, age},
+                user: result
             });
         } catch (error) {
             next(error);

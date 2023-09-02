@@ -19,8 +19,24 @@ router.post("/register-user", validator, pass_is_8, createHash,
         { failureRedirect: "/api/auth/fail-register"} //objeto de config de la ruta
     ),
     userController.registerUser
-
 );
+
+//REGISTER TRADITIONAL WAY
+router.post("/register-new-user", validator, pass_is_8, createHash, async(req, res, next) => {
+    try {
+        let body = req.body;
+        if(body.photo.length<2) {
+            body.photo = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8rQTfvDS0mK_Y09wABdP_UOwfxiuQLqWcUQ&usqp=CAU"
+        }
+        await User.create(body);
+        return res.status(201).json({
+            success: true,
+            message: "User created!"
+        })
+    } catch (error) {
+        next(error);
+    }
+});
 
 //SIGNIN
 router.post("/login", 

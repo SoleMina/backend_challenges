@@ -8,7 +8,7 @@ document.getElementById('register').addEventListener('click',(event)=>{
         password: document.querySelector('#password').value,
         role: document.querySelector('#role').value,
     }
-    console.log(data)
+    console.log(data);
     fetch(`/api/auth/register-user`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -16,6 +16,6 @@ document.getElementById('register').addEventListener('click',(event)=>{
     })
         .then(res=>res.json())
         .then(res=>console.log(res))    //en lugar de imprimir en consola: mostrar mensaje de alerta
-        .then(res => location.href = '/products')
+        .then(res => location.href = '/login')
         .catch(err=>console.log(err))   //en lugar de imprimir en consola: mostrar mensaje de alerta
 })

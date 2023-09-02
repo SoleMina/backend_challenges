@@ -1683,3 +1683,191 @@ info: GET en /favicon.ico - 9/2/2023, 1:21:16 PM
 info: POST en /api/confirm-password - 9/2/2023, 1:21:25 PM
 info: GET en /login - 9/2/2023, 1:21:27 PM
 info: GET en /favicon.ico - 9/2/2023, 1:21:28 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /register-user - 9/2/2023, 1:50:13 PM
+info: GET en /favicon.ico - 9/2/2023, 1:50:14 PM
+info: GET en /register-user - 9/2/2023, 1:51:16 PM
+info: GET en /favicon.ico - 9/2/2023, 1:51:17 PM
+info: GET en /register-user - 9/2/2023, 1:51:38 PM
+info: GET en /favicon.ico - 9/2/2023, 1:51:38 PM
+info: GET en /register-user - 9/2/2023, 1:51:45 PM
+info: GET en /favicon.ico - 9/2/2023, 1:51:46 PM
+info: GET en /register-user - 9/2/2023, 1:51:55 PM
+info: GET en /favicon.ico - 9/2/2023, 1:51:56 PM
+info: GET en /register-user - 9/2/2023, 1:52:02 PM
+info: GET en /favicon.ico - 9/2/2023, 1:52:03 PM
+info: GET en /register-user - 9/2/2023, 1:52:16 PM
+info: GET en /favicon.ico - 9/2/2023, 1:52:16 PM
+info: GET en /register-user - 9/2/2023, 1:52:30 PM
+info: GET en /favicon.ico - 9/2/2023, 1:52:30 PM
+info: GET en /register-user - 9/2/2023, 1:53:00 PM
+info: GET en /favicon.ico - 9/2/2023, 1:53:00 PM
+info: GET en /register-user - 9/2/2023, 1:53:02 PM
+info: GET en /favicon.ico - 9/2/2023, 1:53:03 PM
+info: GET en /register-user - 9/2/2023, 1:53:19 PM
+info: GET en /favicon.ico - 9/2/2023, 1:53:19 PM
+info: GET en /register-user - 9/2/2023, 1:53:21 PM
+info: GET en /favicon.ico - 9/2/2023, 1:53:22 PM
+info: GET en /register-user - 9/2/2023, 1:53:27 PM
+info: GET en /favicon.ico - 9/2/2023, 1:53:28 PM
+info: GET en /register - 9/2/2023, 1:53:44 PM
+info: GET en /login - 9/2/2023, 1:53:45 PM
+info: GET en /favicon.ico - 9/2/2023, 1:53:45 PM
+info: GET en /register-user - 9/2/2023, 1:53:47 PM
+info: GET en /favicon.ico - 9/2/2023, 1:53:47 PM
+info: GET en /login - 9/2/2023, 1:53:49 PM
+info: GET en /favicon.ico - 9/2/2023, 1:53:50 PM
+info: GET en /register-user - 9/2/2023, 1:53:52 PM
+info: GET en /favicon.ico - 9/2/2023, 1:53:52 PM
+info: GET en /login - 9/2/2023, 1:53:53 PM
+info: GET en /favicon.ico - 9/2/2023, 1:53:54 PM
+info: GET en /login - 9/2/2023, 1:54:49 PM
+info: GET en /favicon.ico - 9/2/2023, 1:54:50 PM
+info: GET en /register-user - 9/2/2023, 1:54:51 PM
+info: GET en /favicon.ico - 9/2/2023, 1:54:52 PM
+info: GET en /register-user - 9/2/2023, 1:55:05 PM
+info: GET en /favicon.ico - 9/2/2023, 1:55:06 PM
+info: GET en /register-user - 9/2/2023, 1:55:25 PM
+info: GET en /favicon.ico - 9/2/2023, 1:55:25 PM
+info: GET en /register-user - 9/2/2023, 1:55:34 PM
+info: GET en /favicon.ico - 9/2/2023, 1:55:35 PM
+info: GET en /register-user - 9/2/2023, 3:58:38 PM
+info: GET en /favicon.ico - 9/2/2023, 3:58:40 PM
+info: GET en /login - 9/2/2023, 3:58:40 PM
+info: GET en /favicon.ico - 9/2/2023, 3:58:40 PM
+info: GET en /register-user - 9/2/2023, 3:58:42 PM
+info: GET en /favicon.ico - 9/2/2023, 3:58:42 PM
+info: GET en /login - 9/2/2023, 3:58:43 PM
+info: GET en /favicon.ico - 9/2/2023, 3:58:44 PM
+info: GET en /register-user - 9/2/2023, 3:58:46 PM
+info: GET en /favicon.ico - 9/2/2023, 3:58:47 PM
+info: POST en /api/auth/register-user - 9/2/2023, 3:59:35 PM
+info: GET en /products - 9/2/2023, 3:59:36 PM
+info: GET en /favicon.ico - 9/2/2023, 3:59:37 PM
+info: GET en /register - 9/2/2023, 3:59:40 PM
+info: GET en /login - 9/2/2023, 3:59:41 PM
+info: GET en /favicon.ico - 9/2/2023, 3:59:41 PM
+info: GET en /register - 9/2/2023, 3:59:42 PM
+info: GET en /login - 9/2/2023, 3:59:43 PM
+info: GET en /favicon.ico - 9/2/2023, 3:59:43 PM
+info: GET en /register-user - 9/2/2023, 4:01:32 PM
+info: GET en /favicon.ico - 9/2/2023, 4:01:32 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /register-user - 9/2/2023, 4:06:24 PM
+info: GET en /favicon.ico - 9/2/2023, 4:06:25 PM
+info: GET en /register-user - 9/2/2023, 4:06:58 PM
+info: GET en /favicon.ico - 9/2/2023, 4:06:59 PM
+info: POST en /api/auth/register-user - 9/2/2023, 4:08:13 PM
+info: GET en /products - 9/2/2023, 4:08:13 PM
+info: GET en /favicon.ico - 9/2/2023, 4:08:15 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /register-user - 9/2/2023, 4:08:44 PM
+info: GET en /favicon.ico - 9/2/2023, 4:08:45 PM
+info: GET en /register-user - 9/2/2023, 4:08:50 PM
+info: GET en /favicon.ico - 9/2/2023, 4:08:50 PM
+info: POST en /api/auth/register-user - 9/2/2023, 4:09:47 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/auth/register-user - 9/2/2023, 4:14:28 PM
+info: GET en /register-user - 9/2/2023, 4:14:39 PM
+info: GET en /favicon.ico - 9/2/2023, 4:14:40 PM
+info: POST en /api/auth/register-user - 9/2/2023, 4:14:56 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /register-user - 9/2/2023, 4:26:48 PM
+info: GET en /favicon.ico - 9/2/2023, 4:26:49 PM
+info: POST en /api/auth/register-user - 9/2/2023, 4:27:06 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/auth/register-user - 9/2/2023, 4:27:58 PM
+info: GET en /api/auth/fail-register - 9/2/2023, 4:27:59 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/auth/register-user - 9/2/2023, 4:28:34 PM
+info: GET en /api/auth/fail-register - 9/2/2023, 4:28:35 PM
+info: POST en /api/auth/register-user - 9/2/2023, 4:29:44 PM
+info: GET en /api/auth/fail-register - 9/2/2023, 4:29:45 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/auth/register-user - 9/2/2023, 4:30:15 PM
+info: GET en /api/auth/fail-register - 9/2/2023, 4:30:16 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/auth/register-user - 9/2/2023, 4:31:36 PM
+info: GET en /api/auth/fail-register - 9/2/2023, 4:31:36 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/auth/register-user - 9/2/2023, 4:31:43 PM
+info: GET en /api/auth/fail-register - 9/2/2023, 4:31:44 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/auth/register-user - 9/2/2023, 4:32:40 PM
+info: GET en /api/auth/fail-register - 9/2/2023, 4:32:41 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/auth/register-user - 9/2/2023, 4:33:23 PM
+info: GET en /api/auth/fail-register - 9/2/2023, 4:33:24 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/auth/register-user - 9/2/2023, 4:33:37 PM
+info: GET en /api/auth/fail-register - 9/2/2023, 4:33:38 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/auth/register-user - 9/2/2023, 4:37:16 PM
+info: GET en /register-user - 9/2/2023, 4:54:00 PM
+info: GET en /favicon.ico - 9/2/2023, 4:54:01 PM
+info: POST en /api/auth/register-user - 9/2/2023, 4:54:28 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /register-user - 9/2/2023, 4:56:25 PM
+info: GET en /favicon.ico - 9/2/2023, 4:56:26 PM
+info: POST en /api/auth/register-user - 9/2/2023, 4:56:46 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /login - 9/2/2023, 4:57:25 PM
+info: GET en /favicon.ico - 9/2/2023, 4:57:27 PM
+info: POST en /api/auth/login - 9/2/2023, 4:57:40 PM
+info: GET en /products - 9/2/2023, 4:57:43 PM
+info: GET en /favicon.ico - 9/2/2023, 4:57:44 PM
+info: GET en /register - 9/2/2023, 4:57:46 PM
+info: GET en /products - 9/2/2023, 4:57:56 PM
+info: GET en /favicon.ico - 9/2/2023, 4:57:57 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /register - 9/2/2023, 4:58:59 PM
+info: GET en /favicon.ico - 9/2/2023, 4:59:00 PM
+info: GET en /products - 9/2/2023, 4:59:04 PM
+info: GET en /favicon.ico - 9/2/2023, 4:59:05 PM
+info: GET en /register - 9/2/2023, 4:59:07 PM
+info: GET en /favicon.ico - 9/2/2023, 4:59:08 PM
+info: POST en /api/auth/signout - 9/2/2023, 4:59:08 PM
+info: GET en /login - 9/2/2023, 4:59:09 PM
+info: GET en /favicon.ico - 9/2/2023, 4:59:09 PM
+info: GET en /register - 9/2/2023, 4:59:10 PM
+info: GET en /login - 9/2/2023, 4:59:10 PM
+info: GET en /favicon.ico - 9/2/2023, 4:59:10 PM
