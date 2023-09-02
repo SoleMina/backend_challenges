@@ -673,3 +673,948 @@ info: GET en /reset-password/public/js/signout.js - 9/1/2023, 3:49:52 AM
 info: GET en /favicon.ico - 9/1/2023, 3:49:52 AM
 info: Proceso primario, generando worker
 info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 11:42:03 AM
+info: GET en /favicon.ico - 9/1/2023, 11:42:04 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /products - 9/1/2023, 11:50:28 AM
+info: GET en /favicon.ico - 9/1/2023, 11:50:30 AM
+info: GET en /login - 9/1/2023, 11:50:31 AM
+info: GET en /favicon.ico - 9/1/2023, 11:50:31 AM
+info: GET en /forgot-password - 9/1/2023, 11:50:34 AM
+info: GET en /favicon.ico - 9/1/2023, 11:50:34 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 11:58:01 AM
+info: GET en /favicon.ico - 9/1/2023, 11:58:01 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 11:58:59 AM
+info: GET en /favicon.ico - 9/1/2023, 11:58:59 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 12:04:17 PM
+info: GET en /favicon.ico - 9/1/2023, 12:04:18 PM
+info: GET en /forgot-password?mail=karina.pradogutierrez%40gmail.com - 9/1/2023, 12:04:22 PM
+info: GET en /favicon.ico - 9/1/2023, 12:04:23 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /favicon.ico - 9/1/2023, 12:04:46 PM
+info: GET en /forgot-password - 9/1/2023, 12:04:48 PM
+info: GET en /favicon.ico - 9/1/2023, 12:04:49 PM
+info: GET en /forgot-password?mail=karina.pradogutierrez%40gmail.com - 9/1/2023, 12:04:51 PM
+info: GET en /favicon.ico - 9/1/2023, 12:04:51 PM
+info: GET en /favicon.ico - 9/1/2023, 12:05:27 PM
+info: GET en /forgot-password - 9/1/2023, 12:05:30 PM
+info: GET en /favicon.ico - 9/1/2023, 12:05:31 PM
+info: GET en /forgot-password?mail=karina.pradogutierrez%40gmail.com - 9/1/2023, 12:05:32 PM
+info: GET en /favicon.ico - 9/1/2023, 12:05:33 PM
+info: GET en /forgot-password?mail=karina.pradogutierrez%40gmail.com - 9/1/2023, 12:06:41 PM
+info: GET en /favicon.ico - 9/1/2023, 12:06:41 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /favicon.ico - 9/1/2023, 12:07:24 PM
+info: GET en /forgot-password - 9/1/2023, 12:07:28 PM
+info: GET en /favicon.ico - 9/1/2023, 12:07:29 PM
+info: POST en /api/forgot-password - 9/1/2023, 12:07:30 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzU1ODE4MCwiZXhwIjoxNjkzNTYxNzgwfQ.Dv5vCNTKxyyLEd7BaQVsJWdij_qSVDTRVOJAwt-QVcU - 9/1/2023, 12:32:14 PM
+info: GET en /favicon.ico - 9/1/2023, 12:32:15 PM
+info: GET en /reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzU4ODA1MCwiZXhwIjoxNjkzNTkxNjUwfQ.wHC3WCQhjvohwnXFl-Uh_FIcjKxd_DWEMBfvtL_rxgU - 9/1/2023, 12:32:19 PM
+info: GET en /favicon.ico - 9/1/2023, 12:32:19 PM
+info: POST en /api/forgot-password - 9/1/2023, 12:32:25 PM
+info: GET en /reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzU4OTU0NSwiZXhwIjoxNjkzNTkzMTQ1fQ.pnUzO1u-trmxHjem-nFcjQTLJI8q9CbIF52RKB08fFw - 9/1/2023, 12:32:32 PM
+info: GET en /favicon.ico - 9/1/2023, 12:32:32 PM
+info: GET en /login - 9/1/2023, 12:32:39 PM
+info: GET en /favicon.ico - 9/1/2023, 12:32:40 PM
+info: GET en /forgot-password - 9/1/2023, 12:32:42 PM
+info: GET en /favicon.ico - 9/1/2023, 12:32:42 PM
+info: POST en /api/forgot-password - 9/1/2023, 12:32:44 PM
+info: GET en /reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzU4OTU2NSwiZXhwIjoxNjkzNTkzMTY1fQ.s0GEdD6JKmr6xBy9MSU-QqODTDSCu1J9ZHZ9vxpKFtA - 9/1/2023, 12:32:51 PM
+info: GET en /favicon.ico - 9/1/2023, 12:32:51 PM
+info: POST en /api/auth/signout - 9/1/2023, 12:33:09 PM
+info: GET en /login - 9/1/2023, 12:33:10 PM
+info: GET en /favicon.ico - 9/1/2023, 12:33:10 PM
+info: GET en /login - 9/1/2023, 12:33:12 PM
+info: GET en /favicon.ico - 9/1/2023, 12:33:13 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /login - 9/1/2023, 12:33:21 PM
+info: GET en /favicon.ico - 9/1/2023, 12:33:22 PM
+info: GET en /forgot-password - 9/1/2023, 12:33:24 PM
+info: GET en /favicon.ico - 9/1/2023, 12:33:24 PM
+info: POST en /api/forgot-password - 9/1/2023, 12:33:27 PM
+info: GET en /reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzU4OTYwNywiZXhwIjoxNjkzNTkzMjA3fQ.yJYM4o9uIl90C7Y_tqqU2d1wBsq_-bpgJ38NS_BMGZ8 - 9/1/2023, 12:33:32 PM
+info: GET en /favicon.ico - 9/1/2023, 12:33:33 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzU4OTYwNywiZXhwIjoxNjkzNTkzMjA3fQ.yJYM4o9uIl90C7Y_tqqU2d1wBsq_-bpgJ38NS_BMGZ8 - 9/1/2023, 12:36:35 PM
+info: GET en /favicon.ico - 9/1/2023, 12:36:35 PM
+info: GET en /forgot-password - 9/1/2023, 12:36:41 PM
+info: GET en /favicon.ico - 9/1/2023, 12:36:42 PM
+info: POST en /api/forgot-password - 9/1/2023, 12:36:44 PM
+info: GET en /reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzU4OTgwNCwiZXhwIjoxNjkzNTkzNDA0fQ.79xWUkVkXWzGvSOlBFXElkVtWWyQ95PAUGfuiY6tArw - 9/1/2023, 12:36:51 PM
+info: GET en /favicon.ico - 9/1/2023, 12:36:51 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 12:41:51 PM
+info: GET en /favicon.ico - 9/1/2023, 12:41:52 PM
+info: POST en /api/forgot-password - 9/1/2023, 12:41:54 PM
+info: GET en /reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzU5MDExNCwiZXhwIjoxNjkzNTkzNzE0fQ.S_8j4L-0ZPvXZNE6WWe6YK7E6c-gS1D4nEjafBDRhdc - 9/1/2023, 12:42:01 PM
+info: GET en /favicon.ico - 9/1/2023, 12:42:02 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzU5MDExNCwiZXhwIjoxNjkzNTkzNzE0fQ.S_8j4L-0ZPvXZNE6WWe6YK7E6c-gS1D4nEjafBDRhdc - 9/1/2023, 12:43:30 PM
+info: GET en /favicon.ico - 9/1/2023, 12:43:30 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzU5MDExNCwiZXhwIjoxNjkzNTkzNzE0fQ.S_8j4L-0ZPvXZNE6WWe6YK7E6c-gS1D4nEjafBDRhdc - 9/1/2023, 12:44:19 PM
+info: GET en /reset-password/public/js/signout.js - 9/1/2023, 12:44:19 PM
+info: GET en /reset-password/public/js/confirm.js - 9/1/2023, 12:44:20 PM
+info: GET en /reset-password/public/css/styles.css - 9/1/2023, 12:44:20 PM
+info: GET en /favicon.ico - 9/1/2023, 12:44:20 PM
+info: GET en /forgot-password - 9/1/2023, 12:45:07 PM
+info: GET en /favicon.ico - 9/1/2023, 12:45:08 PM
+info: GET en /reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzU5MDExNCwiZXhwIjoxNjkzNTkzNzE0fQ.S_8j4L-0ZPvXZNE6WWe6YK7E6c-gS1D4nEjafBDRhdc - 9/1/2023, 12:45:10 PM
+info: GET en /reset-password/public/css/styles.css - 9/1/2023, 12:45:11 PM
+info: GET en /reset-password/public/js/confirm.js - 9/1/2023, 12:45:11 PM
+info: GET en /reset-password/public/js/signout.js - 9/1/2023, 12:45:11 PM
+info: GET en /favicon.ico - 9/1/2023, 12:45:12 PM
+info: GET en /forgot-password - 9/1/2023, 3:53:26 PM
+info: GET en /favicon.ico - 9/1/2023, 3:53:26 PM
+info: GET en /forgot-password - 9/1/2023, 3:54:13 PM
+info: GET en /favicon.ico - 9/1/2023, 3:54:14 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 4:03:13 PM
+info: GET en /favicon.ico - 9/1/2023, 4:03:15 PM
+info: POST en /api/forgot-password - 9/1/2023, 4:03:17 PM
+info: GET en /reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwMjE5NywiZXhwIjoxNjkzNjA1Nzk3fQ.U5sHZxXqCHaw-7HmJ6nj6_25e9esXOeaP_8Z0s5nR94 - 9/1/2023, 4:03:23 PM
+info: GET en /reset-password/public/css/styles.css - 9/1/2023, 4:03:23 PM
+info: GET en /reset-password/public/js/confirm.js - 9/1/2023, 4:03:23 PM
+info: GET en /reset-password/public/js/signout.js - 9/1/2023, 4:03:24 PM
+info: GET en /favicon.ico - 9/1/2023, 4:03:24 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzU5MDExNCwiZXhwIjoxNjkzNTkzNzE0fQ.S_8j4L-0ZPvXZNE6WWe6YK7E6c-gS1D4nEjafBDRhdc?email=%2F&confirm=Test1234&passwordConfirm=Test1234 - 9/1/2023, 4:16:03 PM
+info: GET en /reset-password/public/js/signout.js - 9/1/2023, 4:16:04 PM
+info: GET en /reset-password/public/js/confirm.js - 9/1/2023, 4:16:04 PM
+info: GET en /reset-password/public/css/styles.css - 9/1/2023, 4:16:04 PM
+info: GET en /favicon.ico - 9/1/2023, 4:16:05 PM
+info: GET en /forgot-password - 9/1/2023, 4:16:12 PM
+info: GET en /favicon.ico - 9/1/2023, 4:16:13 PM
+info: POST en /api/forgot-password - 9/1/2023, 4:16:15 PM
+info: GET en /reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwMjk3NiwiZXhwIjoxNjkzNjA2NTc2fQ.BRfocAnAkB26wM4n2SiGpmo5AkyD9uh2HSzK03hRLmQ - 9/1/2023, 4:16:24 PM
+info: GET en /reset-password/public/css/styles.css - 9/1/2023, 4:16:25 PM
+info: GET en /reset-password/public/js/confirm.js - 9/1/2023, 4:16:25 PM
+info: GET en /reset-password/public/js/signout.js - 9/1/2023, 4:16:25 PM
+info: GET en /favicon.ico - 9/1/2023, 4:16:25 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 4:18:09 PM
+info: GET en /favicon.ico - 9/1/2023, 4:18:10 PM
+info: POST en /api/forgot-password - 9/1/2023, 4:18:12 PM
+info: GET en /reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwMzA5MiwiZXhwIjoxNjkzNjA2NjkyfQ.X8iJXJNTfwTo1vDtr9caSHqlyk-fL5gMxYKSSYWbwo8 - 9/1/2023, 4:18:18 PM
+info: GET en /reset-password/public/css/styles.css - 9/1/2023, 4:18:19 PM
+info: GET en /reset-password/public/js/confirm.js - 9/1/2023, 4:18:19 PM
+info: GET en /reset-password/public/js/signout.js - 9/1/2023, 4:18:19 PM
+info: GET en /favicon.ico - 9/1/2023, 4:18:19 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 5:10:27 PM
+info: GET en /favicon.ico - 9/1/2023, 5:10:29 PM
+info: POST en /api/forgot-password - 9/1/2023, 5:10:31 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/forgot-password - 9/1/2023, 5:12:58 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwNjM3OCwiZXhwIjoxNjkzNjA5OTc4fQ.hcz36tvNLuC-oglinod0-bvOVjL4j14IQic_82hi6vA - 9/1/2023, 5:13:03 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 5:13:04 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:13:04 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 5:13:04 PM
+info: GET en /favicon.ico - 9/1/2023, 5:13:04 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwNjM3OCwiZXhwIjoxNjkzNjA5OTc4fQ.hcz36tvNLuC-oglinod0-bvOVjL4j14IQic_82hi6vA?email=karina.pradogutierrez%40gmail.com&confirm=Karina123&passwordConfirm=Karina123 - 9/1/2023, 5:13:17 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 5:13:17 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:13:17 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 5:13:18 PM
+info: GET en /favicon.ico - 9/1/2023, 5:13:18 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:14:35 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 5:31:33 PM
+info: GET en /favicon.ico - 9/1/2023, 5:31:34 PM
+info: POST en /api/forgot-password - 9/1/2023, 5:31:35 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwNzQ5NiwiZXhwIjoxNjkzNjExMDk2fQ.e0SdBWYIIlOvZz82ci5c2m3kDK4Pb9CwFqQ5711JhQg - 9/1/2023, 5:31:45 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:31:46 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 5:31:46 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 5:31:46 PM
+info: GET en /favicon.ico - 9/1/2023, 5:31:46 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:31:59 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwNzQ5NiwiZXhwIjoxNjkzNjExMDk2fQ.e0SdBWYIIlOvZz82ci5c2m3kDK4Pb9CwFqQ5711JhQg?email=karina.pradogutierrez%40gmail.com&confirm=Karina137&passwordConfirm=Karina137 - 9/1/2023, 5:32:03 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:32:03 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 5:32:03 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 5:32:03 PM
+info: GET en /favicon.ico - 9/1/2023, 5:32:04 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 5:34:14 PM
+info: GET en /favicon.ico - 9/1/2023, 5:34:15 PM
+info: POST en /api/forgot-password - 9/1/2023, 5:34:18 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwNzY1OCwiZXhwIjoxNjkzNjExMjU4fQ.FzQMgmU2JtcXpz3UEdPltZAuKA38Wgh0siy3WmvLiKg - 9/1/2023, 5:34:23 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:34:23 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 5:34:23 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 5:34:24 PM
+info: GET en /favicon.ico - 9/1/2023, 5:34:24 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:34:34 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwNzY1OCwiZXhwIjoxNjkzNjExMjU4fQ.FzQMgmU2JtcXpz3UEdPltZAuKA38Wgh0siy3WmvLiKg?email=karina.pradogutierrez%40gmail.com&confirm=Karina137&passwordConfirm=Karina137 - 9/1/2023, 5:34:37 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:34:38 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 5:34:38 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 5:34:38 PM
+info: GET en /favicon.ico - 9/1/2023, 5:34:38 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwNzY1OCwiZXhwIjoxNjkzNjExMjU4fQ.FzQMgmU2JtcXpz3UEdPltZAuKA38Wgh0siy3WmvLiKg?email=karina.pradogutierrez%40gmail.com&confirm=frffffffff&passwordConfirm=ffffffffff - 9/1/2023, 5:34:58 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 5:34:58 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:34:58 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 5:34:58 PM
+info: GET en /favicon.ico - 9/1/2023, 5:34:58 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwNzY1OCwiZXhwIjoxNjkzNjExMjU4fQ.FzQMgmU2JtcXpz3UEdPltZAuKA38Wgh0siy3WmvLiKg?email=karina.pradogutierrez%40gmail.com&confirm=sfvddrfd&passwordConfirm=fdfdgdddd - 9/1/2023, 5:35:09 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:35:10 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 5:35:10 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 5:35:10 PM
+info: GET en /favicon.ico - 9/1/2023, 5:35:10 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwNzY1OCwiZXhwIjoxNjkzNjExMjU4fQ.FzQMgmU2JtcXpz3UEdPltZAuKA38Wgh0siy3WmvLiKg - 9/1/2023, 5:37:22 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:37:22 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 5:37:22 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 5:37:22 PM
+info: GET en /favicon.ico - 9/1/2023, 5:37:22 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwNzY1OCwiZXhwIjoxNjkzNjExMjU4fQ.FzQMgmU2JtcXpz3UEdPltZAuKA38Wgh0siy3WmvLiKg?email=karina.pradogutierrez%40gmail.com&confirm=sfgsgsg&passwordConfirm=gdgddgdgdg - 9/1/2023, 5:37:26 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:37:26 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 5:37:26 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 5:37:26 PM
+info: GET en /favicon.ico - 9/1/2023, 5:37:27 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:37:29 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwNzY1OCwiZXhwIjoxNjkzNjExMjU4fQ.FzQMgmU2JtcXpz3UEdPltZAuKA38Wgh0siy3WmvLiKg?email=karina.pradogutierrez%40gmail.com&confirm=vvddbfffff&passwordConfirm=fffhfhfhfh - 9/1/2023, 5:37:47 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:37:47 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 5:37:47 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 5:37:47 PM
+info: GET en /favicon.ico - 9/1/2023, 5:37:48 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwNzY1OCwiZXhwIjoxNjkzNjExMjU4fQ.FzQMgmU2JtcXpz3UEdPltZAuKA38Wgh0siy3WmvLiKg - 9/1/2023, 5:39:21 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:39:21 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 5:39:21 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 5:39:21 PM
+info: GET en /favicon.ico - 9/1/2023, 5:39:22 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:39:29 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwNzY1OCwiZXhwIjoxNjkzNjExMjU4fQ.FzQMgmU2JtcXpz3UEdPltZAuKA38Wgh0siy3WmvLiKg?email=karina.pradogutierrez%40gmail.com&password=fdvfdfdfdfd&passwordConfirm=ffdfdfdfdffd - 9/1/2023, 5:39:31 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 5:39:31 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:39:31 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 5:39:31 PM
+info: GET en /favicon.ico - 9/1/2023, 5:39:32 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 5:54:35 PM
+info: GET en /favicon.ico - 9/1/2023, 5:54:36 PM
+info: POST en /api/forgot-password - 9/1/2023, 5:54:39 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwODg3OSwiZXhwIjoxNjkzNjEyNDc5fQ.ve2MrJMzXYVQwEANqoi9c36xqlaHDQME0MOT7W_oLBg - 9/1/2023, 5:54:45 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:54:45 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 5:54:45 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 5:54:46 PM
+info: GET en /favicon.ico - 9/1/2023, 5:54:46 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:55:00 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwODg3OSwiZXhwIjoxNjkzNjEyNDc5fQ.ve2MrJMzXYVQwEANqoi9c36xqlaHDQME0MOT7W_oLBg?email=karina.pradogutierrez%40gmail.com&password=Karina137&passwordConfirm=Karina137 - 9/1/2023, 5:55:03 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:55:03 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 5:55:03 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 5:55:03 PM
+info: GET en /favicon.ico - 9/1/2023, 5:55:04 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwODg3OSwiZXhwIjoxNjkzNjEyNDc5fQ.ve2MrJMzXYVQwEANqoi9c36xqlaHDQME0MOT7W_oLBg - 9/1/2023, 5:57:10 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:57:11 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 5:57:11 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 5:57:11 PM
+info: GET en /favicon.ico - 9/1/2023, 5:57:12 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwODg3OSwiZXhwIjoxNjkzNjEyNDc5fQ.ve2MrJMzXYVQwEANqoi9c36xqlaHDQME0MOT7W_oLBg?email=karina.pradogutierrez%40gmail.com&password=fsffsfsfs&passwordConfirm=fsfsfsfs - 9/1/2023, 5:57:15 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:57:15 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 5:57:15 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 5:57:16 PM
+info: GET en /favicon.ico - 9/1/2023, 5:57:16 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:57:18 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwODg3OSwiZXhwIjoxNjkzNjEyNDc5fQ.ve2MrJMzXYVQwEANqoi9c36xqlaHDQME0MOT7W_oLBg?email=karina.pradogutierrez%40gmail.com&password=ddssdsffs&passwordConfirm=fsfsfssfsfs - 9/1/2023, 5:57:25 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 5:57:25 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 5:57:25 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 5:57:25 PM
+info: GET en /favicon.ico - 9/1/2023, 5:57:25 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwODg3OSwiZXhwIjoxNjkzNjEyNDc5fQ.ve2MrJMzXYVQwEANqoi9c36xqlaHDQME0MOT7W_oLBg - 9/1/2023, 6:01:36 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:01:36 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:01:36 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:01:37 PM
+info: GET en /favicon.ico - 9/1/2023, 6:01:37 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:02:49 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwODg3OSwiZXhwIjoxNjkzNjEyNDc5fQ.ve2MrJMzXYVQwEANqoi9c36xqlaHDQME0MOT7W_oLBg - 9/1/2023, 6:02:52 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:02:53 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:02:53 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:02:53 PM
+info: GET en /favicon.ico - 9/1/2023, 6:03:02 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:03:02 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwODg3OSwiZXhwIjoxNjkzNjEyNDc5fQ.ve2MrJMzXYVQwEANqoi9c36xqlaHDQME0MOT7W_oLBg - 9/1/2023, 6:03:41 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:03:41 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:03:42 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:03:42 PM
+info: GET en /favicon.ico - 9/1/2023, 6:03:42 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:03:44 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwODg3OSwiZXhwIjoxNjkzNjEyNDc5fQ.ve2MrJMzXYVQwEANqoi9c36xqlaHDQME0MOT7W_oLBg - 9/1/2023, 6:09:20 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:09:20 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:09:20 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:09:20 PM
+info: GET en /favicon.ico - 9/1/2023, 6:09:20 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:09:24 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwODg3OSwiZXhwIjoxNjkzNjEyNDc5fQ.ve2MrJMzXYVQwEANqoi9c36xqlaHDQME0MOT7W_oLBg - 9/1/2023, 6:11:07 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:11:08 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:11:09 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:11:09 PM
+info: GET en /favicon.ico - 9/1/2023, 6:11:09 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwODg3OSwiZXhwIjoxNjkzNjEyNDc5fQ.ve2MrJMzXYVQwEANqoi9c36xqlaHDQME0MOT7W_oLBg - 9/1/2023, 6:11:28 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:11:28 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:11:28 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:11:28 PM
+info: GET en /favicon.ico - 9/1/2023, 6:11:29 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwODg3OSwiZXhwIjoxNjkzNjEyNDc5fQ.ve2MrJMzXYVQwEANqoi9c36xqlaHDQME0MOT7W_oLBg - 9/1/2023, 6:11:32 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:11:32 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:11:32 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:11:32 PM
+info: GET en /favicon.ico - 9/1/2023, 6:11:33 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwODg3OSwiZXhwIjoxNjkzNjEyNDc5fQ.ve2MrJMzXYVQwEANqoi9c36xqlaHDQME0MOT7W_oLBg - 9/1/2023, 6:12:46 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:12:47 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:12:47 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:12:47 PM
+info: GET en /favicon.ico - 9/1/2023, 6:12:47 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:12:50 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwODg3OSwiZXhwIjoxNjkzNjEyNDc5fQ.ve2MrJMzXYVQwEANqoi9c36xqlaHDQME0MOT7W_oLBg?email=karina.pradogutierrez%40gmail.com&password=ggjgghghghj&passwordConfirm=jhhjhhjhjhjhj - 9/1/2023, 6:14:58 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:15:00 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:15:01 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:15:09 PM
+info: GET en /favicon.ico - 9/1/2023, 6:15:11 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwODg3OSwiZXhwIjoxNjkzNjEyNDc5fQ.ve2MrJMzXYVQwEANqoi9c36xqlaHDQME0MOT7W_oLBg?email=karina.pradogutierrez%40gmail.com&password=ggjgghghghj&passwordConfirm=jhhjhhjhjhjhj - 9/1/2023, 6:16:15 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:16:16 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:16:18 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:16:18 PM
+info: GET en /favicon.ico - 9/1/2023, 6:16:20 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYwODg3OSwiZXhwIjoxNjkzNjEyNDc5fQ.ve2MrJMzXYVQwEANqoi9c36xqlaHDQME0MOT7W_oLBg - 9/1/2023, 6:16:33 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:16:34 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:16:34 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:16:34 PM
+info: GET en /favicon.ico - 9/1/2023, 6:16:36 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:16:38 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 6:19:29 PM
+info: GET en /favicon.ico - 9/1/2023, 6:19:31 PM
+info: POST en /api/forgot-password - 9/1/2023, 6:19:33 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:19:39 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:19:39 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:19:39 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:19:40 PM
+info: GET en /favicon.ico - 9/1/2023, 6:19:40 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:19:44 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw?email=karina.pradogutierrez%40gmail.com&password=Karinaaaaa&passwordConfirm=Karinaaaa - 9/1/2023, 6:19:57 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:19:58 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:19:58 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:19:58 PM
+info: GET en /favicon.ico - 9/1/2023, 6:19:58 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw?email=karina.pradogutierrez%40gmail.com&password=jkjhhhj&passwordConfirm=jkjkjjjk - 9/1/2023, 6:26:32 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:26:33 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:26:33 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:26:33 PM
+info: GET en /favicon.ico - 9/1/2023, 6:26:34 PM
+info: GET en /login - 9/1/2023, 6:26:40 PM
+info: GET en /favicon.ico - 9/1/2023, 6:26:41 PM
+info: GET en /forgot-password - 9/1/2023, 6:26:42 PM
+info: GET en /favicon.ico - 9/1/2023, 6:26:43 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:26:49 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:26:50 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:26:50 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:26:50 PM
+info: GET en /favicon.ico - 9/1/2023, 6:26:50 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:26:54 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw?email=karina.pradogutierrez%40gmail.com&password=jjkjjkk&passwordConfirm=jjkjkjkj - 9/1/2023, 6:26:59 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:27:00 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:27:00 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:27:00 PM
+info: GET en /favicon.ico - 9/1/2023, 6:27:01 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:28:32 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:28:33 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:28:33 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:28:33 PM
+info: GET en /favicon.ico - 9/1/2023, 6:28:33 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:28:35 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw?email=karina.pradogutierrez%40gmail.com&password=jhjhhjhjjh&passwordConfirm=kjjkjkjkjkj - 9/1/2023, 6:28:41 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:28:41 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:28:41 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:28:42 PM
+info: GET en /favicon.ico - 9/1/2023, 6:28:42 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:30:10 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:30:10 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:30:11 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:30:11 PM
+info: GET en /favicon.ico - 9/1/2023, 6:30:11 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:30:13 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw?email=karina.pradogutierrez%40gmail.com&password=ffggffg&passwordConfirm=fggfgg - 9/1/2023, 6:30:18 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:30:18 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:30:18 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:30:19 PM
+info: GET en /favicon.ico - 9/1/2023, 6:30:19 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:31:05 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:31:05 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:31:05 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:31:05 PM
+info: GET en /favicon.ico - 9/1/2023, 6:31:06 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw?email=karina.pradogutierrez%40gmail.com&password=adjhsdhjsbjh&passwordConfirm=sjhfshjfhjfshjf - 9/1/2023, 6:31:16 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:31:17 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:31:17 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:31:17 PM
+info: GET en /favicon.ico - 9/1/2023, 6:31:17 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:31:19 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw?email=karina.pradogutierrez%40gmail.com&password=adjhsdhjsbjh&passwordConfirm=sjhfshjfhjfshjf - 9/1/2023, 6:32:47 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:32:47 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:32:48 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:32:48 PM
+info: GET en /favicon.ico - 9/1/2023, 6:32:48 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:36:51 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:36:52 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:36:52 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:36:52 PM
+info: GET en /favicon.ico - 9/1/2023, 6:36:52 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw?email=karina.pradogutierrez%40gmail.com&password=dfggddggd&passwordConfirm=dgggdgg - 9/1/2023, 6:37:06 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:37:06 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:37:06 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:37:06 PM
+info: GET en /favicon.ico - 9/1/2023, 6:37:07 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:37:10 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw?email=karina.pradogutierrez%40gmail.com&password=dfggddggd&passwordConfirm=dgggdgg - 9/1/2023, 6:37:41 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:37:41 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:37:41 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:37:42 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:37:42 PM
+info: GET en /favicon.ico - 9/1/2023, 6:37:42 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw?email=karina.pradogutierrez%40gmail.com&password=fdfdddgggd&passwordConfirm=gddggdggdgd - 9/1/2023, 6:37:47 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:37:47 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:37:47 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:37:47 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:37:48 PM
+info: GET en /favicon.ico - 9/1/2023, 6:37:48 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:37:53 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:37:53 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:37:54 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:37:54 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:37:54 PM
+info: GET en /favicon.ico - 9/1/2023, 6:37:54 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw?email=karina.pradogutierrez%40gmail.com&password=fdfdfdffd&passwordConfirm=fffdfdffdfd - 9/1/2023, 6:37:59 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:37:59 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:37:59 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:37:59 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:37:59 PM
+info: GET en /favicon.ico - 9/1/2023, 6:37:59 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:38:01 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw?email=karina.pradogutierrez%40gmail.com&password=jjkjjkk&passwordConfirm=jjkjkjkj - 9/1/2023, 6:40:18 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:40:18 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:40:18 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:40:19 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:40:19 PM
+info: GET en /favicon.ico - 9/1/2023, 6:40:19 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:40:27 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:40:27 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:40:28 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:40:28 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:40:28 PM
+info: GET en /favicon.ico - 9/1/2023, 6:40:28 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:40:31 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:41:50 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:41:50 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:41:51 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:41:51 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:41:51 PM
+info: GET en /favicon.ico - 9/1/2023, 6:41:51 PM
+info: POST en /products - 9/1/2023, 6:41:55 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /forgot-password - 9/1/2023, 6:44:04 PM
+info: GET en /favicon.ico - 9/1/2023, 6:44:05 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:44:09 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:44:09 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:44:12 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:44:12 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:44:12 PM
+info: GET en /favicon.ico - 9/1/2023, 6:44:12 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:44:15 PM
+info: POST en /confirm-password - 9/1/2023, 6:44:22 PM
+info: GET en /favicon.ico - 9/1/2023, 6:44:22 PM
+info: GET en /favicon.ico - 9/1/2023, 6:44:34 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:44:36 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:44:36 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:44:38 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:44:38 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:44:38 PM
+info: GET en /favicon.ico - 9/1/2023, 6:44:39 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:44:47 PM
+info: GET en /favicon.ico - 9/1/2023, 6:44:47 PM
+info: GET en /favicon.ico - 9/1/2023, 6:49:20 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:49:20 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:49:21 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:49:22 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:49:22 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:49:22 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:49:22 PM
+info: GET en /favicon.ico - 9/1/2023, 6:49:22 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:49:26 PM
+info: GET en /favicon.ico - 9/1/2023, 6:49:27 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /favicon.ico - 9/1/2023, 6:50:12 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:50:14 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:50:14 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:50:14 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:50:15 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:50:15 PM
+info: GET en /favicon.ico - 9/1/2023, 6:50:15 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:50:17 PM
+info: GET en /favicon.ico - 9/1/2023, 6:50:18 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:51:16 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:51:16 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:51:17 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:51:17 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:51:17 PM
+info: GET en /favicon.ico - 9/1/2023, 6:51:17 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:51:26 PM
+info: GET en /favicon.ico - 9/1/2023, 6:51:27 PM
+info: GET en /favicon.ico - 9/1/2023, 6:51:29 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:51:30 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:51:30 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:51:31 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:51:31 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:51:31 PM
+info: GET en /favicon.ico - 9/1/2023, 6:51:31 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:51:41 PM
+info: GET en /favicon.ico - 9/1/2023, 6:51:41 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /favicon.ico - 9/1/2023, 6:53:35 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:53:36 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:53:37 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:53:37 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:53:38 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:53:38 PM
+info: GET en /favicon.ico - 9/1/2023, 6:53:38 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:53:44 PM
+info: GET en /favicon.ico - 9/1/2023, 6:53:44 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:53:50 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:53:50 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:53:51 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:53:51 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:53:51 PM
+info: GET en /favicon.ico - 9/1/2023, 6:53:51 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:53:58 PM
+info: GET en /favicon.ico - 9/1/2023, 6:53:58 PM
+info: GET en /favicon.ico - 9/1/2023, 6:54:08 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:54:13 PM
+info: GET en /favicon.ico - 9/1/2023, 6:54:13 PM
+info: GET en /favicon.ico - 9/1/2023, 6:54:20 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:54:20 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:54:21 PM
+info: GET en /favicon.ico - 9/1/2023, 6:54:22 PM
+info: GET en /favicon.ico - 9/1/2023, 6:58:16 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:58:17 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:58:17 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:58:17 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:58:17 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:58:17 PM
+info: GET en /favicon.ico - 9/1/2023, 6:58:18 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:58:21 PM
+info: GET en /favicon.ico - 9/1/2023, 6:58:21 PM
+info: GET en /favicon.ico - 9/1/2023, 6:59:01 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:59:02 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:59:02 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:59:03 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:59:03 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:59:03 PM
+info: GET en /favicon.ico - 9/1/2023, 6:59:04 PM
+info: POST en /confirm-password - 9/1/2023, 6:59:07 PM
+info: GET en /favicon.ico - 9/1/2023, 6:59:07 PM
+info: GET en /favicon.ico - 9/1/2023, 6:59:10 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:59:10 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:59:12 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:59:12 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:59:12 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:59:12 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:59:12 PM
+info: GET en /favicon.ico - 9/1/2023, 6:59:13 PM
+info: POST en /confirm-password - 9/1/2023, 6:59:15 PM
+info: GET en /favicon.ico - 9/1/2023, 6:59:16 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /favicon.ico - 9/1/2023, 6:59:53 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 6:59:54 PM
+info: POST en /api/confirm-password - 9/1/2023, 6:59:54 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 6:59:55 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 6:59:55 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 6:59:55 PM
+info: GET en /favicon.ico - 9/1/2023, 6:59:56 PM
+info: POST en /confirm-password - 9/1/2023, 6:59:58 PM
+info: GET en /favicon.ico - 9/1/2023, 6:59:58 PM
+info: GET en /favicon.ico - 9/1/2023, 7:00:01 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:00:01 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 7:00:02 PM
+info: POST en /api/confirm-password - 9/1/2023, 7:00:02 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 7:00:03 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:00:03 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 7:00:03 PM
+info: GET en /favicon.ico - 9/1/2023, 7:00:03 PM
+info: POST en /confirm-password - 9/1/2023, 7:00:06 PM
+info: GET en /favicon.ico - 9/1/2023, 7:00:06 PM
+info: GET en /favicon.ico - 9/1/2023, 7:00:17 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 7:00:18 PM
+info: POST en /api/confirm-password - 9/1/2023, 7:00:18 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:00:18 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 7:00:18 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 7:00:19 PM
+info: GET en /favicon.ico - 9/1/2023, 7:00:19 PM
+info: POST en /api/confirm-password - 9/1/2023, 7:00:21 PM
+info: GET en /favicon.ico - 9/1/2023, 7:00:22 PM
+info: GET en /favicon.ico - 9/1/2023, 7:00:41 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:00:41 PM
+info: POST en /api/confirm-password - 9/1/2023, 7:00:43 PM
+info: GET en /favicon.ico - 9/1/2023, 7:00:43 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /favicon.ico - 9/1/2023, 7:01:15 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 7:01:16 PM
+info: POST en /api/confirm-password - 9/1/2023, 7:01:16 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:01:17 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 7:01:17 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 7:01:17 PM
+info: GET en /favicon.ico - 9/1/2023, 7:01:18 PM
+info: POST en /api/confirm-password - 9/1/2023, 7:01:24 PM
+info: GET en /favicon.ico - 9/1/2023, 7:01:24 PM
+info: GET en /favicon.ico - 9/1/2023, 7:01:30 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 7:01:31 PM
+info: POST en /api/confirm-password - 9/1/2023, 7:01:31 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:01:31 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 7:01:31 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 7:01:31 PM
+info: GET en /favicon.ico - 9/1/2023, 7:01:31 PM
+info: POST en /api/confirm-password - 9/1/2023, 7:01:37 PM
+info: GET en /favicon.ico - 9/1/2023, 7:01:37 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /favicon.ico - 9/1/2023, 7:02:26 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:02:27 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 7:02:27 PM
+info: POST en /api/confirm-password - 9/1/2023, 7:02:27 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:02:28 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 7:02:28 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 7:02:28 PM
+info: GET en /favicon.ico - 9/1/2023, 7:02:29 PM
+info: POST en /api/confirm-password - 9/1/2023, 7:02:31 PM
+info: GET en /favicon.ico - 9/1/2023, 7:02:31 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /favicon.ico - 9/1/2023, 7:05:07 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 7:05:08 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:05:08 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 7:05:09 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 7:05:09 PM
+info: GET en /favicon.ico - 9/1/2023, 7:05:09 PM
+info: POST en /api/confirm-password - 9/1/2023, 7:05:13 PM
+info: GET en /favicon.ico - 9/1/2023, 7:05:13 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:05:15 PM
+info: GET en /favicon.ico - 9/1/2023, 7:05:15 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 7:05:17 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:05:17 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 7:05:17 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 7:05:17 PM
+info: GET en /favicon.ico - 9/1/2023, 7:05:17 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 7:05:19 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 7:05:20 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:05:20 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 7:05:20 PM
+info: GET en /favicon.ico - 9/1/2023, 7:05:20 PM
+info: POST en /api/confirm-password - 9/1/2023, 7:05:22 PM
+info: GET en /favicon.ico - 9/1/2023, 7:05:23 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /favicon.ico - 9/1/2023, 7:06:47 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 7:06:48 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 7:06:48 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:06:49 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 7:06:49 PM
+info: GET en /favicon.ico - 9/1/2023, 7:06:49 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw?email=karina.pradogutierrez%40gmail.com&password=1234567777&passwordConfirm=1234455566 - 9/1/2023, 7:06:55 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:06:55 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 7:06:55 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 7:06:55 PM
+info: GET en /favicon.ico - 9/1/2023, 7:06:56 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw?email=karina.pradogutierrez%40gmail.com&password=1234567777&passwordConfirm=1234455566 - 9/1/2023, 7:07:40 PM
+info: POST en /api/confirm-password - 9/1/2023, 7:07:41 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:07:41 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 7:07:41 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 7:07:41 PM
+info: GET en /favicon.ico - 9/1/2023, 7:07:42 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw?email=karina.pradogutierrez%40gmail.com&password=dfdfdffdf&passwordConfirm=dffddfdf - 9/1/2023, 7:07:45 PM
+info: POST en /api/confirm-password - 9/1/2023, 7:07:45 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:07:45 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/confirm.js - 9/1/2023, 7:07:45 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 7:07:46 PM
+info: GET en /favicon.ico - 9/1/2023, 7:07:46 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:36:16 PM
+info: GET en /products - 9/1/2023, 7:40:48 PM
+info: GET en /favicon.ico - 9/1/2023, 7:40:50 PM
+info: GET en /products/64d2709b997d5d74e825ac75 - 9/1/2023, 7:40:54 PM
+info: GET en /products/public/css/styles.css - 9/1/2023, 7:40:54 PM
+info: GET en /products/public/js/signout.js - 9/1/2023, 7:40:54 PM
+info: GET en /favicon.ico - 9/1/2023, 7:40:54 PM
+info: GET en /login - 9/1/2023, 7:40:58 PM
+info: GET en /favicon.ico - 9/1/2023, 7:40:58 PM
+info: GET en /register-user - 9/1/2023, 7:40:59 PM
+info: GET en /favicon.ico - 9/1/2023, 7:40:59 PM
+info: GET en /register - 9/1/2023, 7:41:06 PM
+info: GET en /login - 9/1/2023, 7:41:06 PM
+info: GET en /favicon.ico - 9/1/2023, 7:41:06 PM
+info: POST en /api/auth/login - 9/1/2023, 7:41:10 PM
+info: GET en /products - 9/1/2023, 7:41:13 PM
+info: GET en /favicon.ico - 9/1/2023, 7:41:14 PM
+info: GET en /login - 9/1/2023, 7:41:16 PM
+info: GET en /favicon.ico - 9/1/2023, 7:41:16 PM
+info: GET en /products - 9/1/2023, 7:44:11 PM
+info: GET en /favicon.ico - 9/1/2023, 7:44:12 PM
+info: GET en /products/64d2709b997d5d74e825ac75 - 9/1/2023, 7:44:13 PM
+info: GET en /products/public/css/styles.css - 9/1/2023, 7:44:13 PM
+info: GET en /products/public/js/signout.js - 9/1/2023, 7:44:14 PM
+info: GET en /favicon.ico - 9/1/2023, 7:44:14 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /login - 9/1/2023, 7:46:05 PM
+info: GET en /favicon.ico - 9/1/2023, 7:46:06 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw?email=karina.pradogutierrez%40gmail.com&password=dfdfdffdf&passwordConfirm=dffddfdf - 9/1/2023, 7:46:10 PM
+info: POST en /api/confirm-password - 9/1/2023, 7:46:10 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:46:10 PM
+info: GET en /reset-password/public/js/confirm.js - 9/1/2023, 7:46:10 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 7:46:11 PM
+info: GET en /favicon.ico - 9/1/2023, 7:46:11 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 7:46:18 PM
+info: POST en /api/confirm-password - 9/1/2023, 7:46:18 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:46:18 PM
+info: GET en /reset-password/public/js/confirm.js - 9/1/2023, 7:46:18 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 7:46:18 PM
+info: GET en /favicon.ico - 9/1/2023, 7:46:19 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:46:21 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 7:48:05 PM
+info: POST en /api/confirm-password - 9/1/2023, 7:48:05 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:48:05 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 7:48:05 PM
+info: GET en /reset-password/public/js/confirm.js - 9/1/2023, 7:48:05 PM
+info: GET en /favicon.ico - 9/1/2023, 7:48:06 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxMDM3MywiZXhwIjoxNjkzNjEzOTczfQ.6p3rYuyNQICvnIDpgo5_EG-fu7TmxLAVTgNF8asdLlw - 9/1/2023, 7:48:16 PM
+info: POST en /api/confirm-password - 9/1/2023, 7:48:16 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 7:48:17 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 7:48:17 PM
+info: GET en /favicon.ico - 9/1/2023, 7:48:17 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /login - 9/1/2023, 8:18:04 PM
+info: GET en /favicon.ico - 9/1/2023, 8:18:05 PM
+info: GET en /forgot-password - 9/1/2023, 8:18:08 PM
+info: GET en /favicon.ico - 9/1/2023, 8:18:09 PM
+info: POST en /api/forgot-password - 9/1/2023, 8:18:13 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzYxNzQ5MywiZXhwIjoxNjkzNjIxMDkzfQ.gGUXa0EoFoBLopaDGEg6b-AAKS_cqXESdJHSgD0mI9E - 9/1/2023, 8:18:21 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 8:18:21 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/1/2023, 8:18:22 PM
+info: GET en /favicon.ico - 9/1/2023, 8:18:22 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/1/2023, 8:18:25 PM
+info: POST en /api/confirm-password - 9/1/2023, 8:18:39 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en / - 9/1/2023, 8:21:00 PM
+info: GET en /favicon.ico - 9/1/2023, 8:21:01 PM
+info: GET en /products - 9/1/2023, 8:21:01 PM
+info: GET en /favicon.ico - 9/1/2023, 8:21:03 PM
+info: GET en /login - 9/1/2023, 8:21:05 PM
+info: GET en /favicon.ico - 9/1/2023, 8:21:06 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /login - 9/1/2023, 8:30:53 PM
+info: GET en /favicon.ico - 9/1/2023, 8:30:55 PM
+info: GET en /forgot-password - 9/1/2023, 8:30:56 PM
+info: GET en /favicon.ico - 9/1/2023, 8:30:56 PM

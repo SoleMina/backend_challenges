@@ -69,7 +69,7 @@ class ProductViewController {
     };
 
     createProduct = async(req, res, next) => {
-        const newProduct = req.body;
+        const body = req.body;
 
         let thumbnail = "http://localhost:8080/public/images/" + body.thumbnail;
         body.thumbnail = thumbnail;

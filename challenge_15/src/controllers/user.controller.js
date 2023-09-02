@@ -1,3 +1,4 @@
+import User from "../dao/Mongo/models/User.js";
 import UserDTO from "../dto/user.dto.js";
 import {userService} from "../service/index.js";
 import CustomError from "../utils/error/customError.js";
@@ -45,6 +46,22 @@ class UserController {
                 message: "User found!",
                 payload: user
             });
+        } catch (error) {
+            next(error);
+        }
+    }
+    updateUser = async (req, res, next) => {
+        try {
+            const body = req.body;
+            const {uid} = req.params;
+            const user = await User.findByIdAndUpdate(uid, body);
+
+            return res.status(201).json({
+                success: true,
+                message: "User updated!",
+                payload: user
+            });
+
         } catch (error) {
             next(error);
         }

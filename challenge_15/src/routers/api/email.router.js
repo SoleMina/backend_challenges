@@ -5,6 +5,56 @@ import generateToken from "../../utils/generateToken.js";
 
 const router = Router();
 
+
+router.get("/forgot-password", async(req, res, next) => {
+    try {
+        return res.render(
+            "reset", 
+            {
+            title: "Reset Password",
+            script: "public/js/reset.js",
+            styles: "public/css/styles.css"
+            }
+        );
+    } catch (error) {
+        next(error);
+    }
+});
+
+router.get("/reset-password/:email/:token", async(req, res, next) => {
+    try {
+        const { email, token } = req.params;
+        console.log(email);
+        if(!token) return req.status(500).json({ status: false, message: "El link ha caducado"});
+
+        let password = "kdfjfhjfhdf";
+
+        await fetch("http://localhost:8080/api/confirm-password", {
+        method: "POST",
+        body: JSON.stringify({email, password}),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      })
+        .then((result) => result.json())
+        .catch((error) => console.log(error));
+        
+        return res.render(
+            "confirmpassword", 
+            {
+            title: "Reset Password",
+            email: email,
+            script: "public/js/index.js",
+            styles: "public/css/styles.css"
+            }
+        );
+
+
+    } catch (error) {
+        next(error);
+    }
+});
+
 router.post("/forgot-password", async(req, res, next) => {
     try {
         const {email} = req.body;
@@ -29,7 +79,7 @@ router.post("/forgot-password", async(req, res, next) => {
         const html = `
                     <p>Saludos ${user.name}</p>
                     <p>Para restablecer contraseña hacer click en el siguiente enlace: </p>
-                    <a href="http://localhost:8080/reset-password/${token}">Aquí</a>
+                    <a href="http://localhost:8080/reset-password/${user.email}/${token}">Aquí</a>
                     <p>Este enlace caduca en una hora</p>`;
 
         sendMail(user.email, subject, html);
@@ -44,24 +94,22 @@ router.post("/forgot-password", async(req, res, next) => {
     }
 });
 
-router.get("/reset-password/:token", async(req, res, next) => {
+router.post("/confirm-password", async(req, res, next) => {
     try {
-        const { token } = req.params;
-        if(!token) return req.status(500).json({ status: false, message: "El link ha caducado"});
+        console.log("CONFIRM PASSWORD");
+        const { email, password} = req.body;
+        let userDB = await User.findOne({email});
+        userDB.password = password;
 
-        return res.render(
-            "reset", 
-            {
-            title: "Reset Password",
-            script: "public/js/index.js",
-            styles: "public/css/styles.css"
-            }
-        );
+        const user = await User.findByIdAndUpdate({_id: userDB.id}, userDB);
 
-
-    } catch (error) {
+        return res.status(200).json({
+            success: true,
+            payload: user
+        });
+    }catch(error){
         next(error);
-    }
+    } 
 });
 
 export default router;

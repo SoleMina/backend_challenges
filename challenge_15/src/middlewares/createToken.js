@@ -8,6 +8,7 @@ export default (req, res, next) => {
         { expiresIn: 60*60*24*7 }
     )
     req.token = token;
+    console.log(token, "token");
 
     return next();
 }
