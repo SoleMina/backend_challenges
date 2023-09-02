@@ -5,7 +5,6 @@ import generateToken from "../../utils/generateToken.js";
 
 const router = Router();
 
-
 router.get("/forgot-password", async(req, res, next) => {
     try {
         return res.render(

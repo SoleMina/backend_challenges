@@ -1618,3 +1618,68 @@ info: GET en /login - 9/1/2023, 8:30:53 PM
 info: GET en /favicon.ico - 9/1/2023, 8:30:55 PM
 info: GET en /forgot-password - 9/1/2023, 8:30:56 PM
 info: GET en /favicon.ico - 9/1/2023, 8:30:56 PM
+info: GET en /products - 9/1/2023, 8:32:12 PM
+info: GET en /favicon.ico - 9/1/2023, 8:32:13 PM
+info: GET en /login - 9/1/2023, 8:32:16 PM
+info: GET en /favicon.ico - 9/1/2023, 8:32:17 PM
+info: GET en /login - 9/1/2023, 9:04:00 PM
+info: GET en /favicon.ico - 9/1/2023, 9:04:01 PM
+info: GET en /register-user - 9/1/2023, 9:04:03 PM
+info: GET en /favicon.ico - 9/1/2023, 9:04:04 PM
+info: GET en /register - 9/1/2023, 9:04:08 PM
+info: GET en /login - 9/1/2023, 9:04:08 PM
+info: GET en /favicon.ico - 9/1/2023, 9:04:08 PM
+info: POST en /api/auth/signout - 9/1/2023, 9:04:12 PM
+info: GET en /login - 9/1/2023, 9:04:12 PM
+info: GET en /favicon.ico - 9/1/2023, 9:04:13 PM
+info: GET en /products - 9/1/2023, 9:04:15 PM
+info: GET en /favicon.ico - 9/1/2023, 9:04:17 PM
+info: GET en / - 9/1/2023, 9:04:17 PM
+info: GET en /favicon.ico - 9/1/2023, 9:04:18 PM
+info: GET en /products - 9/1/2023, 9:04:18 PM
+info: GET en /favicon.ico - 9/1/2023, 9:04:19 PM
+info: GET en / - 9/1/2023, 9:04:20 PM
+info: GET en /favicon.ico - 9/1/2023, 9:04:20 PM
+info: GET en /products - 9/1/2023, 9:04:32 PM
+info: GET en /favicon.ico - 9/1/2023, 9:04:33 PM
+info: GET en /register - 9/1/2023, 9:04:35 PM
+info: GET en /login - 9/1/2023, 9:04:36 PM
+info: GET en /favicon.ico - 9/1/2023, 9:04:36 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /products - 9/1/2023, 11:58:14 PM
+info: GET en /favicon.ico - 9/1/2023, 11:58:16 PM
+info: GET en /login - 9/2/2023, 12:16:40 AM
+info: GET en /favicon.ico - 9/2/2023, 12:16:40 AM
+info: GET en /forgot-password - 9/2/2023, 12:16:43 AM
+info: GET en /favicon.ico - 9/2/2023, 12:16:43 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /register-user - 9/2/2023, 2:17:53 AM
+info: GET en /favicon.ico - 9/2/2023, 2:17:54 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /products - 9/2/2023, 2:20:38 AM
+info: GET en /favicon.ico - 9/2/2023, 2:20:40 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /login - 9/2/2023, 1:21:00 PM
+info: GET en /favicon.ico - 9/2/2023, 1:21:02 PM
+info: GET en /forgot-password - 9/2/2023, 1:21:03 PM
+info: GET en /favicon.ico - 9/2/2023, 1:21:04 PM
+info: POST en /api/forgot-password - 9/2/2023, 1:21:06 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6eyJuYW1lIjoiS2FyaW5hIiwiZW1haWwiOiJrYXJpbmEucHJhZG9ndXRpZXJyZXpAZ21haWwuY29tIiwicm9sZSI6MH0sImlhdCI6MTY5MzY3ODg2NywiZXhwIjoxNjkzNjgyNDY3fQ.VrzUF9-rYCXFe9w1y6SF6Jqp0hVG8aaSSSMIpIRdBPs - 9/2/2023, 1:21:14 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/css/styles.css - 9/2/2023, 1:21:15 PM
+info: GET en /reset-password/karina.pradogutierrez@gmail.com/public/js/signout.js - 9/2/2023, 1:21:15 PM
+info: GET en /favicon.ico - 9/2/2023, 1:21:16 PM
+info: POST en /api/confirm-password - 9/2/2023, 1:21:25 PM
+info: GET en /login - 9/2/2023, 1:21:27 PM
+info: GET en /favicon.ico - 9/2/2023, 1:21:28 PM

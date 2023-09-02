@@ -15,7 +15,11 @@ form.addEventListener("submit", function (event) {
           "Content-Type": "application/json"
         }
       })
-        .then((result) => result.json());
+        .then((result) => result.json())
+        .then((res) => {
+          alert("Password reseted");
+          location.href = "http://localhost:8080/login";
+        });
   }else{
     alert("User un nuevo password");
   }

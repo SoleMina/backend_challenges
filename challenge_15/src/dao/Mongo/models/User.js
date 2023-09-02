@@ -8,7 +8,12 @@ const schema = new Schema({
     email: {type: String, required: true, index: true, unique: true},
     age: {type: Number, required: true},
     role: {type: Number, required: true, default: 0},
-    password: {type: String, required: true}
+    password: {type: String, required: true},
+    // role: {
+    //     type: String,
+    //     enum: ['user', 'admin', 'premium'],
+    //     default: 'user'
+    // }
 });
 
 const User =model(collection, schema);
