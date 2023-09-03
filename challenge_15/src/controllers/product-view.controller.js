@@ -12,7 +12,7 @@ class ProductViewController {
         
         try {
             const data = await this.productService.getProducts(limit, page, title);
-
+            console.log(data);
             if(data) {
                 return res.render(
                     "products", 
@@ -70,12 +70,11 @@ class ProductViewController {
 
     createProduct = async(req, res, next) => {
         const body = req.body;
-
         let thumbnail = "http://localhost:8080/public/images/" + body.thumbnail;
         body.thumbnail = thumbnail;
     
         try {
-            let response = await this.productService.createProduct(newProduct);
+            let response = await this.productService.createProduct(body);
             if(response) {
                 return res.render(
                     "products", 
