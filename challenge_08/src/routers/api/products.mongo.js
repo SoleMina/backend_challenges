@@ -52,7 +52,7 @@ router.post("/", upload.single("imageFile"), async(req, res, next) => {
     const body = req.body;
     console.log(body);
     console.log(req.file, "req.file");
-    let thumbnail = "http://localhost:8080/public/images/" + body.thumbnail;
+    let thumbnail = "http://localhost:8080/public/images/" + req.file.filename;
     body.thumbnail = thumbnail;
 
     try {

@@ -69,12 +69,12 @@ class ProductViewController {
     };
 
     createProduct = async(req, res, next) => {
-        const body = req.body;
-        let thumbnail = "http://localhost:8080/public/images/" + body.thumbnail;
-        body.thumbnail = thumbnail;
+        const newProduct = req.body;
+        let thumbnail = "http://localhost:8080/public/images/" + req.file.filename;
+        newProduct.thumbnail = thumbnail;
     
         try {
-            let response = await this.productService.createProduct(body);
+            let response = await this.productService.createProduct(newProduct);
             if(response) {
                 return res.render(
                     "products", 
