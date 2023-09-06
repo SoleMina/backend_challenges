@@ -1,3 +1,4 @@
+import User from "../dao/Mongo/models/User.js";
 import UserDTO from "../dto/user.dto.js";
 import {userService} from "../service/index.js";
 import CustomError from "../utils/error/customError.js";
@@ -8,10 +9,11 @@ class UserController {
     constructor() {
         this.userService = userService;
     }
-    registerUser = async (req, res) => {
-
+    registerUser = async (req, res, next) => {
+        console.log("INSIDEEE");
         try {
             let {name, photo, email, age, rol, password} = req.body;
+            console.log(req.body, "req.body");
     
             if(!name || !email || !password) {
                 CustomError.createError({
@@ -22,15 +24,47 @@ class UserController {
                 });
             }
     
-            let newUser = new UserDTO({name, photo, email, age, rol, password});
+            let newUser = {name, photo, email, age, rol, password};
     
-            let result = this.service.create(newUser);
+            let result = await User.create(newUser);
+            console.log(result, "crear user result");
                     
             return res.status(201).json({
                 success: true,
                 message: "User created!",
-                payload: {name, email, age}
+                payload: {name, email, age},
+                user: result
             });
+        } catch (error) {
+            next(error);
+        }
+    }
+    getUser = async(req, res, next) => {
+        try {
+            const {email} = req.body;
+            const user = this.service.findOne({email});
+
+            return res.status(201).json({
+                success: true,
+                message: "User found!",
+                payload: user
+            });
+        } catch (error) {
+            next(error);
+        }
+    }
+    updateUser = async (req, res, next) => {
+        try {
+            const body = req.body;
+            const {uid} = req.params;
+            const user = await User.findByIdAndUpdate(uid, body);
+
+            return res.status(201).json({
+                success: true,
+                message: "User updated!",
+                payload: user
+            });
+
         } catch (error) {
             next(error);
         }

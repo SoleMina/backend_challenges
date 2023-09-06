@@ -40,3 +40,6 @@ get, post, put & delete
 - Add send gmail config
 - Add middlewares error custom
 - Add customized loggers 
+- Security
+- Add create user premiun, admin & user
+- Add reset password with email

@@ -11,7 +11,8 @@ const router = Router();
 
 router.get("/mail", async(req, res, next) => {
     try {
-        await sendMail();
+        const email = "karina.pradogutierrez@gmail.com";
+        await sendMail(email, "Reset Password", "Reset Password in a secure way");
         res.send("Email enviado");
     } catch (error) {
        console.log(error);

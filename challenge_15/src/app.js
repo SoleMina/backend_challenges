@@ -39,7 +39,7 @@ server.use(express.json());
 server.use(express.urlencoded({extended: true}));
 server.use("/public", express.static("public"));
 server.use(morgan('dev'));
-// initializePassport();
+initializePassport();
 server.use(passport.initialize());
 server.use(passport.session());
 server.use(addLogger);

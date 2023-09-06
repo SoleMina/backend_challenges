@@ -17,12 +17,13 @@ const transport = nodemailer.createTransport({
 });
 
 
-export const sendMail = async () => {
+export const sendMail = async ( emailUser, subject, html) => {
     return await transport.sendMail({
-        from: "Coder Test <karina.pradogutierrez@gmail.com>",
-        to: "karina.pradogutierrez@gmail.com",
-        subject: "Correo electrónico de prueba",
-        html: `<h1>Esto es un correo de prueba</h1>`,
+        from: `Email: <karina.pradogutierrez@gmail.com>`,
+        to: emailUser,
+        subject: subject,
+        //html: `<h1>${message}</h1>`,
+        html: html,
         attachments: [
             {
                 filename: "nodejs.jpg",

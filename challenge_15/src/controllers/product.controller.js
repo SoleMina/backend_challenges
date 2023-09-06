@@ -56,10 +56,8 @@ class ProductController {
     };
     createProduct = async(req, res, next) => {
         const newProduct = req.body;
-    
-        console.log(req.file, "req.file");
-        let thumbnail = "http://localhost:8080/public/images/" + body.thumbnail;
-        body.thumbnail = thumbnail;
+        let thumbnail = "http://localhost:8080/public/images/" + req.file.filename;
+        newProduct.thumbnail = thumbnail;
     
         try {
             const {title, description, price, code, stock } = newProduct;

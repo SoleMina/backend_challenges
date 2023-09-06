@@ -5,6 +5,7 @@ import cartsRouter from "./carts.router.js";
 import registerRouter from "./carts.memory.js";
 import compression from "express-compression";
 import pruebasRouter from "./pruebas.router.js";
+import emailRouter from "./email.router.js";
 
 const router = Router();
 
@@ -22,6 +23,7 @@ router.use("/carts", cartsRouter);
 router.use('/register',registerRouter);
 router.use('/auth',authRouter);
 router.use('/',pruebasRouter);
+router.use('/',emailRouter);
 
 
 export default router;

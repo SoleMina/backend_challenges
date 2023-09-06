@@ -1,32 +1,38 @@
-<main class="d-flex flex-column justify-content-center align-items-center flex-grow-1">
-    <h1 class="p-5">{{title}}</h1>
-    <form class="d-flex flex-column justify-content-center align-items-center w-50" id="registerForm">
-        <fieldset class="mb-2 w-100">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" name="name" id="name" />
-        </fieldset>
-        <fieldset class="mb-2 w-100">
-            <label for="photo" class="form-label">URL photo</label>
-            <input type="text" class="form-control" name="photo" id="photo" />
-        </fieldset>
-        <fieldset class="mb-2 w-100">
-            <label for="age" class="form-label">Age</label>
-            <input type="number" class="form-control" name="age" id="age" />
-        </fieldset>
-        <fieldset class="mb-2 w-100">
-            <label for="mail" class="form-label">Email</label>
-            <input type="email" class="form-control" name="mail" id="email" />
-        </fieldset>
-        <fieldset class="mb-2 w-100">
-            <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control" name="password" id="password" />
-        </fieldset>
-        <fieldset class="mb-2 w-100">
-            <label for="role" class="form-label">Role</label>
-            <input type="number" class="form-control" name="role" id="role" />
-        </fieldset>
-        <div class="d-flex justify-content-between w-100">
-            <input type="button" id='register' class="btn btn-danger mt-2  w-100" value="Register!">
-        </div>
-    </form>
+<main class="d-flex flex-column justify-content-center align-items-center flex-grow-1 pb-5 pt-2">
+    <h1 class="p-4">{{title}}</h1>
+    <div class="w-75 d-flex flex-column justify-content-center align-items-center flex-grow-1">
+        <form class="d-flex flex-column justify-content-center align-items-center w-50" id="registerForm">
+            <fieldset class="mb-2 w-100">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" name="name" id="name" />
+            </fieldset>
+            <fieldset class="mb-2 w-100">
+                <label for="photo" class="form-label">URL photo:</label>
+                <input type="text" class="form-control" name="photo" id="photo" />
+            </fieldset>
+            <fieldset class="mb-2 w-100">
+                <label for="age" class="form-label">Age:</label>
+                <input type="number" class="form-control" name="age" id="age" />
+            </fieldset>
+            <fieldset class="mb-2 w-100">
+                <label for="mail" class="form-label">Email:</label>
+                <input type="email" class="form-control" name="mail" id="email" />
+            </fieldset>
+            <fieldset class="mb-2 w-100">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" class="form-control" name="password" id="password" />
+            </fieldset>
+            <fieldset class="mb-2 w-100">
+                <label for="role" class="form-label">Role:</label>
+                <select id="role" name="role" class="form-select" aria-label="Default select example">
+                    <option value="user" selected>User</option>
+                    <option value="admin">Admin</option>
+                    <option value="premium">Premium</option>
+                </select>
+            </fieldset>
+            <div class="d-flex justify-content-between w-100">
+                <input type="button" id='register' class="btn btn-danger mt-2  w-100" value="Register!">
+            </div>
+        </form>
+    </div>
 </main>

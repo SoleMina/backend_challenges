@@ -28,6 +28,7 @@ export default  function initializePassport() {
                 try {
                     //buscar un usuario
                     let one = await User.findOne({ email: username}) //puedo buscar req.body.email
+                    console.log(username, "username");
                     if(!one) {
                         let user = await User.create(req.body)
                         console.log(user, "user");

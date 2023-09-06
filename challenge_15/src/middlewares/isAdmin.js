@@ -1,7 +1,7 @@
 function isAdmin (req, res, next) {
     try {
         const {email, password, role} = req.user;
-        if(role === 1) {
+        if(role === "admin") {
             console.log("entró");
             next();
         }
