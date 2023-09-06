@@ -39,6 +39,26 @@ class UserController {
             next(error);
         }
     }
+    getUsers = async(req, res, next) => {
+        try {
+            const users = await User.find();
+
+            if(users) {
+                return res.status(201).json({
+                    success: true,
+                    message: "User found!",
+                    payload: users
+                });
+            }else{
+                return res.status(404).json({
+                    success: false,
+                    message: `Error products not found`
+                })
+            }
+        } catch (error) {
+            next(error);
+        }
+    }
     getUser = async(req, res, next) => {
         try {
             const {email} = req.body;

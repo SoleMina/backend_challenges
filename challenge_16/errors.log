@@ -66,3 +66,35 @@ info: Proceso primario, generando worker
 info: Listening server on 8080
 info: GET en /doc - 9/5/2023, 11:16:05 PM
 info: GET en /favicon.ico - 9/5/2023, 11:16:05 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/users - 9/5/2023, 11:39:42 PM
+info: GET en /api/users - 9/5/2023, 11:39:57 PM
+info: GET en /favicon.ico - 9/5/2023, 11:39:57 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/auth/users - 9/5/2023, 11:43:40 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/auth/users - 9/5/2023, 11:44:23 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/auth/users - 9/5/2023, 11:44:49 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/auth/users - 9/6/2023, 12:18:11 AM
+info: GET en /api/auth/users/64f3af9ff3e703ea0721468c - 9/6/2023, 12:18:26 AM
