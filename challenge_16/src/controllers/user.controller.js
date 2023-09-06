@@ -1,5 +1,4 @@
 import User from "../dao/Mongo/models/User.js";
-import UserDTO from "../dto/user.dto.js";
 import {userService} from "../service/index.js";
 import CustomError from "../utils/error/customError.js";
 import { EErrors } from "../utils/error/enum.js";
@@ -9,39 +8,9 @@ class UserController {
     constructor() {
         this.userService = userService;
     }
-    registerUser = async (req, res, next) => {
-        console.log("INSIDEEE");
-        try {
-            let {name, photo, email, age, rol, password} = req.body;
-            console.log(req.body, "req.body");
-    
-            if(!name || !email || !password) {
-                CustomError.createError({
-                    name: "User Creation error",
-                    cause: generateUserErrorsInfo({name, email, password}),
-                    message: "Error trying to create user",
-                    code: EErrors.INVALID_TYPE_ERROR
-                });
-            }
-    
-            let newUser = {name, photo, email, age, rol, password};
-    
-            let result = await User.create(newUser);
-            console.log(result, "crear user result");
-                    
-            return res.status(201).json({
-                success: true,
-                message: "User created!",
-                payload: {name, email, age},
-                user: result
-            });
-        } catch (error) {
-            next(error);
-        }
-    }
     getUsers = async(req, res, next) => {
         try {
-            const users = await User.find();
+            const users = await this.userService.getUsers();
 
             if(users) {
                 return res.status(201).json({
@@ -62,7 +31,7 @@ class UserController {
     getUser = async(req, res, next) => {
         try {
             const {uid} = req.params;
-            const user = await User.findById(uid);
+            const user = await this.userService.getUser(uid);
 
             return res.status(201).json({
                 success: true,
@@ -73,17 +42,53 @@ class UserController {
             next(error);
         }
     }
+    registerUser = async (req, res, next) => {
+        try {
+            let {name, photo, email, age, rol, password} = req.body;
+            console.log(req.body, "req.body");
+    
+            if(!name || !email || !password) {
+                CustomError.createError({
+                    name: "User Creation error",
+                    cause: generateUserErrorsInfo({name, email, password}),
+                    message: "Error trying to create user",
+                    code: EErrors.INVALID_TYPE_ERROR
+                });
+            }
+    
+            let newUser = {name, photo, email, age, rol, password};
+    
+            let result = await this.userService.registerUser(newUser);
+            console.log(result, "crear user result");
+                    
+            return res.status(201).json({
+                success: true,
+                message: "User created!",
+                payload: {name, email, age},
+                user: result
+            });
+        } catch (error) {
+            next(error);
+        }
+    }
     updateUser = async (req, res, next) => {
         try {
             const body = req.body;
             const {uid} = req.params;
-            const user = await User.findByIdAndUpdate(uid, body);
+            const user = await this.userService.updateUser(uid, body);
 
-            return res.status(201).json({
-                success: true,
-                message: "User updated!",
-                payload: user
-            });
+            if(user) {
+                return res.status(201).json({
+                    success: true,
+                    message: "User updated!",
+                    payload: user
+                });
+            }else{
+                return res.status(500).json({
+                    success: false,
+                    message: `Couldn't update user`
+                })
+            }
 
         } catch (error) {
             next(error);

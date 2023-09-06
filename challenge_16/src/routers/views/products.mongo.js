@@ -1,7 +1,6 @@
 import { Router} from "express";
-import Product from "../../dao/Mongo/models/Product.js";
 import upload from "../../middlewares/multer.js";
-import isAdmin from "../../middlewares/isAdmin.js";
+// import isAdmin from "../../middlewares/isAdmin.js";
 import ProductViewController from "../../controllers/product-view.controller.js";
 
 const router = Router();

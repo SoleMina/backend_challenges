@@ -6,9 +6,7 @@ const cartController = new CartController();
 
 //GETS
 router.get("/", cartController.getCart);
-
 router.get("/bills/:cid", cartController.getCartInformation);
-
 router.get("/:cid", cartController.getCartById);
 
 //POSTS

@@ -1,0 +1,34 @@
+paths:
+  /api/carts:
+    get:
+      summary: Se obtiene los carritos
+      tags:
+        - Carts
+      responses:
+        "200":
+          description: Los carritos fueron obtenidos de la base de datos
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#components/schemas/Cart"
+        "500":
+          description: Error interno del server por ser defectuoso
+
+components:
+  schemas:
+    Cart:
+      type: object
+      properties:
+        id:
+          type: String
+          description: Id autogenerado mongodb
+        products:
+          type: Array
+          description: Conjunto de productos
+      example:
+        _id: ObjectId("")
+        products: [{00001, 20}]
+        
+        

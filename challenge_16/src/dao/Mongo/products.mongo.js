@@ -1,9 +1,6 @@
 import Product from "./models/Product.js";
  
 class ProductDaoMongo {
-    constructor() {
-        this.productModel = Product;
-    }
 
     getProducts = async(limit, page, title) => {
         try {
