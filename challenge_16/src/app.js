@@ -15,6 +15,8 @@ import { addLogger } from "./config/logger.js";
 import path from 'path';
 import dotenv from 'dotenv';
 import config from "./config/configuration.js";
+import swaggerJsDoc from "swagger-jsdoc";
+import swaggerUiExpress from "swagger-ui-express";
 
 const envPath = path.join(__dirname, '..', '.env.development');
 dotenv.config({
@@ -22,6 +24,20 @@ dotenv.config({
 });
 
 const server = express();
+
+//docs
+const swaggerOptions = {
+  definition: {
+    openapi: "3.0.1",
+    info: {
+      title: "Documentación de app ecommerce",
+      description: "Api para productos"
+    }
+  },
+  apis: [`${__dirname}/docs/**/*.yaml`]
+}
+
+const specs = swaggerJsDoc(swaggerOptions);
 
 //middlewares
 server.use(session({
@@ -37,6 +53,7 @@ server.use(session({
 server.use(cookieParser(config.secret_cookie));
 server.use(express.json());
 server.use(express.urlencoded({extended: true}));
+server.use("/docs", swaggerUiExpress.serve, swaggerUiExpress.setup(specs));
 server.use("/public", express.static("public"));
 server.use(morgan('dev'));
 initializePassport();

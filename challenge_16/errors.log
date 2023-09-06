@@ -4,3 +4,25 @@ info: GET en / - 9/5/2023, 10:08:19 PM
 info: GET en /favicon.ico - 9/5/2023, 10:08:20 PM
 info: GET en /products - 9/5/2023, 10:08:20 PM
 info: GET en /favicon.ico - 9/5/2023, 10:08:21 PM
+info: GET en /products - 9/5/2023, 10:11:25 PM
+info: GET en /favicon.ico - 9/5/2023, 10:11:26 PM
+info: GET en /docs - 9/5/2023, 10:17:59 PM
+info: GET en /favicon.ico - 9/5/2023, 10:17:59 PM
+info: GET en /docs - 9/5/2023, 10:18:02 PM
+info: GET en /favicon.ico - 9/5/2023, 10:18:02 PM
+info: GET en /docs - 9/5/2023, 10:18:56 PM
+info: GET en /favicon.ico - 9/5/2023, 10:18:57 PM
+info: GET en /docs - 9/5/2023, 10:19:16 PM
+info: GET en /favicon.ico - 9/5/2023, 10:19:16 PM
+info: GET en /docs/ - 9/5/2023, 10:19:19 PM
+info: GET en /favicon.ico - 9/5/2023, 10:19:19 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080

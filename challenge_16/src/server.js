@@ -37,4 +37,4 @@ if(cluster.isPrimary) {
 }
 
 const numProcess = cpus().length;
-console.log(numProcess, 'num');
+// console.log(numProcess, 'num');
