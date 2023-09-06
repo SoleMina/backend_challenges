@@ -43,3 +43,26 @@ info: GET en /favicon.ico - 9/5/2023, 10:40:43 PM
 info: Proceso primario, generando worker
 info: Listening server on 8080
 info: GET en /api/products - 9/5/2023, 10:41:13 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/products - 9/5/2023, 10:51:22 PM
+info: GET en /api/products/64d2709b997d5d74e825ac75 - 9/5/2023, 10:51:34 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/products - 9/5/2023, 10:54:24 PM
+info: GET en /api/products/64d275b074a9626b8d23178c - 9/5/2023, 10:54:41 PM
+info: GET en /api/products/64d275b074a9626b8d23178c - 9/5/2023, 10:55:10 PM
+info: GET en /favicon.ico - 9/5/2023, 10:55:11 PM
+info: GET en /api/products/64d275b074a9626b8d23178c - 9/5/2023, 10:55:17 PM
+info: GET en /favicon.ico - 9/5/2023, 10:55:18 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/products/64d275b074a9626b8d23178c - 9/5/2023, 10:55:54 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /doc - 9/5/2023, 11:16:05 PM
+info: GET en /favicon.ico - 9/5/2023, 11:16:05 PM

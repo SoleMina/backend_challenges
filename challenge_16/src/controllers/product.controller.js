@@ -39,7 +39,7 @@ class ProductController {
         try {
             const {pid} = req.params
             let product = await this.productService.getProduct(pid);
-            if(one) {
+            if(product) {
                 return res.status(200).json({
                     success: true,
                     payload: product
