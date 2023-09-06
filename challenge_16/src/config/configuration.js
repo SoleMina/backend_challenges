@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 import path from 'path';
-import __dirname from "../utils.js";
+import __dirname from "../utils/utils.js";
 
 const envPath = path.join(__dirname, '..', '.env.development');
 

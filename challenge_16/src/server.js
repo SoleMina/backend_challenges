@@ -5,7 +5,7 @@ import config from "./config/configuration.js";
 import cluster from "node:cluster";
 import {cpus} from "node:os";
 
-const PORT = process.env.PORT || 8000;
+const PORT = config.port || 8000;
 
 const http_server = server.listen(PORT, err => {
     // console.log(`Listening server on ${PORT}`);
