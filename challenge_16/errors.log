@@ -98,3 +98,41 @@ info: Proceso primario, generando worker
 info: Listening server on 8080
 info: GET en /api/auth/users - 9/6/2023, 12:18:11 AM
 info: GET en /api/auth/users/64f3af9ff3e703ea0721468c - 9/6/2023, 12:18:26 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/auth/users - 9/6/2023, 12:27:32 AM
+info: GET en /api/auth/users/64f3af9ff3e703ea0721468c - 9/6/2023, 12:27:44 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/auth/users/64f3af9ff3e703ea0721468c - 9/6/2023, 12:28:12 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/auth/users/64f3af9ff3e703ea0721468c - 9/6/2023, 12:29:17 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/auth/users/64f3af9ff3e703ea0721468c - 9/6/2023, 12:29:38 AM
+info: GET en /api/auth/users/64f3af9ff3e703ea0721468c - 9/6/2023, 12:29:39 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/auth/users/64f3af9ff3e703ea0721468c - 9/6/2023, 12:30:17 AM
+info: GET en /api/auth/users/64f3af9ff3e703ea0721468c - 9/6/2023, 12:30:24 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/auth/users/64f3af9ff3e703ea0721468c - 9/6/2023, 12:30:45 AM
+info: GET en /api/auth/users/64f3af9ff3e703ea0721468c - 9/6/2023, 12:30:59 AM
+info: GET en /favicon.ico - 9/6/2023, 12:30:59 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/auth/users/64f3af9ff3e703ea0721468c - 9/6/2023, 12:32:09 AM
+info: GET en /api/auth/users/64f3af9ff3e703ea0721468c - 9/6/2023, 12:32:24 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/auth/users/64f3af9ff3e703ea0721468c - 9/6/2023, 12:33:25 AM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/auth/users - 9/6/2023, 12:36:43 AM
+info: GET en /api/auth/users/6498ac0eb0e146ca1a04564b - 9/6/2023, 12:36:56 AM

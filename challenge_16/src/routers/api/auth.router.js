@@ -14,6 +14,7 @@ const userController = new UserController();
 
 //REGISTER
 router.get("/users", userController.getUsers);
+router.get("/users/:uid", userController.getUser);
 router.post("/register-user", validator, pass_is_8, createHash,
     passport.authenticate(
         "register", //nombre de la estrategia

@@ -61,8 +61,8 @@ class UserController {
     }
     getUser = async(req, res, next) => {
         try {
-            const {email} = req.body;
-            const user = this.service.findOne({email});
+            const {uid} = req.params;
+            const user = await User.findById(uid);
 
             return res.status(201).json({
                 success: true,
