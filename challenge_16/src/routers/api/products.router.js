@@ -1,4 +1,4 @@
-import { Router} from "express";
+import { Router } from "express";
 import upload from "../../middlewares/multer.js";
 import ProductController from "../../controllers/product.controller.js";
 

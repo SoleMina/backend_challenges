@@ -1,4 +1,4 @@
-import { Router} from "express";
+import { Router } from "express";
 import Cart from "../../dao/Mongo/models/Cart.js";
 import Product from "../../dao/Mongo/models/Product.js";
 import { Types } from "mongoose";
@@ -11,42 +11,48 @@ const cartViewController = new CartViewController();
 router.get("/", cartViewController.getCart);
 
 router.get("/bills/:cid", async (req, res, next) => {
-    try {
-        const cid = req.params.cid;
-        let totalCarts = await Cart.aggregate([
-            { $match: {_id: new Types.ObjectId(cid) }}, //filtro carritos por usuario
-            { $lookup: { foreignField: "product_id", from: "products", localField: "product_id", as: "product_id"}}, //populeo los datos del usuario
-            { $replaceRoot: { //reemplazo la ubicacion de los elementos del array populado
-                newRoot: {
-                    $mergeObjects: [
-                        { $arrayElemAt: [ "$product_id", 0]},
-                        "$$ROOT"
-                    ]
-                }
-            }},
-            { $set: { total: { $multiply: ["$quantity", "$price"] }}}, //multiplicar precio x cantidad
-            //{ $project: { products: 0, title: 0, quantity:0, price: 0, __v: 0}},
-            { $project: { product_id: 0, title: 0, quantity:0, price: 0, __v: 0}}, //limpia el objeto
-            { $group: {_id: "$products", sum: { $sum: "$total"}}}, //agrupo y reduzco
-            { $project: {products: 0, products: "$_id", sum: "$sum"}},
+  try {
+    const cid = req.params.cid;
+    let totalCarts = await Cart.aggregate([
+      { $match: { _id: new Types.ObjectId(cid) } }, //filtro carritos por usuario
+      {
+        $lookup: {
+          foreignField: "product_id",
+          from: "products",
+          localField: "product_id",
+          as: "product_id",
+        },
+      }, //populeo los datos del usuario
+      {
+        $replaceRoot: {
+          //reemplazo la ubicacion de los elementos del array populado
+          newRoot: {
+            $mergeObjects: [{ $arrayElemAt: ["$product_id", 0] }, "$$ROOT"],
+          },
+        },
+      },
+      { $set: { total: { $multiply: ["$quantity", "$price"] } } }, //multiplicar precio x cantidad
+      //{ $project: { products: 0, title: 0, quantity:0, price: 0, __v: 0}},
+      { $project: { product_id: 0, title: 0, quantity: 0, price: 0, __v: 0 } }, //limpia el objeto
+      { $group: { _id: "$products", sum: { $sum: "$total" } } }, //agrupo y reduzco
+      { $project: { products: 0, products: "$_id", sum: "$sum" } },
+    ]);
 
-        ]);
-
-        console.log(totalCarts, "totalCarts");
-        if(totalCarts) {
-            return res.status(200).json({
-                success: true,
-                response: totalCarts
-            })
-        }else{
-            return res.status(404).json({
-                success: true,
-                message: `Not found`
-            })
-        }
-    } catch (error) {
-        next(error);
+    console.log(totalCarts, "totalCarts");
+    if (totalCarts) {
+      return res.status(200).json({
+        success: true,
+        response: totalCarts,
+      });
+    } else {
+      return res.status(404).json({
+        success: true,
+        message: `Not found`,
+      });
     }
+  } catch (error) {
+    next(error);
+  }
 });
 //POSTS
 router.post("/", cartViewController.createCart);

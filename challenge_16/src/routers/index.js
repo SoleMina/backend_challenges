@@ -1,4 +1,4 @@
-import { Router} from "express";
+import { Router } from "express";
 import apiRouter from "./api/index.js";
 import viewsRouter from "./views/index.js";
 
