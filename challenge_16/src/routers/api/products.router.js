@@ -8,7 +8,7 @@ import ProductController from "../../controllers/product.controller.js";
 const router = Router();
 const productController = new ProductController();
 
-router.get("/", isAdmin, productController.getProducts);
+router.get("/", productController.getProducts);
 router.get("/:pid", productController.getProduct);
 router.post("/", upload.single("imageFile"), productController.createProduct);
 router.put("/:pid", productController.updateProduct);

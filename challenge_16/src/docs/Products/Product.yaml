@@ -11,3 +11,42 @@ paths:
             application/json:
               schema:
                 type: array
+                items:
+                  $ref: "#components/schemas/Product"
+        "500":
+          description: Error interno del server por ser defectuoso
+
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        id:
+          type: String
+          description: Id autogenerado mongodb
+        title:
+          type: String
+          description: Nombre del producto
+        description:
+          type: String
+          description: Description del producto
+        price:
+          type: Number
+          description: Precio del producto
+        thumbnail:
+          type: String
+          description: Url del producto
+        code:
+          type: String
+          description: Código del producto
+        stock:
+          type: String
+          description: Stock del producto
+      example:
+        _id: ObjectId("")
+        title: "Macbook Pro"
+        description: "Product with high quality"
+        price: $2900
+        thumbnail: ""
+        code: A001
+        stock: 20
