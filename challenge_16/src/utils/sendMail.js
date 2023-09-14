@@ -1,5 +1,5 @@
 import nodemailer from "nodemailer";
-import __dirname from "../utils.js";
+import __dirname from "./utils.js";
 
 const gmail_user_app = process.env.GMAIL_USER_APP;
 const gmail_pass_app = process.env.GMAIL_PASS_APP;

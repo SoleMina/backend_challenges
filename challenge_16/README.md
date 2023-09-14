@@ -43,3 +43,4 @@ get, post, put & delete
 - Security
 - Add create user premiun, admin & user
 - Add reset password with email
+- Add api documentation: http://localhost:8080/docs/
