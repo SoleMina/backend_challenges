@@ -1,26 +1,24 @@
-import mongoose from "mongoose";
 import chai from "chai";
-import createHash from "../src/middlewares/createHash";
-import isValidPassword from "../src/middlewares/isValidPassword";
-import User from "../src/dao/Mongo/users.mongo.js";
+import { createHash, isValid } from "../src/utils/utils.js";
 
 const expect = chai.expect;
 
 describe("Testing de bcrypt", () => {
   it("El servicio debe devolver un haseo efectivo del password", async () => {
     const password = "123456";
-    const hasedPassword = await createHash(password);
+    const hasedPassword = createHash(password);
     console.log(hasedPassword, password);
 
     expect(hasedPassword).to.not.equal(password);
   });
-  it("El servicio debe devolver un haseo efectivo del password", async () => {
+  it("El servicio debe devolver un haseo efectivo del password comparado", async () => {
     const password = "123456";
-    const hasedPassword = await createHash(password);
+    const hasedPassword = createHash(password);
+    const userMock = { password: hasedPassword };
 
-    const userDbMock = { password: hasedPassword };
-    const isValid = await isValidPassword(userDbMock, password);
-    expect(isValid).to.be.true;
+    const isValidPassword = isValid(password, userMock.password);
+    console.log(isValidPassword);
+    expect(isValidPassword).to.be.true;
   });
 });
 describe("Testing de DAO", () => {

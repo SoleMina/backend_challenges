@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "NODE_ENV=development nodemon ./src/server.js",
     "prod": "NODE_ENV=production nodemon ./src/server.js",
-    "test": "mocha test/Users.test.js"
+    "test": "mocha test/hands.test.js"
   },
   "dependencies": {
     "@faker-js/faker": "^8.0.2",

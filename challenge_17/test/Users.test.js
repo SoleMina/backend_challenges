@@ -47,20 +47,20 @@ describe("Testing User Dao", () => {
   //     console.log(result);
   //     assert.strictEqual(result.products, []);
   //   });
-  //   it("El dao puede obtener a un usuario por email", async function () {
-  //     let mockeruser = {
-  //       name: "Estrella Choi",
-  //       photo:
-  //         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8rQTfvDS0mK_Y09wABdP_UOwfxiuQLqWcUQ&usqp=CAU",
-  //       email: "estrella2023@gmail.com",
-  //       age: 21,
-  //       password: "admin1234",
-  //       role: "admin",
-  //     };
-  //     const result = await this.userDao.registerUser(mockeruser);
-  //     console.log(result);
-  //     const user = await this.userDao.getUser(result._id);
-  //     console.log(user);
-  //     assert.strictEqual(typeof user, "object");
-  //   });
+  it("El dao puede obtener a un usuario por email", async function () {
+    let mockeruser = {
+      name: "Esther Balabarca",
+      photo:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8rQTfvDS0mK_Y09wABdP_UOwfxiuQLqWcUQ&usqp=CAU",
+      email: "esther@gmail.com",
+      age: 21,
+      password: "admin1234",
+      role: "admin",
+    };
+    const result = await this.userDao.registerUser(mockeruser);
+    console.log(result);
+    const user = await this.userDao.getUser(result._id);
+    console.log(user);
+    assert.strictEqual(typeof user, "object");
+  });
 });
