@@ -58,3 +58,5 @@ info: Proceso primario, generando worker
 info: Listening server on 8080
 info: POST en /api/users - 9/18/2023, 5:03:21 PM
 info: GET en /api/users/undefined - 9/18/2023, 5:03:21 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
