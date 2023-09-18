@@ -21,6 +21,3 @@ describe("Testing de bcrypt", () => {
     expect(isValidPassword).to.be.true;
   });
 });
-describe("Testing de DAO", () => {
-  it("El servicio debe devolver un haseo efectivo del password");
-});
