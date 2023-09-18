@@ -1,0 +1,144 @@
+paths:
+  /api/products:
+    get:
+      summary: Obtiene los productos
+      tags:
+        - Products
+      responses:
+        "200":
+          description: Los productos fueron obtenidos correctamente de la base de datos
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#components/schemas/Product"
+        "500":
+          description: Error interno del server por ser defectuoso
+    post:
+      summary: Crea un producto
+      tags:
+        - Products
+  /api/products/{pid}:
+    get:
+      summary: Obtiene un producto a partir de un id
+      tags:
+        - Products
+      parameters:
+        - name: pid
+          in: path
+          required: true
+          description: Id del producto que se debe solicitar
+          schema:
+            $type: String
+      responses:
+        "200":
+          description: El producto fue obtenido correctamente de la base de datos
+          content:
+            application/json:
+              schema:
+                $ref: "#components/schema/Product"
+        "500":
+          description: Error interno del server por ser defectuoso
+    put:
+      summary: Se actualiza product según su id
+      tags:
+        - Products
+      parameters:
+        - name: pid
+          in: path
+          required: true
+          descrirption: El id del producto
+          schema:
+            $type: String
+      responses:
+        "200":
+          description: El producto fue actualizado correctamente
+        "500":
+          description: Error interno del server por ser defectuoso
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#components/requestBodies/updateProduct"
+    delete:
+      summary: Se elimina producto según id
+      tags:
+        - Products
+      parameters:
+        - name: pid
+          in: path
+          required: true
+          description: Id del producto
+          schema:
+            $type: String
+      responses:
+        "200":
+          description: El producto fue eliminado satisfactoriamente
+        "500":
+          description: Error interno del server por ser defectuoso
+
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        id:
+          type: String
+          description: Id autogenerado mongodb
+        title:
+          type: String
+          description: Nombre del producto
+        description:
+          type: String
+          description: Description del producto
+        price:
+          type: Number
+          description: Precio del producto
+        thumbnail:
+          type: String
+          description: Url del producto
+        code:
+          type: String
+          description: Código del producto
+        stock:
+          type: String
+          description: Stock del producto
+      example:
+        _id: ObjectId("")
+        title: "Macbook Pro"
+        description: "Product with high quality"
+        price: $2900
+        thumbnail: ""
+        code: A001
+        stock: 20
+  requestBodies:
+    updateProduct:
+      type: object
+      properties:
+        title:
+          type: String
+          description: Nombre del producto
+        description:
+          type: String
+          description: Descripción del producto
+        price:
+          type: Number
+          description: Precio del producto
+        thumbnail:
+          type: String
+          description: Url del producto
+        code:
+          type: String
+          description: Código del producto
+        stock:
+          type: Number
+          description: Stock del producto
+      example:
+        title: "Macbook Pro"
+        description: "Product with high quality"
+        price: $2900
+        thumbnail: ""
+        code: A001
+        stock: 20
