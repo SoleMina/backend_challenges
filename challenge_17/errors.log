@@ -14,3 +14,47 @@ info: Proceso primario, generando worker
 info: Listening server on 8080
 info: Proceso primario, generando worker
 info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/products - 9/18/2023, 4:16:34 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/products - 9/18/2023, 4:18:55 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: GET en /api/products - 9/18/2023, 4:19:16 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/products - 9/18/2023, 4:20:34 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/products - 9/18/2023, 4:20:53 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/products - 9/18/2023, 4:27:03 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/products - 9/18/2023, 4:27:48 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/products - 9/18/2023, 4:31:52 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/users - 9/18/2023, 5:02:32 PM
+info: GET en /api/users/undefined - 9/18/2023, 5:02:32 PM
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: Proceso primario, generando worker
+info: Listening server on 8080
+info: POST en /api/users - 9/18/2023, 5:03:21 PM
+info: GET en /api/users/undefined - 9/18/2023, 5:03:21 PM
