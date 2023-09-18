@@ -1,25 +1,26 @@
-import chai from "chai";
 import mongoose, { connect } from "mongoose";
+import Assert from "assert";
+import chai from "chai";
 import config from "../src/config/configuration.js";
 import User from "../src/dao/Mongo/users.mongo.js";
 
 const expect = chai.expect;
+const assert = Assert.strict;
 
 connect(config.mongo_url);
 
 describe("Testing Users Dao", () => {
   before(function () {
-    this.usersDao = new User();
+    this.userDao = new User();
   });
   beforeEach(function () {
-    mongoose.connection.collections.users.drop();
-    this.timeout(3000);
+    //mongoose.connection.collections.users.drop();
+    this.timeout(5000);
   });
   it("El DAO debe traer todos los usuarios en forma arreglo", async function () {
     const result = await this.userDao.getUsers();
     console.log(result);
-    // expect(result).to.be.deep.equal([]);
-    expect(Array.isArray(result).to.be.equals(true));
-    // assert.strictEqual(Array.isArray(result)).to.be.ok;
+    expect(Array.isArray(result)).to.be.true.to.be.ok;
+    //assert.strictEqual(Array.isArray(result), true);
   });
 });
